@@ -12,7 +12,7 @@ export default function Navbar() {
     { name: "Contact", url: "#" },
   ];
   return (
-    <nav className="flex items-center justify-between gap-10 px-10 py-5">
+    <nav className=" bg-white flex items-center justify-between gap-10 px-10 py-5 sticky top-0 left-0 z-10 ">
       <div className="flex items-center gap-2">
         <Image
           src={"/images/logo.png"}
