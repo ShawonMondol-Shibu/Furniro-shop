@@ -15,13 +15,13 @@ export default function BrowseRange() {
   return (
     <main className="py-20">
       <div className="text-center mb-10">
-        <Title> Browse The Range</Title>
+        <Title className=""> Browse The Range</Title>
         <p className="text-xl font-normal">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </p>
       </div>
 
-      <div className="flex items-center justify-center gap-10">
+      <div className="flex flex-wrap items-center justify-center gap-8">
         {rangeData.map((data: dataType, i) => (
           <div key={i} className="rounded-lg ">
             <Image
