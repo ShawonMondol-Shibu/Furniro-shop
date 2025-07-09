@@ -7,7 +7,10 @@ import { Button } from "../ui/button";
 export default function OurProducts() {
   return (
     <main className="container m-auto py-5">
-      <Title className={"text-[40px]"}> Our Products </Title>
+        <div className="text-center">
+
+      <Title className={"text-[40px] text-center"}> Our Products </Title>
+        </div>
       <div className="xl:grid grid-cols-4 flex flex-wrap gap-10 items-center justify-center py-10">
         {Array.from({ length: 8 }).map((item, i) => (
           <Card key={i} className="w-72 pt-0 rounded-none m-auto">
@@ -31,13 +34,16 @@ export default function OurProducts() {
           </Card>
         ))}
       </div>
+      <div className="w-full text-center">
+
       <Button
         variant={"outline"}
         size={"lg"}
-        className="text-base text-(--textPrimary) font-semibold border-(--textPrimary) border rounded-none py-6 px-10 "
-      >
+        className="text-base text-(--textPrimary) font-semibold border-(--textPrimary) border rounded-none py-6 px-10"
+        >
         See More
       </Button>
+          </div>
     </main>
   );
 }
