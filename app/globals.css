@@ -78,6 +78,7 @@
   --sidebar-ring: oklch(0.709 0.01 56.259);
 --bgPrimary:#FFF3E3;
 --textPrimary:#B88E2F;
+--textSecondary: #333333;
 }
 
 .dark {
