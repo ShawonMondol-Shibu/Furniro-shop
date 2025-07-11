@@ -15,7 +15,7 @@ export default function BrowseRange() {
   return (
     <main className="py-20">
       <div className="text-center mb-10">
-        <Title className=""> Browse The Range</Title>
+        <Title className="text-[36px]"> Browse The Range</Title>
         <p className="text-xl font-normal">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </p>
