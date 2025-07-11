@@ -6,7 +6,7 @@ import Footer from "@/components/layouts/Footer";
 
 const poppins = Poppins({
   variable : '--my-font-poppins',
-  subsets: ['latin'],
+  subsets: ['latin'], 
   weight: "600"
 });
 
