@@ -7,25 +7,26 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb"
+import Title from '@/components/ui/Title'
 
 export default function Page() {
   return (
-    <div>
-<Breadcrumb>
+    <main className=''>
+<header className="bg-[url(/images/shopBanner.png)] bg-cover h-80 w-full flex items-center">
+
+<Title className='text-center '>Shop </Title>
+<Breadcrumb className='m-auto'>
   <BreadcrumbList>
     <BreadcrumbItem>
-      <BreadcrumbLink href="/">Home</BreadcrumbLink>
+      <BreadcrumbPage>Home</BreadcrumbPage>
     </BreadcrumbItem>
     <BreadcrumbSeparator />
     <BreadcrumbItem>
-      <BreadcrumbLink href="/components">Components</BreadcrumbLink>
-    </BreadcrumbItem>
-    <BreadcrumbSeparator />
-    <BreadcrumbItem>
-      <BreadcrumbPage>Breadcrumb</BreadcrumbPage>
+      <BreadcrumbLink href="/components">Shop</BreadcrumbLink>
     </BreadcrumbItem>
   </BreadcrumbList>
 </Breadcrumb>
-    </div>
+</header>
+    </main>
   )
 }
