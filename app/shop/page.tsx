@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -6,27 +6,29 @@ import {
   BreadcrumbList,
   BreadcrumbPage,
   BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb"
-import Title from '@/components/ui/Title'
+} from "@/components/ui/breadcrumb";
+import Title from "@/components/ui/Title";
 
 export default function Page() {
   return (
-    <main className=''>
-<header className="bg-[url(/images/shopBanner.png)] bg-cover h-80 w-full flex items-center">
+    <main className="">
+      <header className="bg-[url(/images/shopBanner.png)] bg-cover h-80 w-full text-center">
+        <Title className="text-center">Shop </Title>
 
-<Title className='text-center '>Shop </Title>
-<Breadcrumb className='m-auto'>
-  <BreadcrumbList>
-    <BreadcrumbItem>
-      <BreadcrumbPage>Home</BreadcrumbPage>
-    </BreadcrumbItem>
-    <BreadcrumbSeparator />
-    <BreadcrumbItem>
-      <BreadcrumbLink href="/components">Shop</BreadcrumbLink>
-    </BreadcrumbItem>
-  </BreadcrumbList>
-</Breadcrumb>
-</header>
+        <span className="flex items-center">
+          <Breadcrumb className="m-auto">
+            <BreadcrumbList>
+              <BreadcrumbItem>
+                <BreadcrumbPage>Home</BreadcrumbPage>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbLink href="/components">Shop</BreadcrumbLink>
+              </BreadcrumbItem>
+            </BreadcrumbList>
+          </Breadcrumb>
+        </span>
+      </header>
     </main>
-  )
+  );
 }
