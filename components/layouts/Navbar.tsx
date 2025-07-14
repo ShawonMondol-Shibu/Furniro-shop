@@ -6,10 +6,10 @@ import { Heart, Search, ShoppingCart, User2 } from "lucide-react";
 
 export default function Navbar() {
   const navLink = [
-    { name: "Home", url: "#" },
-    { name: "Shop", url: "#" },
-    { name: "About", url: "#" },
-    { name: "Contact", url: "#" },
+    { name: "Home", url: "/" },
+    { name: "Shop", url: "/shop" },
+    { name: "About", url: "/about" },
+    { name: "Contact", url: "/contact" },
   ];
   return (
     <nav className=" bg-white flex items-center justify-between gap-10 px-10 py-5 sticky top-0 left-0 z-10 ">
