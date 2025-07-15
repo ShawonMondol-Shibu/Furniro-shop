@@ -13,9 +13,9 @@ export default function Page() {
   return (
     <main className="">
       <header className="bg-[url(/images/shopBanner.png)] bg-cover h-80 w-full text-center">
-        <Title className="text-center">Shop </Title>
 
-        <span className="flex items-center">
+        <div className="">
+        <Title className="text-center">Shop </Title>
           <Breadcrumb className="m-auto">
             <BreadcrumbList>
               <BreadcrumbItem>
@@ -27,7 +27,7 @@ export default function Page() {
               </BreadcrumbItem>
             </BreadcrumbList>
           </Breadcrumb>
-        </span>
+        </div>
       </header>
     </main>
   );

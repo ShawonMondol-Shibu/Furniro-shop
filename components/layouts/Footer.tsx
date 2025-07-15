@@ -59,7 +59,7 @@ export default function Footer() {
             <p className="text-(--textGray)">Newsletter</p>
             <div className="flex items-center gap-2">
                 <Input type="search" placeholder="Enter Your Email Address"  className="border-0 border-b-2 outline-none"/>
-                <Button variant={'link'}>SUBSCRIB</Button>
+                <Button variant={'link'}>SUBSCRIBE</Button>
             </div>
         </div>
             </div>
