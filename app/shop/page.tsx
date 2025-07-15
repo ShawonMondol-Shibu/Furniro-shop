@@ -12,11 +12,10 @@ import Title from "@/components/ui/Title";
 export default function Page() {
   return (
     <main className="">
-      <header className="bg-[url(/images/shopBanner.png)] bg-cover h-80 w-full text-center">
-
-        <div className="">
-        <Title className="text-center">Shop </Title>
-          <Breadcrumb className="m-auto">
+      <header className="bg-[url(/images/shopBanner.png)] bg-cover h-80 w-full text-center flex items-center">
+        <div className="m-auto">
+          <Title className="text-center">Shop </Title>
+          <Breadcrumb className="">
             <BreadcrumbList>
               <BreadcrumbItem>
                 <BreadcrumbPage>Home</BreadcrumbPage>
