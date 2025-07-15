@@ -19,7 +19,7 @@ export default function ProductCard({
 }: productCardType) {
   return (
     <>
-      <Card className="w-72 pt-0 rounded-none m-auto">
+      <Card className="w-72 pt-0 bg-(--cardBg) border-none rounded-none shadow-none m-auto">
         <Image
           src={image}
           width={285}
@@ -30,7 +30,7 @@ export default function ProductCard({
         <CardFooter className="block">
           <CardTitle className="text-2xl font-semibold">{title}</CardTitle>
           <p className="text-base font-medium">{category}</p>
-          <h4 className="text-xl font-semibold">
+          <h4 className="text-xl font-semibold flex items-center justify-between">
             Rp {price}
             <del className="text-base font-normal">{savings}</del>
           </h4>

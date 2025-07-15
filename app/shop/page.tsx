@@ -8,7 +8,7 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import Title from "@/components/ui/Title";
-import ProductCard, { productCardType } from "@/components/layouts/ProductCard";
+import ProductCard from "@/components/layouts/ProductCard";
 
 export default function Page() {
   return (
@@ -30,17 +30,19 @@ export default function Page() {
         </div>
       </header>
 
-      <main className="grid grid-cols-4 items-center justify-center gap-10 mt-10">
-        {Array.from({ length: 15 }).map((item: productCardType) => (
-          <ProductCard
-            key={item}
-            image={"/images/image.png"}
-            title={"hi"}
-            category={"hello"}
-            price={100}
-            savings={0}
-          />
-        ))}
+      <main>
+        <div className="container m-auto xl:grid grid-cols-4 flex flex-wrap items-center justify-center gap-10 mt-10">
+          {Array.from({ length: 16 }).map((item, i) => (
+            <ProductCard
+              key={i}
+              image={"/images/image.png"}
+              title={""}
+              category={"hello"}
+              price={100}
+              savings={0}
+            />
+          ))}
+        </div>
       </main>
     </div>
   );
