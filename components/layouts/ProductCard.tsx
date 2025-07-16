@@ -19,7 +19,7 @@ export default function ProductCard({
 }: productCardType) {
   return (
     <>
-      <Card className="w-72 pt-0 bg-(--cardBg) border-none rounded-none shadow-none m-auto">
+      <Card className="lg:w-72 w-48  pt-0 bg-(--cardBg) border-none rounded-none shadow-none m-auto">
         <Image
           src={image}
           width={285}
