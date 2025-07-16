@@ -9,6 +9,15 @@ import {
 } from "@/components/ui/breadcrumb";
 import Title from "@/components/ui/Title";
 import ProductCard from "@/components/layouts/ProductCard";
+import {
+  Pagination,
+  PaginationContent,
+  PaginationEllipsis,
+  PaginationItem,
+  PaginationLink,
+  PaginationNext,
+  PaginationPrevious,
+} from "@/components/ui/pagination";
 
 export default function Page() {
   return (
@@ -44,7 +53,22 @@ export default function Page() {
           ))}
         </div>
 
-        
+        <Pagination>
+          <PaginationContent>
+            <PaginationItem>
+              <PaginationPrevious href="#" />
+            </PaginationItem>
+            <PaginationItem>
+              <PaginationLink href="#">1</PaginationLink>
+            </PaginationItem>
+            <PaginationItem>
+              <PaginationEllipsis />
+            </PaginationItem>
+            <PaginationItem>
+              <PaginationNext href="#" />
+            </PaginationItem>
+          </PaginationContent>
+        </Pagination>
       </main>
     </div>
   );
