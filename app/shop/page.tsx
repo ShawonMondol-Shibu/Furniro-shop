@@ -12,7 +12,6 @@ import ProductCard from "@/components/layouts/ProductCard";
 import {
   Pagination,
   PaginationContent,
-  PaginationEllipsis,
   PaginationItem,
   PaginationLink,
   PaginationNext,
@@ -60,7 +59,7 @@ export default function Page() {
             </PaginationItem>
 
             {
-              
+
             }
             <PaginationItem>
               <PaginationLink href="#">1</PaginationLink>
