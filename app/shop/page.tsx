@@ -40,7 +40,7 @@ export default function Page() {
       </header>
 
       <main>
-        <div className="container m-auto lg:grid xl:grid-cols-4 @min-xs::grid-cols-3 flex flex-wrap items-center justify-center gap-10 mt-10">
+        <div className="container m-auto lg:grid xl:grid-cols-4 grid-cols-3 flex flex-wrap items-center justify-center gap-10 mt-10">
           {Array.from({ length: 16 }).map((item, i) => (
             <ProductCard
               key={i}
@@ -58,12 +58,14 @@ export default function Page() {
             <PaginationItem>
               <PaginationPrevious href="#" />
             </PaginationItem>
+
+            {
+              
+            }
             <PaginationItem>
               <PaginationLink href="#">1</PaginationLink>
             </PaginationItem>
-            <PaginationItem>
-              <PaginationEllipsis />
-            </PaginationItem>
+         
             <PaginationItem>
               <PaginationNext href="#" />
             </PaginationItem>
