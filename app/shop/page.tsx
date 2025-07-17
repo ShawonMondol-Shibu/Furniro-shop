@@ -7,8 +7,6 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
-import Title from "@/components/ui/Title";
-import ProductCard from "@/components/layouts/ProductCard";
 import {
   Pagination,
   PaginationContent,
@@ -17,6 +15,8 @@ import {
   PaginationNext,
   PaginationPrevious,
 } from "@/components/ui/pagination";
+import Title from "@/components/ui/Title";
+import ProductCard from "@/components/layouts/ProductCard";
 import { BadgeCheck, Headset, Trophy, Truck } from "lucide-react";
 
 interface serviceType {
@@ -52,7 +52,12 @@ export default function Page() {
         </div>
       </header>
 
+      <section className="bg-(--bgPrimary) p-5">
+
+      </section>
+
       <main>
+        {/* This is the Product Section */}
         <section className="container m-auto lg:grid xl:grid-cols-4 grid-cols-3 flex flex-wrap items-center justify-center gap-10 mt-10">
           {Array.from({ length: 16 }).map((item, i) => (
             <ProductCard
@@ -62,10 +67,12 @@ export default function Page() {
               category={"hello"}
               price={100}
               savings={0}
+              url=""
             />
           ))}
         </section>
 
+        {/* This is the Pagination */}
         <Pagination className="my-20">
           <PaginationContent>
             <PaginationItem className="bg-(--bgPrimary)">
@@ -86,7 +93,8 @@ export default function Page() {
           </PaginationContent>
         </Pagination>
 
-        <section className="bg-(--bgPrimary) px-10 py-16 flex flex-wrap items-center justify-evenly">
+        {/* This is the Service Section */}
+        <section className="bg-(--bgPrimary) px-10 py-32 flex gap-20 flex-wrap items-center justify-center">
           {services.map((service: serviceType, i: number) => (
             <div key={i} className="flex items-center gap-2 ">
               <service.icon size={60} />
