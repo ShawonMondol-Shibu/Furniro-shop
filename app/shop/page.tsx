@@ -17,7 +17,10 @@ import {
 } from "@/components/ui/pagination";
 import Title from "@/components/ui/Title";
 import ProductCard from "@/components/layouts/ProductCard";
-import { BadgeCheck, Headset, Trophy, Truck } from "lucide-react";
+import { BadgeCheck, Headset, SlidersHorizontal, Trophy, Truck } from "lucide-react";
+import { HiViewGrid } from "react-icons/hi";
+import { BsViewList } from "react-icons/bs";
+import { Button } from "@/components/ui/button";
 
 interface serviceType {
   icon: ElementType;
@@ -53,7 +56,19 @@ export default function Page() {
       </header>
 
       <section className="bg-(--bgPrimary) p-5">
-
+        <div>
+          <Button variant={'ghost'} size={'lg'} className="text-xl font-normal">
+            <SlidersHorizontal size={25}/>
+            Filter
+          </Button>
+          <Button variant={'ghost'} size={'icon'}>
+            <HiViewGrid size={25}/>
+          </Button>
+          <Button variant={'ghost'} size={'icon'}>
+            <BsViewList size={25}/>
+          </Button>
+        </div>
+      
       </section>
 
       <main>
@@ -99,7 +114,7 @@ export default function Page() {
             <div key={i} className="flex items-center gap-2 ">
               <service.icon size={60} />
               <div>
-                <h3 className="text-3xl font-semibold">{service.title}</h3>
+                <h3 className="text-2xl font-semibold">{service.title}</h3>
                 <p className="text-xl font-medium text-(--textGray)">
                   {service.desc}
                 </p>
