@@ -58,13 +58,12 @@ export default function Page() {
               <PaginationPrevious href="#" />
             </PaginationItem>
 
-            {
+            {Array.from({ length: 10 }).map((item, i: number) => (
+              <PaginationItem key={i}>
+                <PaginationLink href="#">{i + 1}</PaginationLink>
+              </PaginationItem>
+            ))}
 
-            }
-            <PaginationItem>
-              <PaginationLink href="#">1</PaginationLink>
-            </PaginationItem>
-         
             <PaginationItem>
               <PaginationNext href="#" />
             </PaginationItem>
