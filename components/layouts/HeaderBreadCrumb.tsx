@@ -8,6 +8,7 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "../ui/breadcrumb";
+import Image from "next/image";
 
 interface headerType {
   title: string;
@@ -24,6 +25,7 @@ export default function HeaderBreadCrumb({
     <>
       <header className="bg-[url(/images/shopBanner.png)] bg-cover h-80 w-full text-center flex items-center">
         <div className="m-auto">
+          <Image src={'/images/logo.png'} width={50} height={50} alt="Furniro Hero logo" className="m-auto"/>
           <Title className="text-center">{title} </Title>
           <Breadcrumb className="">
             <BreadcrumbList>
