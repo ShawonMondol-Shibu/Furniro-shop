@@ -1,13 +1,5 @@
 import React, { ElementType } from "react";
 import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
-import {
   Pagination,
   PaginationContent,
   PaginationItem,
@@ -20,7 +12,6 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
-import Title from "@/components/ui/Title";
 import ProductCard from "@/components/layouts/ProductCard";
 import {
   BadgeCheck,
@@ -33,6 +24,7 @@ import { HiViewGrid } from "react-icons/hi";
 import { BsViewList } from "react-icons/bs";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
+import HeaderBreadCrumb from "@/components/layouts/HeaderBreadCrumb";
 
 interface serviceType {
   icon: ElementType;
@@ -50,64 +42,52 @@ export default function Page() {
 
   return (
     <div className="">
-      <header className="bg-[url(/images/shopBanner.png)] bg-cover h-80 w-full text-center flex items-center">
-        <div className="m-auto">
-          <Title className="text-center">Shop </Title>
-          <Breadcrumb className="">
-            <BreadcrumbList>
-              <BreadcrumbItem>
-                <BreadcrumbPage>Home</BreadcrumbPage>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator />
-              <BreadcrumbItem>
-                <BreadcrumbLink href="/components">Shop</BreadcrumbLink>
-              </BreadcrumbItem>
-            </BreadcrumbList>
-          </Breadcrumb>
-        </div>
-      </header>
+      <HeaderBreadCrumb title="Shop" breadCrumbPage="Home" breadCrumbLink="Shop"/>
 
       {/* Filter is added here */}
       <section className="bg-(--bgPrimary) p-5">
         <div className="container m-auto flex items-center-safe justify-between">
-
-        {/* Filter left side */}
-        <div className="h-6 flex items-center gap-2 ">
-          <Button variant={"ghost"} size={"lg"} className="text-xl font-normal">
-            <SlidersHorizontal size={25} />
-            Filter
-          </Button>
-          <Button variant={"ghost"} size={"icon"}>
-            <HiViewGrid size={25} />
-          </Button>
-          <Button variant={"ghost"} size={"icon"}>
-            <BsViewList size={25} />
-          </Button>
-          <Separator
-            orientation="vertical"
-            className="border-(--textPrimary) border"
+          {/* Filter left side */}
+          <div className="h-6 flex items-center gap-2 ">
+            <Button
+              variant={"ghost"}
+              size={"lg"}
+              className="text-xl font-normal"
+            >
+              <SlidersHorizontal size={25} />
+              Filter
+            </Button>
+            <Button variant={"ghost"} size={"icon"}>
+              <HiViewGrid size={25} />
+            </Button>
+            <Button variant={"ghost"} size={"icon"}>
+              <BsViewList size={25} />
+            </Button>
+            <Separator
+              orientation="vertical"
+              className="border-(--textPrimary) border"
             />
-          <p>Showing 1–16 of 32 results</p>
-        </div>
-
-        {/* Filter right side */}
-        <div className="flex items-center gap-5">
-          <div className="flex items-center-safe gap-5">
-            <p>Show</p>
-            <span className="px-4 py-3 bg-white text-(--textGray)">16</span>
+            <p>Showing 1–16 of 32 results</p>
           </div>
 
-          <div className="flex items-center-safe gap-5">
-            <p>Short by</p>
-            <Popover>
-              <PopoverTrigger className="bg-white text-(--textGray) py-3 px-4">
-                Default
-              </PopoverTrigger>
-              <PopoverContent>Default</PopoverContent>
-            </Popover>
-          </div>
-        </div>
+          {/* Filter right side */}
+          <div className="flex items-center gap-5">
+            <div className="flex items-center-safe gap-5">
+              <p>Show</p>
+              <span className="px-4 py-3 bg-white text-(--textGray)">16</span>
             </div>
+
+            <div className="flex items-center-safe gap-5">
+              <p>Short by</p>
+              <Popover>
+                <PopoverTrigger className="bg-white text-(--textGray) py-3 px-4">
+                  Default
+                </PopoverTrigger>
+                <PopoverContent>Default</PopoverContent>
+              </Popover>
+            </div>
+          </div>
+        </div>
       </section>
 
       <main>
