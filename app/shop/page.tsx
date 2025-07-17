@@ -68,7 +68,9 @@ export default function Page() {
       </header>
 
       {/* Filter is added here */}
-      <section className="bg-(--bgPrimary) p-5 flex items-center justify-between">
+      <section className="bg-(--bgPrimary) p-5">
+        <div className="container m-auto flex items-center-safe justify-between">
+
         {/* Filter left side */}
         <div className="h-6 flex items-center gap-2 ">
           <Button variant={"ghost"} size={"lg"} className="text-xl font-normal">
@@ -84,7 +86,7 @@ export default function Page() {
           <Separator
             orientation="vertical"
             className="border-(--textPrimary) border"
-          />
+            />
           <p>Showing 1–16 of 32 results</p>
         </div>
 
@@ -105,6 +107,7 @@ export default function Page() {
             </Popover>
           </div>
         </div>
+            </div>
       </section>
 
       <main>
@@ -114,11 +117,11 @@ export default function Page() {
             <ProductCard
               key={i}
               image={"/images/image.png"}
-              title={""}
-              category={"hello"}
+              title={"Asgaard Sofa"}
+              category={"Luxury Big Sofa"}
               price={100}
               savings={0}
-              url=""
+              url="/shop/product"
             />
           ))}
         </section>
