@@ -15,6 +15,11 @@ import {
   PaginationNext,
   PaginationPrevious,
 } from "@/components/ui/pagination";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
 import Title from "@/components/ui/Title";
 import ProductCard from "@/components/layouts/ProductCard";
 import {
@@ -83,17 +88,22 @@ export default function Page() {
           <p>Showing 1–16 of 32 results</p>
         </div>
 
-{/* Filter right side */}
+        {/* Filter right side */}
         <div className="flex items-center gap-5">
-<div className="flex items-center-safe gap-5">
-  <p>Show</p>
-  <span className="px-4 py-3 bg-white text-(--textGray)">16</span>
-</div>
+          <div className="flex items-center-safe gap-5">
+            <p>Show</p>
+            <span className="px-4 py-3 bg-white text-(--textGray)">16</span>
+          </div>
 
-<div className="flex items-center-safe gap-5">
-  <p>Short by</p>
-  
-</div>
+          <div className="flex items-center-safe gap-5">
+            <p>Short by</p>
+            <Popover>
+              <PopoverTrigger className="bg-white text-(--textGray) py-3 px-4">
+                Default
+              </PopoverTrigger>
+              <PopoverContent>Default</PopoverContent>
+            </Popover>
+          </div>
         </div>
       </section>
 
