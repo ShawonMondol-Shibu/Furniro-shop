@@ -21,6 +21,7 @@ import { BadgeCheck, Headset, SlidersHorizontal, Trophy, Truck } from "lucide-re
 import { HiViewGrid } from "react-icons/hi";
 import { BsViewList } from "react-icons/bs";
 import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
 
 interface serviceType {
   icon: ElementType;
@@ -56,7 +57,7 @@ export default function Page() {
       </header>
 
       <section className="bg-(--bgPrimary) p-5">
-        <div>
+        <div className="h-6 flex items-center gap-2 ">
           <Button variant={'ghost'} size={'lg'} className="text-xl font-normal">
             <SlidersHorizontal size={25}/>
             Filter
@@ -67,6 +68,8 @@ export default function Page() {
           <Button variant={'ghost'} size={'icon'}>
             <BsViewList size={25}/>
           </Button>
+          <Separator orientation="vertical" className="border-(--textPrimary) border"/>
+          <p>Showing 1–16 of 32 results</p>
         </div>
       
       </section>
