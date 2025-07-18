@@ -1,4 +1,4 @@
-import React, { ElementType } from "react";
+import React from "react";
 import {
   Pagination,
   PaginationContent,
@@ -13,36 +13,21 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 import ProductCard from "@/components/layouts/ProductCard";
-import {
-  BadgeCheck,
-  Headset,
-  SlidersHorizontal,
-  Trophy,
-  Truck,
-} from "lucide-react";
+import { SlidersHorizontal } from "lucide-react";
 import { HiViewGrid } from "react-icons/hi";
 import { BsViewList } from "react-icons/bs";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import HeaderBreadCrumb from "@/components/layouts/HeaderBreadCrumb";
 
-interface serviceType {
-  icon: ElementType;
-  title: string;
-  desc: string;
-}
-
 export default function Page() {
-  const services = [
-    { icon: Trophy, title: "High Quality", desc: "crafted from top materials" },
-    { icon: BadgeCheck, title: "Warranty Protection", desc: "Over 2 years" },
-    { icon: Truck, title: "Free Shipping", desc: "Order over 150 $" },
-    { icon: Headset, title: "24 / 7 Support", desc: "Dedicated support" },
-  ];
-
   return (
     <div className="">
-      <HeaderBreadCrumb title="Shop" breadCrumbPage="Home" breadCrumbLink="Shop"/>
+      <HeaderBreadCrumb
+        title="Shop"
+        breadCrumbPage="Home"
+        breadCrumbLink="Shop"
+      />
 
       {/* Filter is added here */}
       <section className="bg-(--bgPrimary) p-5">
@@ -128,19 +113,6 @@ export default function Page() {
         </Pagination>
 
         {/* This is the Service Section */}
-        <section className="bg-(--bgPrimary) px-10 py-32 flex gap-20 flex-wrap items-center justify-center">
-          {services.map((service: serviceType, i: number) => (
-            <div key={i} className="flex items-center gap-2 ">
-              <service.icon size={60} />
-              <div>
-                <h3 className="text-2xl font-semibold">{service.title}</h3>
-                <p className="text-xl font-medium text-(--textGray)">
-                  {service.desc}
-                </p>
-              </div>
-            </div>
-          ))}
-        </section>
       </main>
     </div>
   );

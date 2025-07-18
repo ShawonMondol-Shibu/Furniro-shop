@@ -11,7 +11,7 @@ export default function Page() {
         breadCrumbLink="Blog"
       />
       <main className="container m-auto mt-20 grid grid-cols-2">
-        <section>
+        <section className="space-y-10">
           <BlogCard />
           <BlogCard />
           <BlogCard />
@@ -19,6 +19,7 @@ export default function Page() {
 
         <aside></aside>
       </main>
+      
     </div>
   );
 }
