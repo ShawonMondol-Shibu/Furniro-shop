@@ -5,9 +5,9 @@ import Navbar from "@/components/layouts/Navbar";
 import Footer from "@/components/layouts/Footer";
 
 const poppins = Poppins({
-  variable : '--my-font-poppins',
-  subsets: ['latin'], 
-  weight: "600"
+  variable: '--my-font-poppins',
+  subsets: ["latin"],
+  weight: ["400","600","700"]
 });
 
 export const metadata: Metadata = {
@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.className} antialiased`}
+        className={`${poppins.variable} antialiased`}
       >
         <Navbar/>
 

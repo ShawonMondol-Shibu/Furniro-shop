@@ -25,7 +25,7 @@ export default function Page() {
         breadCrumbLink="Blog"
       />
       <main className="container m-auto my-20">
-        <div className="flex items-start justify-between gap-20">
+        <div className="flex items-start justify-between gap-10">
           <section className="space-y-10 flex-1/2">
             <BlogCard />
             <BlogCard />
@@ -33,18 +33,17 @@ export default function Page() {
           </section>
 
           <aside className="flex-1">
-            <div>
+            <div className="space-y-10 mb-40">
               <Input />
-              <ul className="px-5">
-                <h3>Categories</h3>
+              <ul className="px-5 space-y-5">
+                <h3 className="text-2xl font-medium">Categories</h3>
                 {categorys.map((category: categoryType, i: number) => (
                   <li key={i}>
                     <Link
                       href={""}
-                      className="flex items-center justify-between"
+                      className="flex items-center justify-between text-base font-normal text-(--textGray)"
                     >
                       <span>{category.titles}</span>
-
                       <span>{category.items}</span>
                     </Link>
                   </li>
@@ -52,8 +51,10 @@ export default function Page() {
               </ul>
             </div>
 
-            
-            <div>Recent Posts</div>
+            <div className="px-5">
+                <h3 className="text-2xl font-medium">Recent Posts</h3>
+              <div></div>
+            </div>
           </aside>
         </div>
         <SitePagination />
