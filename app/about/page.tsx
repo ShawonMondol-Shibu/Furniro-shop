@@ -5,6 +5,7 @@ import Services from "@/components/layouts/Services";
 import SitePagination from "@/components/layouts/SitePagination";
 import { Input } from "@/components/ui/input";
 import Link from "next/link";
+import Image from "next/image";
 interface categoryType {
   titles: string;
   items: number;
@@ -51,9 +52,25 @@ export default function Page() {
               </ul>
             </div>
 
-            <div className="px-5">
-                <h3 className="text-2xl font-medium">Recent Posts</h3>
-              <div></div>
+            <div className="px-5 space-y-10">
+              <h3 className="text-2xl font-medium">Recent Posts</h3>
+              {Array.from({ length: 5 }).map((post, i: number) => (
+                <div key={i} className="w-3xs flex gap-5 items-center">
+                  <Image
+                    src={"/blogs/posts/image.png"}
+                    width={80}
+                    height={80}
+                    alt="post banner"
+                    className="rounded-xl"
+                  />
+                  <hgroup className="space-y-2">
+                    <h5 className="text-sm">
+                      {"Going all-in with millennial design"}
+                    </h5>
+                    <p className="text-xs text-(--textGray)">{"03 Aug 2022"}</p>
+                  </hgroup>
+                </div>
+              ))}
             </div>
           </aside>
         </div>
