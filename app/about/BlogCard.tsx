@@ -28,10 +28,10 @@ export default function BlogCard() {
         ))}
       </div>
 
-      <CardTitle className="text-3xl font-medium">
+      <CardTitle className="text-3xl font-medium mb-4">
         Going all-in with millennial design
       </CardTitle>
-      <CardDescription className="text-base font-normal">
+      <CardDescription className="text-[15px] font-normal">
         {" "}
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae
