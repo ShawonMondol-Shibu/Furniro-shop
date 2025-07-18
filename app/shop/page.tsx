@@ -19,6 +19,8 @@ import { BsViewList } from "react-icons/bs";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import HeaderBreadCrumb from "@/components/layouts/HeaderBreadCrumb";
+import Services from "@/components/layouts/Services";
+import SitePagination from "@/components/layouts/SitePagination";
 
 export default function Page() {
   return (
@@ -92,27 +94,10 @@ export default function Page() {
         </section>
 
         {/* This is the Pagination */}
-        <Pagination className="my-20">
-          <PaginationContent>
-            <PaginationItem className="bg-(--bgPrimary)">
-              <PaginationPrevious href="#" />
-            </PaginationItem>
-
-            {Array.from({ length: 6 }).map((item, i: number) => (
-              <PaginationItem key={i} className="bg-(--bgPrimary)">
-                <PaginationLink href="#" className="active:bg-(--textPrimary)">
-                  {i + 1}
-                </PaginationLink>
-              </PaginationItem>
-            ))}
-
-            <PaginationItem className="bg-(--bgPrimary)">
-              <PaginationNext href="#" />
-            </PaginationItem>
-          </PaginationContent>
-        </Pagination>
+        <SitePagination/>
 
         {/* This is the Service Section */}
+        <Services/>
       </main>
     </div>
   );
