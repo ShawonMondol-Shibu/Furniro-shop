@@ -3,14 +3,14 @@ import Title from "../ui/Title";
 import { Card, CardFooter, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 export default function OurProducts() {
   return (
     <main className="container m-auto py-5">
-        <div className="text-center">
-
-      <Title className={"text-[40px] text-center"}> Our Products </Title>
-        </div>
+      <div className="text-center">
+        <Title className={"text-[40px] text-center"}> Our Products </Title>
+      </div>
       <div className="xl:grid grid-cols-4 flex flex-wrap gap-10 items-center justify-center py-10">
         {Array.from({ length: 8 }).map((item, i) => (
           <Card key={i} className="w-72 pt-0 rounded-none m-auto">
@@ -35,15 +35,15 @@ export default function OurProducts() {
         ))}
       </div>
       <div className="w-full text-center">
-
-      <Button
-        variant={"outline"}
-        size={"lg"}
-        className="text-base text-(--textPrimary) font-semibold border-(--textPrimary) border rounded-none py-6 px-10"
+        <Button
+          variant={"outline"}
+          size={"lg"}
+          asChild
+          className="text-base text-(--textPrimary) font-semibold border-(--textPrimary) border rounded-none py-6 px-10"
         >
-        See More
-      </Button>
-          </div>
+          <Link href={"/shop"}>See More</Link>
+        </Button>
+      </div>
     </main>
   );
 }
