@@ -32,7 +32,7 @@ export default function HeaderBreadCrumb({
             alt="Furniro Hero logo"
             className="m-auto"
           />
-          <Title className="text-center">{title} </Title>
+          <Title className="text-center text-[48px]">{title} </Title>
           <Breadcrumb className="m-auto">
             <BreadcrumbList>
               <BreadcrumbItem>
