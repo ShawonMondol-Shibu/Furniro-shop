@@ -1,22 +1,36 @@
 import { Button } from "@/components/ui/button";
 import { CardDescription, CardTitle } from "@/components/ui/card";
-import { UserRound } from "lucide-react";
+import { BriefcaseBusiness, Tag, UserRound } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { ElementType } from "react";
+
+interface blogIconType {
+  icon: ElementType;
+  title: string;
+}
 
 export default function BlogCard() {
+  const blogIcons = [
+    { icon: UserRound, title: "Admin" },
+    { icon: BriefcaseBusiness, title: "Admin" },
+    { icon: Tag, title: "Admin" },
+  ];
   return (
     <div>
       <Image src={"/blogs/image.png"} width={817} height={500} alt="" />
-      <div>
-        <span className="flex items-center text-(--textGray)">
-          <UserRound fill="gray" />
-          Admin
-        </span>
+      <div className="flex items-center gap-10 py-4">
+        {blogIcons.map((blogIcon: blogIconType, i: number) => (
+          <span key={i} className="flex items-center text-(--textGray)">
+            <blogIcon.icon size={20} />
+            {blogIcon.title}
+          </span>
+        ))}
       </div>
 
-      <CardTitle className="text-3xl font-medium">Going all-in with millennial design</CardTitle>
+      <CardTitle className="text-3xl font-medium">
+        Going all-in with millennial design
+      </CardTitle>
       <CardDescription className="text-base font-normal">
         {" "}
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -28,9 +42,13 @@ export default function BlogCard() {
         Pellentesque elit ullamcorper dignissim cras tincidunt. Pharetra et
         ultrices neque ornare aenean euismod elementum.
       </CardDescription>
-      <Button variant={'link'} size={'lg'} className="text-base font-normal" asChild>
-
-      <Link href={"#"}>Read More</Link>
+      <Button
+        variant={"link"}
+        size={"lg"}
+        className="text-base font-normal px-0"
+        asChild
+      >
+        <Link href={"#"}>Read More</Link>
       </Button>
     </div>
   );

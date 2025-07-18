@@ -12,7 +12,6 @@ export default function Page() {
       />
       <main className="container m-auto mt-20 grid grid-cols-2">
         <section>
-          
           <BlogCard />
           <BlogCard />
           <BlogCard />
