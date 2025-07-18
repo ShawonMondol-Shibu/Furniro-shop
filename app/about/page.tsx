@@ -12,7 +12,7 @@ export default function Page() {
         breadCrumbPage="Home"
         breadCrumbLink="Blog"
       />
-      <main className="container m-auto my-20 ">
+      <main className="container m-auto my-20">
         <div className="flex">
           <section className="space-y-10 flex-1">
             <BlogCard />
@@ -20,9 +20,13 @@ export default function Page() {
             <BlogCard />
           </section>
 
-          <aside className="flex-1"></aside>
+          <aside className="flex-1">
+
+          </aside>
         </div>
+
         <SitePagination />
+
       </main>
       <Services />
     </div>
