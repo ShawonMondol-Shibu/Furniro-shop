@@ -1,13 +1,5 @@
 import React from "react";
 import {
-  Pagination,
-  PaginationContent,
-  PaginationItem,
-  PaginationLink,
-  PaginationNext,
-  PaginationPrevious,
-} from "@/components/ui/pagination";
-import {
   Popover,
   PopoverContent,
   PopoverTrigger,
@@ -94,10 +86,10 @@ export default function Page() {
         </section>
 
         {/* This is the Pagination */}
-        <SitePagination/>
+        <SitePagination />
 
         {/* This is the Service Section */}
-        <Services/>
+        <Services />
       </main>
     </div>
   );
