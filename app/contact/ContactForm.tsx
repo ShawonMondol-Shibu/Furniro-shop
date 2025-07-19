@@ -90,7 +90,7 @@ export default function ContactForm() {
           render={({ field }) => (
             <FormItem>
               <FormLabel className="text-base font-medium">Message</FormLabel>
-              <FormControl>
+              <FormControl className="p-6">
                 <Textarea placeholder="Hi! i'd like to ask about" {...field} />
               </FormControl>
               <FormMessage />
