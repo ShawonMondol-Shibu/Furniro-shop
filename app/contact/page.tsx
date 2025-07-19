@@ -3,6 +3,7 @@ import Services from "@/components/layouts/Services";
 import { Input } from "@/components/ui/input";
 import { Clock, LocationEditIcon, Phone } from "lucide-react";
 import React from "react";
+import ContactForm from "./ContactForm";
 
 interface contactType {
   icon: React.ElementType;
@@ -46,7 +47,7 @@ export default function Page() {
           </p>
         </div>
 
-        <section className="m-auto mt-40 flex gap-10 items-center justify-evenly">
+        <section className="m-auto mt-40 flex gap-10 items-start justify-center">
           <div>
             {contacts.map((contact: contactType, i) => (
               <div key={i} className="flex gap-5 items-start">
@@ -58,11 +59,7 @@ export default function Page() {
               </div>
             ))}
           </div>
-<form action="">
-  
-  <Input/>
-
-</form>
+<ContactForm/>
 
         </section>
         <Services />
