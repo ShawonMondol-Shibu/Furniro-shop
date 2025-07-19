@@ -36,7 +36,7 @@ export default function Page() {
         breadCrumbLink="Contact"
       />
 
-      <main className="my-10">
+      <main className="mt-20">
         <div className="w-xl text-center m-auto">
           <h2 className="text-4xl font-semibold">Get In Touch With Us</h2>
           <p className="text-base font-normal">

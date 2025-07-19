@@ -97,7 +97,7 @@ export default function ContactForm() {
             </FormItem>
           )}
         />
-        <Button type="submit">Submit</Button>
+        <Button variant={'default'} size={'lg'} className="bg-(--textPrimary) px-20" type="submit">Submit</Button>
       </form>
     </Form>
   );
