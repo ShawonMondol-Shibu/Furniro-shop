@@ -47,7 +47,7 @@ export default function Page() {
           </p>
         </div>
 
-        <section className="m-auto mt-40 flex gap-10 items-start justify-center">
+        <section className="m-auto mt-40 mb-20 flex gap-10 items-start justify-center">
           <div>
             {contacts.map((contact: contactType, i) => (
               <div key={i} className="flex gap-5 items-start">
