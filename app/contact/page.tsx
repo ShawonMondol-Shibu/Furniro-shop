@@ -1,6 +1,5 @@
 import HeaderBreadCrumb from "@/components/layouts/HeaderBreadCrumb";
 import Services from "@/components/layouts/Services";
-import { Input } from "@/components/ui/input";
 import { Clock, LocationEditIcon, Phone } from "lucide-react";
 import React from "react";
 import ContactForm from "./ContactForm";
@@ -59,8 +58,7 @@ export default function Page() {
               </div>
             ))}
           </div>
-<ContactForm/>
-
+          <ContactForm />
         </section>
         <Services />
       </main>
