@@ -24,7 +24,7 @@ export default function HeaderBreadCrumb({
   return (
     <>
       <header className="bg-[url(/images/shopBanner.png)] bg-cover h-80 w-full text-center flex items-center">
-        <div className="m-auto justify-items-center grid">
+        <div className="m-auto grid items-center gap-4">
           <Image
             src={"/images/logo.png"}
             width={50}
@@ -40,7 +40,7 @@ export default function HeaderBreadCrumb({
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>
-                <BreadcrumbLink href="/components">
+                <BreadcrumbLink href="/">
                   {breadCrumbLink}
                 </BreadcrumbLink>
               </BreadcrumbItem>

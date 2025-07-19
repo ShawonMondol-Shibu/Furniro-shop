@@ -48,7 +48,7 @@ export default function BlogCard() {
         className="text-base font-normal px-0"
         asChild
       >
-        <Link href={"#"}>Read More</Link>
+        <Link href={"/about/blog"}>Read More</Link>
       </Button>
     </div>
   );

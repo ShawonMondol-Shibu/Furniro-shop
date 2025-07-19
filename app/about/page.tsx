@@ -41,7 +41,7 @@ export default function Page() {
                 {categorys.map((category: categoryType, i: number) => (
                   <li key={i}>
                     <Link
-                      href={""}
+                      href={"/about/blog"}
                       className="flex items-center justify-between text-base font-normal text-(--textGray)"
                     >
                       <span>{category.titles}</span>
@@ -55,7 +55,7 @@ export default function Page() {
             <div className="px-5 space-y-10">
               <h3 className="text-2xl font-medium">Recent Posts</h3>
               {Array.from({ length: 5 }).map((post, i: number) => (
-                <div key={i} className="w-3xs flex gap-5 items-center">
+                <Link href={'/about/blog'} key={i} className="w-3xs flex gap-5 items-center">
                   <Image
                     src={"/blogs/posts/image.png"}
                     width={80}
@@ -69,7 +69,7 @@ export default function Page() {
                     </h5>
                     <p className="text-xs text-(--textGray)">{"03 Aug 2022"}</p>
                   </hgroup>
-                </div>
+                </Link>
               ))}
             </div>
           </aside>
