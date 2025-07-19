@@ -18,6 +18,10 @@ const formSchema = z.object({
   username: z.string().min(2, {
     message: "Username must be at least 2 characters.",
   }),
+  email: z.email().min(2,{message: "please enter your email address"}),
+  subject: z.string(),
+  message: z.string().min(2,{message: "Write your message here."})
+
 });
 
 export default function ContactForm() {
@@ -26,6 +30,9 @@ export default function ContactForm() {
     resolver: zodResolver(formSchema),
     defaultValues: {
       username: "",
+      email: "",
+      subject:"",
+      message:"",
     },
   });
 
@@ -38,6 +45,7 @@ export default function ContactForm() {
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+
         <FormField
           control={form.control}
           name="username"
@@ -45,7 +53,46 @@ export default function ContactForm() {
             <FormItem>
               <FormLabel>Your name</FormLabel>
               <FormControl>
-                <Input placeholder="shadcn" {...field} />
+                <Input placeholder="Abc" {...field} />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <FormField
+          control={form.control}
+          name="email"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Email Address</FormLabel>
+              <FormControl>
+                <Input placeholder="Abc@def.com" {...field} />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <FormField
+          control={form.control}
+          name="subject"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Subject</FormLabel>
+              <FormControl>
+                <Input placeholder="This is an optional" {...field} />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <FormField
+          control={form.control}
+          name="message"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Message</FormLabel>
+              <FormControl>
+                <Input placeholder="Hi! i'd like to ask about" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
