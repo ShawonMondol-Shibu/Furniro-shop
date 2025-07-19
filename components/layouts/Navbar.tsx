@@ -27,7 +27,7 @@ export default function Navbar() {
         <ul className="flex items-center justify-center gap-10">
           {navLink.map((nav, i: number) => (
             <li key={i}>
-              <Link href={nav.url} className="text-base font-medium">
+              <Link href={nav.url} className="text-base font-semibold">
                 {nav.name}
               </Link>
             </li>
