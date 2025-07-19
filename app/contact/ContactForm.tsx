@@ -13,15 +13,15 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { Textarea } from "@/components/ui/textarea";
 
 const formSchema = z.object({
   username: z.string().min(2, {
     message: "Username must be at least 2 characters.",
   }),
-  email: z.email().min(2,{message: "please enter your email address"}),
+  email: z.email().min(2, { message: "please enter your email address" }),
   subject: z.string(),
-  message: z.string().min(2,{message: "Write your message here."})
-
+  message: z.string().min(10, { message: "Write your message here." }),
 });
 
 export default function ContactForm() {
@@ -31,8 +31,8 @@ export default function ContactForm() {
     defaultValues: {
       username: "",
       email: "",
-      subject:"",
-      message:"",
+      subject: "",
+      message: "",
     },
   });
 
@@ -45,14 +45,13 @@ export default function ContactForm() {
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-
         <FormField
           control={form.control}
           name="username"
           render={({ field }) => (
             <FormItem>
               <FormLabel>Your name</FormLabel>
-              <FormControl>
+              <FormControl className="p-6">
                 <Input placeholder="Abc" {...field} />
               </FormControl>
               <FormMessage />
@@ -65,7 +64,7 @@ export default function ContactForm() {
           render={({ field }) => (
             <FormItem>
               <FormLabel>Email Address</FormLabel>
-              <FormControl>
+              <FormControl className="p-6">
                 <Input placeholder="Abc@def.com" {...field} />
               </FormControl>
               <FormMessage />
@@ -78,7 +77,7 @@ export default function ContactForm() {
           render={({ field }) => (
             <FormItem>
               <FormLabel>Subject</FormLabel>
-              <FormControl>
+              <FormControl className="p-6">
                 <Input placeholder="This is an optional" {...field} />
               </FormControl>
               <FormMessage />
@@ -90,9 +89,9 @@ export default function ContactForm() {
           name="message"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Message</FormLabel>
+              <FormLabel className="text-base font-medium">Message</FormLabel>
               <FormControl>
-                <Input placeholder="Hi! i'd like to ask about" {...field} />
+                <Textarea placeholder="Hi! i'd like to ask about" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>

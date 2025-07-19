@@ -47,7 +47,7 @@ export default function Page() {
         </div>
 
         <section className="m-auto mt-40 mb-20 flex gap-10 items-start justify-center">
-          <div>
+          <div className="space-y-10">
             {contacts.map((contact: contactType, i) => (
               <div key={i} className="flex gap-5 items-start">
                 <contact.icon size={23} />
