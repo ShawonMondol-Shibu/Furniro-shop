@@ -68,11 +68,16 @@ export default function Page() {
             <h5 className="text-2xl font-medium">Rs 250,000.00</h5>
 
             <span className="flex items-center gap-5 h-8">
-              <Star />
-              <Separator
-                orientation="vertical"
-              />
-              <span className="text-(--textGray)">5 Customer Review</span>
+              <span className="flex gap-2 items-center">
+                {Array.from({ length: 5 }).map((_, index) => (
+                  <Star key={index} fill="gold" stroke="gold" size={20} />
+                ))}
+              </span>
+
+              <Separator orientation="vertical" />
+              <span className="text-(--textGray) text-sm">
+                5 Customer Review
+              </span>
             </span>
 
             <p className="text-sm font-normal">
@@ -100,19 +105,35 @@ export default function Page() {
             <div>
               Color
               <div className="space-x-4">
-                <Button variant={'ghost'} size={"icon"} className="size-8" asChild>
-                  <Circle fill="#816DFA" stroke="#816DFA"/>
+                <Button
+                  variant={"ghost"}
+                  size={"icon"}
+                  className="size-8"
+                  asChild
+                >
+                  <Circle fill="#816DFA" stroke="#816DFA" />
                 </Button>
-               
-                <Button variant={'ghost'} size={"icon"} className="size-8" asChild>
-                  <Circle fill="black"/>
+
+                <Button
+                  variant={"ghost"}
+                  size={"icon"}
+                  className="size-8"
+                  asChild
+                >
+                  <Circle fill="black" />
                 </Button>
-               
-                <Button variant={'ghost'} size={"icon"} className="size-8" asChild>
-                  <Circle fill="var(--textPrimary)" stroke="var(--textPrimary)"/>
+
+                <Button
+                  variant={"ghost"}
+                  size={"icon"}
+                  className="size-8"
+                  asChild
+                >
+                  <Circle
+                    fill="var(--textPrimary)"
+                    stroke="var(--textPrimary)"
+                  />
                 </Button>
-               
-                
               </div>
             </div>
 
