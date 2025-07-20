@@ -62,13 +62,17 @@ export default function Page() {
           </div>
 
           {/* Product Details texts */}
-          <div className="space-y-5">
+          <div className="space-y-5 w-96">
             <h3 className="text-[42px] font-normal">Asgaard Sofa</h3>
 
             <h5 className="text-2xl font-medium">Rs 250,000.00</h5>
 
-            <span className="flex items-center gap-5">
-              <Star /> | 5 Customer Review
+            <span className="flex items-center gap-5 h-8">
+              <Star />
+              <Separator
+                orientation="vertical"
+              />
+              <span className="text-(--textGray)">5 Customer Review</span>
             </span>
 
             <p className="text-sm font-normal">
@@ -95,16 +99,20 @@ export default function Page() {
 
             <div>
               Color
-              <div>
-                <Button variant={"ghost"} size={"icon"}>
-                  <Circle />
+              <div className="space-x-4">
+                <Button variant={'ghost'} size={"icon"} className="size-8" asChild>
+                  <Circle fill="#816DFA" stroke="#816DFA"/>
                 </Button>
-                <Button variant={"ghost"} size={"icon"}>
-                  <Circle />
+               
+                <Button variant={'ghost'} size={"icon"} className="size-8" asChild>
+                  <Circle fill="black"/>
                 </Button>
-                <Button variant={"ghost"} size={"icon"}>
-                  <Circle />
+               
+                <Button variant={'ghost'} size={"icon"} className="size-8" asChild>
+                  <Circle fill="var(--textPrimary)" stroke="var(--textPrimary)"/>
                 </Button>
+               
+                
               </div>
             </div>
 
