@@ -9,6 +9,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Circle, Star } from "lucide-react";
+import Image from "next/image";
 import React from "react";
 
 export default function Page() {
@@ -30,17 +31,26 @@ export default function Page() {
         </div>
       </header>
 
-      <main>
+      <main className="mt-10">
         {/* Product Details Section */}
-        <section>
-          <div></div>
+        <section className="container m-auto flex items-start">
+          <div>
+            <div className="w-[423px] h-[500] bg-(--bgPrimary) rounded-xl flex items-center">
+              <Image
+                src={"/images/products/image.png"}
+                width={423}
+                height={391}
+                alt=""
+              />
+            </div>
+          </div>
 
           <div>
-            <h3>Asgaard Sofa</h3>
+            <h3 className="text-[42px] font-normal">Asgaard Sofa</h3>
 
-            <h5>Rs 250,000.00</h5>
+            <h5 className="text-2xl font-medium">Rs 250,000.00</h5>
 
-            <span>
+            <span className="flex items-center gap-5">
               <Star /> | 5 Customer Review
             </span>
 
@@ -54,42 +64,44 @@ export default function Page() {
             <div>
               Size
               <div className="space-x-2">
-
-              <Button size={'icon'} className="bg-(--bgPrimary) text-black">L</Button>
-              <Button size={'icon'} className="bg-(--bgPrimary) text-black">XL</Button>
-              <Button size={'icon'} className="bg-(--bgPrimary) text-black">XS</Button>
+                <Button size={"icon"} className="bg-(--bgPrimary) text-black">
+                  L
+                </Button>
+                <Button size={"icon"} className="bg-(--bgPrimary) text-black">
+                  XL
+                </Button>
+                <Button size={"icon"} className="bg-(--bgPrimary) text-black">
+                  XS
+                </Button>
               </div>
             </div>
 
             <div>
               Color
               <div>
-
-              <Button variant={'ghost'} size={'icon'}>
-                <Circle/>
-              </Button>
-              <Button variant={'ghost'} size={'icon'}>
-                <Circle/>
-              </Button>
-              <Button variant={'ghost'} size={'icon'}>
-                <Circle/>
-              </Button>
+                <Button variant={"ghost"} size={"icon"}>
+                  <Circle />
+                </Button>
+                <Button variant={"ghost"} size={"icon"}>
+                  <Circle />
+                </Button>
+                <Button variant={"ghost"} size={"icon"}>
+                  <Circle />
+                </Button>
               </div>
             </div>
 
-<div className="flex items-center gap-2">
-  <div className="border rounded-lg">
-    <Button variant={'ghost'}>-</Button>
-    <span className="p-2">1</span>
-    <Button variant={'ghost'}>+</Button>
-  </div>
-  <Button variant={'outline'}>Add To Cart</Button>
-  <Button variant={'outline'}>+ Compare</Button>
-</div>
+            <div className="flex items-center gap-2">
+              <div className="border rounded-lg">
+                <Button variant={"ghost"}>-</Button>
+                <span className="p-2">1</span>
+                <Button variant={"ghost"}>+</Button>
+              </div>
+              <Button variant={"outline"}>Add To Cart</Button>
+              <Button variant={"outline"}>+ Compare</Button>
+            </div>
 
-
-<Separator className="my-5"/>
-
+            <Separator className="my-5" />
           </div>
         </section>
       </main>
