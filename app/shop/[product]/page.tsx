@@ -52,13 +52,18 @@ export default function Page() {
 
             <div>
               Size
-              <Button>L</Button>
-              <Button>XL</Button>
-              <Button>XS</Button>
+              <div>
+
+              <Button size={'icon'} className="bg-(--bgPrimary) text-black">L</Button>
+              <Button size={'icon'}>XL</Button>
+              <Button size={'icon'}>XS</Button>
+              </div>
             </div>
 
             <div>
               Color
+              <div>
+
               <Button variant={'ghost'} size={'icon'}>
                 <Circle/>
               </Button>
@@ -68,10 +73,17 @@ export default function Page() {
               <Button variant={'ghost'} size={'icon'}>
                 <Circle/>
               </Button>
+              </div>
             </div>
 
-<div>
-  
+<div className="flex items-center gap-2">
+  <div className="border rounded-lg">
+    <Button variant={'ghost'}>-</Button>
+    <span className="p-2">1</span>
+    <Button variant={'ghost'}>+</Button>
+  </div>
+  <Button variant={'outline'}>Add To Cart</Button>
+  <Button variant={'outline'}>+ Compare</Button>
 </div>
           </div>
         </section>
