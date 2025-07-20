@@ -87,23 +87,29 @@ export default function Page() {
               sound.
             </p>
 
-            <div>
+            <div className="space-y-4">
+              <p>
+
               Size
+              </p>
               <div className="space-x-2">
-                <Button size={"icon"} className="bg-(--bgPrimary) text-black">
+                <Button size={"icon"} className="bg-(--bgPrimary) hover:text-white hover:bg-(--textPrimary) text-black">
                   L
                 </Button>
-                <Button size={"icon"} className="bg-(--bgPrimary) text-black">
+                <Button size={"icon"} className="bg-(--bgPrimary) text-black hover:text-white hover:bg-(--textPrimary)">
                   XL
                 </Button>
-                <Button size={"icon"} className="bg-(--bgPrimary) text-black">
+                <Button size={"icon"} className="bg-(--bgPrimary) text-black hover:text-white hover:bg-(--textPrimary)">
                   XS
                 </Button>
               </div>
             </div>
 
-            <div>
+            <div className="space-y-4">
+              <p>
+
               Color
+              </p>
               <div className="space-x-4">
                 <Button
                   variant={"ghost"}
