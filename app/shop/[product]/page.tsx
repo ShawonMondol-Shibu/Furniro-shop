@@ -7,6 +7,7 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
 import { Circle, Star } from "lucide-react";
 import React from "react";
 
@@ -52,11 +53,11 @@ export default function Page() {
 
             <div>
               Size
-              <div>
+              <div className="space-x-2">
 
               <Button size={'icon'} className="bg-(--bgPrimary) text-black">L</Button>
-              <Button size={'icon'}>XL</Button>
-              <Button size={'icon'}>XS</Button>
+              <Button size={'icon'} className="bg-(--bgPrimary) text-black">XL</Button>
+              <Button size={'icon'} className="bg-(--bgPrimary) text-black">XS</Button>
               </div>
             </div>
 
@@ -85,6 +86,10 @@ export default function Page() {
   <Button variant={'outline'}>Add To Cart</Button>
   <Button variant={'outline'}>+ Compare</Button>
 </div>
+
+
+<Separator className="my-5"/>
+
           </div>
         </section>
       </main>
