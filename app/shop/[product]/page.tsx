@@ -33,19 +33,36 @@ export default function Page() {
 
       <main className="mt-10">
         {/* Product Details Section */}
-        <section className="container m-auto flex items-start">
-          <div>
+        <section className="container m-auto flex items-start gap-30">
+          {/* Product Details Images */}
+          <div className="flex items-start gap-10">
+            <div className="space-y-8">
+              {Array.from({ length: 4 }).map((item, index) => (
+                <div
+                  key={index}
+                  className="w-18 h-20 bg-(--bgPrimary) rounded-xl flex items-center"
+                >
+                  <Image
+                    src={"/images/products/image.png"}
+                    width={481}
+                    height={391}
+                    alt=""
+                  />
+                </div>
+              ))}
+            </div>
             <div className="w-[423px] h-[500] bg-(--bgPrimary) rounded-xl flex items-center">
               <Image
                 src={"/images/products/image.png"}
-                width={423}
+                width={481}
                 height={391}
                 alt=""
               />
             </div>
           </div>
 
-          <div>
+          {/* Product Details texts */}
+          <div className="space-y-5">
             <h3 className="text-[42px] font-normal">Asgaard Sofa</h3>
 
             <h5 className="text-2xl font-medium">Rs 250,000.00</h5>
@@ -54,7 +71,7 @@ export default function Page() {
               <Star /> | 5 Customer Review
             </span>
 
-            <p>
+            <p className="text-sm font-normal">
               Setting the bar as one of the loudest speakers in its class, the
               Kilburn is a compact, stout-hearted hero with a well-balanced
               audio which boasts a clear midrange and extended highs for a
