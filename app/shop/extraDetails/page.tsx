@@ -1,14 +1,18 @@
 import { Button } from '@/components/ui/button'
-import Link from 'next/link'
 import React from 'react'
 
 export default function ExtraDetails() {
+ 
+  const handleClick = ()=>{
+    
+  }
   return (
     <div>
       <div>
-        <Button>
-          <Link
-        </Button>
+        <Button onClick={handleClick}>Description</Button>
+        {
+""
+        }
       </div>
     </div>
   )
