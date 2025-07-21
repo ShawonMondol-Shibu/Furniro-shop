@@ -37,17 +37,13 @@ export default function ExtraDetails() {
             value={"desc"}
             variant={"ghost"}
             onClick={button.func}
-      
           >
             {button.name}
           </Button>
         ))}
       </div>
-      
-      <section className="my-10">
 
-        {page}
-      </section>
+      <section className="my-10">{page}</section>
     </div>
   );
 }
