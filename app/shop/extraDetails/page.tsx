@@ -13,9 +13,7 @@ interface buttonType {
 export default function ExtraDetails() {
   const [page, setPages] = useState<React.ReactNode>();
 
-  function handleDesc(e) {
-    e.preventDefault()
-    alert(e.value)
+  function handleDesc() {
     return setPages(<Description />);
   }
   function handleInfo() {
@@ -31,18 +29,25 @@ export default function ExtraDetails() {
     { name: "Review", func: handleReview },
   ];
   return (
-    <div>
-      <div>
+    <div className="container m-auto mt-10">
+      <div className="text-center mb-10">
         {buttons.map((button: buttonType, index) => (
-          <Button key={index} value={'desc'} variant={"ghost"} onClick={button.func}>
+          <Button
+            key={index}
+            value={"desc"}
+            variant={"ghost"}
+            onClick={button.func}
+      
+          >
             {button.name}
           </Button>
         ))}
-
-        {/* <Button variant={'ghost'} onClick={handleInfo}>info</Button>
-        <Button variant={'ghost'} onClick={handleReview}>review</Button> */}
-        {page}
       </div>
+      
+      <section>
+
+        {page}
+      </section>
     </div>
   );
 }
