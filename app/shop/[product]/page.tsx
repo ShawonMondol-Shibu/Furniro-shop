@@ -34,17 +34,19 @@ export default function Page() {
       </header>
 
       <main className="my-10">
-
         {/* Product Details Section */}
-        <ProductDetails/>
-        
+        <ProductDetails />
+
         <hr />
 
-<ExtraDetails/>
+        <ExtraDetails />
         {/* Related Products  */}
         <section>
           <div className="text-center">
-            <Title className={"text-[40px] text-center"}> Related Products </Title>
+            <Title className={"text-[40px] text-center"}>
+              {" "}
+              Related Products{" "}
+            </Title>
           </div>
           <div className="xl:grid grid-cols-4 flex flex-wrap gap-10 items-center justify-center py-10">
             {Array.from({ length: 4 }).map((item, i) => (
@@ -53,8 +55,8 @@ export default function Page() {
                 image={"/images/image.png"}
                 title={"Asgaard Sofa"}
                 category={"Luxury Big Sofa"}
-                price={100}
-                savings={0}
+                price={1000}
+                savings={1200}
                 url="/shop/product"
               />
             ))}

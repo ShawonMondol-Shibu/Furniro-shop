@@ -11,7 +11,7 @@ interface buttonType {
 }
 
 export default function ExtraDetails() {
-  const [page, setPages] = useState<React.ReactNode>();
+  const [page, setPages] = useState<React.ReactNode>(<Description/>);
 
   function handleDesc() {
     return setPages(<Description />);
@@ -29,7 +29,7 @@ export default function ExtraDetails() {
     { name: "Review", func: handleReview },
   ];
   return (
-    <div className="container m-auto mt-10">
+    <div className="container m-auto mt-10 px-5">
       <div className="text-center mb-10">
         {buttons.map((button: buttonType, index) => (
           <Button

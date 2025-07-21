@@ -78,8 +78,8 @@ export default function Page() {
               image={"/images/image.png"}
               title={"Asgaard Sofa"}
               category={"Luxury Big Sofa"}
-              price={100}
-              savings={0}
+              price={1000}
+              savings={1200}
               url="/shop/product"
             />
           ))}

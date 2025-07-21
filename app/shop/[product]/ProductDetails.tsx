@@ -19,7 +19,7 @@ export default function ProductDetails() {
                 src={"/images/products/image.png"}
                 width={481}
                 height={391}
-                alt=""
+                alt="product image"
               />
             </div>
           ))}
@@ -29,7 +29,7 @@ export default function ProductDetails() {
             src={"/images/products/image.png"}
             width={481}
             height={391}
-            alt=""
+            alt="product main image"
           />
         </div>
       </div>
