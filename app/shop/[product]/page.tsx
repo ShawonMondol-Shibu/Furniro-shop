@@ -12,9 +12,7 @@ import Title from "@/components/ui/Title";
 import Link from "next/link";
 import React from "react";
 import ProductDetails from "./ProductDetails";
-import ExtraDetailsLayout from "../extraDetails/page";
 import ExtraDetails from "../extraDetails/page";
-// import ExtraDetails from "../extraDetails/page1";
 
 export default function Page() {
   return (
