@@ -39,6 +39,10 @@ export default function Page() {
         
         <hr />
 
+        <section>
+          
+        </section>
+
         {/* Related Products  */}
         <section>
           <div className="text-center">

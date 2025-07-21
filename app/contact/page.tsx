@@ -46,13 +46,13 @@ export default function Page() {
           </p>
         </div>
 
-        <section className="m-auto mt-40 mb-20 flex gap-10 items-start justify-center">
+        <section className="m-auto mt-30 mb-20 flex gap-40 items-start justify-center">
           <div className="space-y-10">
             {contacts.map((contact: contactType, i) => (
               <div key={i} className="flex gap-5 items-start">
                 <contact.icon size={23} />
                 <div className="w-56">
-                  <h4 className="text-2xl font-medium">{contact.title}</h4>
+                  <h4 className="text-2xl font-semibold">{contact.title}</h4>
                   <p className="text-base font-normal">{contact.desc}</p>
                 </div>
               </div>
