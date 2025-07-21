@@ -44,7 +44,7 @@ export default function ExtraDetails() {
         ))}
       </div>
       
-      <section>
+      <section className="my-10">
 
         {page}
       </section>
