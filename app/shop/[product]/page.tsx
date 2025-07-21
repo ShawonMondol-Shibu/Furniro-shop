@@ -12,6 +12,7 @@ import Title from "@/components/ui/Title";
 import Link from "next/link";
 import React from "react";
 import ProductDetails from "./ProductDetails";
+import ExtraDetails from "./extraDetails/page1";
 
 export default function Page() {
   return (
@@ -38,10 +39,7 @@ export default function Page() {
         <ProductDetails/>
         
         <hr />
-
-        <section>
-          
-        </section>
+<ExtraDetails/>
 
         {/* Related Products  */}
         <section>
