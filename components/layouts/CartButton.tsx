@@ -8,11 +8,11 @@ import { Card, CardContent, CardFooter } from "../ui/card";
 import Image from "next/image";
 import Link from "next/link";
 export default function CartButton() {
-    const cartLinks = [
-    {url: "/cart", name:"Cart"},    
-    {url: "/checkout", name:"Checkout"},    
-    {url: "/comparison", name:"Comparison"},    
-    ]
+  const cartLinks = [
+    { url: "/cart", name: "Cart" },
+    { url: "/checkout", name: "Checkout" },
+    { url: "/comparison", name: "Comparison" },
+  ];
   return (
     <Popover>
       <PopoverTrigger asChild>
@@ -55,22 +55,25 @@ export default function CartButton() {
           </div>
         </Card>
 
-<div className="mt-10">
-
-        <div>
+        <div className="mt-10">
+          <div>
             <p>Subtotal</p>
             <p>Rs 250,000.00</p>
-        </div>
-        <hr className="my-5"/>
-        <div className="flex items-center justify-between gap-5">
-            {
-                cartLinks.map((cartLink)=><Button key={cartLink.name} variant={'outline'} asChild className="hover:bg-[var(--bg-primary]">
+          </div>
+          <hr className="my-5" />
+          <div className="flex items-center justify-between gap-5">
+            {cartLinks.map((cartLink) => (
+              <Button
+                key={cartLink.name}
+                variant={"outline"}
+                asChild
+                className="hover:bg-[var(--bg-primary]"
+              >
                 <Link href={cartLink.url}>{cartLink.name}</Link>
-            </Button>)
-            }
-            
+              </Button>
+            ))}
+          </div>
         </div>
-            </div>
       </PopoverContent>
     </Popover>
   );

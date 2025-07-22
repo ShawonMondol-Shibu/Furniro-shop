@@ -1,9 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { Button } from "../ui/button";
-import { Heart, Search, User2 } from "lucide-react";
 import CartButton from "./CartButton";
+import NavSearch from "./NavSearch";
+import HeartButton from "./HeartButton";
+import UserButton from "./UserButton";
 
 export default function Navbar() {
   const navLink = [
@@ -38,22 +39,16 @@ export default function Navbar() {
 
       <ul className="flex items-center gap-10">
         <li>
-          <Button variant={"ghost"} size={"icon"} className="size-6" asChild>
-            <User2 />
-          </Button>
+          <UserButton />
         </li>
         <li>
-          <Button variant={"ghost"} size={"icon"} className="size-6" asChild>
-            <Search />
-          </Button>
+          <NavSearch />
         </li>
         <li>
-          <Button variant={"ghost"} size={"icon"} className="size-6" asChild>
-            <Heart />
-          </Button>
+          <HeartButton />
         </li>
         <li>
-         <CartButton/>
+          <CartButton />
         </li>
       </ul>
     </nav>
