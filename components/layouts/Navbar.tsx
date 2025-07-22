@@ -2,7 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { Button } from "../ui/button";
-import { Heart, Search, ShoppingCart, User2 } from "lucide-react";
+import { Heart, Search, User2 } from "lucide-react";
+import CartButton from "./CartButton";
 
 export default function Navbar() {
   const navLink = [
@@ -52,9 +53,7 @@ export default function Navbar() {
           </Button>
         </li>
         <li>
-          <Button variant={"ghost"} size={"icon"} className="size-6" asChild>
-            <ShoppingCart />
-          </Button>
+         <CartButton/>
         </li>
       </ul>
     </nav>
