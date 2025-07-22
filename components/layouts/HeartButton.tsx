@@ -1,7 +1,6 @@
 import React from 'react'
 import { Popover, PopoverContent, PopoverTrigger } from '../ui/popover'
 import { Heart } from 'lucide-react'
-import { Input } from '../ui/input'
 
 export default function HeartButton() {
   return (
@@ -10,7 +9,7 @@ export default function HeartButton() {
           <Heart />
         </PopoverTrigger>
         <PopoverContent>
-          <Input />
+          <Heart fill='red' />
         </PopoverContent>
       </Popover>
   )

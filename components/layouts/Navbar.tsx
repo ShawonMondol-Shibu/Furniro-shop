@@ -48,7 +48,7 @@ export default function Navbar() {
           <HeartButton />
         </li>
         <li>
-          <CartButton />
+          <CartButton/>
         </li>
       </ul>
     </nav>
