@@ -36,7 +36,7 @@ export default function CartButton() {
               height={108}
               alt="product image"
             />
-            <CardContent className="p-0">
+            <CardContent className="p-0 space-y-2">
               <p>Asgaard Sofa</p>
               <p>
                 1 x <span className="text-(--textPrimary) text-xs font-medium">Rs 250,000.00</span>
