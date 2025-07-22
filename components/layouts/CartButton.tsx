@@ -39,7 +39,7 @@ export default function CartButton() {
             <CardContent className="p-0">
               <p>Asgaard Sofa</p>
               <p>
-                1 x <span>Rs 250,000.00</span>
+                1 x <span className="text-(--textPrimary) text-xs font-medium">Rs 250,000.00</span>
               </p>
             </CardContent>
             <CardFooter className="p-0">
@@ -56,9 +56,9 @@ export default function CartButton() {
         </Card>
 
         <div className="mt-10">
-          <div>
+          <div className="flex items-center justify-between gap-20">
             <p>Subtotal</p>
-            <p>Rs 250,000.00</p>
+            <p className="text-(--textPrimary)">Rs 250,000.00</p>
           </div>
           <hr className="my-5" />
           <div className="flex items-center justify-between gap-5">
