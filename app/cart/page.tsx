@@ -14,7 +14,7 @@ export default function Page() {
         breadCrumbLink="Cart"
         breadCrumbPage="Home"
       />
-      <section className="flex items-start justify-center gap-10 my-20">
+      <section className="flex flex-wrap items-start justify-center gap-10 my-20 px-5">
         <div>
           <ul className="p-5 bg-[var(--bgPrimary)] flex items-center gap-5 justify-evenly mb-5 text-base font-medium">
             {titleGroup.map((titles) => (
