@@ -1,9 +1,11 @@
 import HeaderBreadCrumb from "@/components/layouts/HeaderBreadCrumb";
 import Services from "@/components/layouts/Services";
+import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { CircleIcon } from "lucide-react";
 import React from "react";
+import CheckoutForm from "./CheckoutForm";
 
 export default function Page() {
   return (
@@ -15,18 +17,7 @@ export default function Page() {
       />
 
       <main className="container m-auto px-5 my-10 grid grid-cols-2 items-start gap-10">
-        <section>
-          <div className="flex gap-5 items-center">
-            <div className="space-y-4">
-              <Label> Frist Name </Label>
-              <Input />
-            </div>
-            <div className="space-y-4">
-              <Label> Frist Name </Label>
-              <Input />
-            </div>
-          </div>
-        </section>
+       <CheckoutForm/>
 
         <section className="w-96 m-auto space-y-4">
           <div className="flex items-center gap-10 justify-between">
@@ -85,6 +76,14 @@ export default function Page() {
               <Label htmlFor="cash"> Cash On Delivery</Label>
             </div>
           </div>
+
+          <p>
+            Your personal data will be used to support your experience
+            throughout this website, to manage access to your account, and for
+            other purposes described in our <b>privacy</b> <b>policy.</b>
+          </p>
+
+          <Button variant={"outline"} size={'lg'} >Place order</Button>
         </section>
       </main>
 
