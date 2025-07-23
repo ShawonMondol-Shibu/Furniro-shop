@@ -13,7 +13,7 @@ export default function HeartButton() {
         <Heart />
       </PopoverTrigger>
       <PopoverContent className="w-96">
-        <Title className="">Faviourate</Title>
+        <Title className="text-2xl">Faviourate</Title>
         <Card className="p-0 border-none shadow-none mt-4">
           <div className="flex items-center justify-between gap-5">
             <Image
