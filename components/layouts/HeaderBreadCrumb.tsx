@@ -40,9 +40,7 @@ export default function HeaderBreadCrumb({
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>
-                <BreadcrumbLink href="/">
-                  {breadCrumbLink}
-                </BreadcrumbLink>
+                <BreadcrumbLink href="/">{breadCrumbLink}</BreadcrumbLink>
               </BreadcrumbItem>
             </BreadcrumbList>
           </Breadcrumb>

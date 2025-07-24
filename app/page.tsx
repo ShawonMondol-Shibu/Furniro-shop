@@ -6,10 +6,10 @@ import OurProducts from "@/components/layouts/OurProducts";
 export default function Home() {
   return (
     <>
-      <Header/>
-      <BrowseRange/>
-      <OurProducts/>
-      <FuniroFurniture/>
+      <Header />
+      <BrowseRange />
+      <OurProducts />
+      <FuniroFurniture />
     </>
   );
 }

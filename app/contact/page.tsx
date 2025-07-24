@@ -36,7 +36,7 @@ export default function Page() {
         breadCrumbPage="Home"
         breadCrumbLink="Contact"
       />
-<Toaster richColors/>
+      <Toaster richColors />
       <main className="mt-20">
         <div className="w-xl text-center m-auto">
           <h2 className="text-4xl font-semibold">Get In Touch With Us</h2>

@@ -9,7 +9,7 @@ export type productCardType = {
   category: string;
   price: number;
   savings: number;
-  url:string;
+  url: string;
 };
 
 export default function ProductCard({

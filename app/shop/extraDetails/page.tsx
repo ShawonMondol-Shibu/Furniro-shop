@@ -11,7 +11,7 @@ interface buttonType {
 }
 
 export default function ExtraDetails() {
-  const [page, setPages] = useState<React.ReactNode>(<Description/>);
+  const [page, setPages] = useState<React.ReactNode>(<Description />);
 
   function handleDesc() {
     return setPages(<Description />);

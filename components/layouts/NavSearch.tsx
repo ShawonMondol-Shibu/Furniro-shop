@@ -9,15 +9,13 @@ import { Input } from "../ui/input";
 
 export default function NavSearch() {
   return (
-
-      <Popover>
-        <PopoverTrigger>
-          <Search />
-        </PopoverTrigger>
-        <PopoverContent>
-          <Input />
-        </PopoverContent>
-      </Popover>
-   
+    <Popover>
+      <PopoverTrigger>
+        <Search />
+      </PopoverTrigger>
+      <PopoverContent>
+        <Input />
+      </PopoverContent>
+    </Popover>
   );
 }

@@ -36,12 +36,12 @@ export default function CheckoutForm() {
       zipCode: "",
       phone: "",
       email: "",
-      additional:""
+      additional: "",
     },
   });
 
- function onSubmit(values: z.infer<typeof formSchema>) {
-  console.info(values)
+  function onSubmit(values: z.infer<typeof formSchema>) {
+    console.info(values);
   }
   return (
     <Form {...form}>
@@ -156,7 +156,6 @@ export default function CheckoutForm() {
                   <Select
                     onValueChange={field.onChange}
                     defaultValue={field.value}
-                    
                   >
                     <FormControl>
                       <SelectTrigger>
@@ -176,7 +175,7 @@ export default function CheckoutForm() {
               )}
             />
 
-                <FormField
+            <FormField
               control={form.control}
               name="zipCode"
               render={({ field }) => (
@@ -189,7 +188,7 @@ export default function CheckoutForm() {
                 </FormItem>
               )}
             />
-                <FormField
+            <FormField
               control={form.control}
               name="phone"
               render={({ field }) => (
@@ -202,7 +201,7 @@ export default function CheckoutForm() {
                 </FormItem>
               )}
             />
-                <FormField
+            <FormField
               control={form.control}
               name="additional"
               render={({ field }) => (

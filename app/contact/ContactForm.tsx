@@ -39,7 +39,7 @@ export default function ContactForm() {
 
   // 2. Define a submit handler.
   function onSubmit() {
-   toast.success("Message send successfully")
+    toast.success("Message send successfully");
   }
   return (
     <Form {...form}>
@@ -96,7 +96,14 @@ export default function ContactForm() {
             </FormItem>
           )}
         />
-        <Button variant={'default'} size={'lg'} className="bg-(--textPrimary) px-20 hover:cursor-pointer" type="submit">Submit</Button>
+        <Button
+          variant={"default"}
+          size={"lg"}
+          className="bg-(--textPrimary) px-20 hover:cursor-pointer"
+          type="submit"
+        >
+          Submit
+        </Button>
       </form>
     </Form>
   );

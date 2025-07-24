@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 function Inspiration() {
-  return (
-    <div>Inspiration</div> 
-  )
+  return <div>Inspiration</div>;
 }
 
-export default Inspiration
+export default Inspiration;

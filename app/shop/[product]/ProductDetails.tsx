@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Circle, Star } from "lucide-react";
@@ -109,8 +109,16 @@ export default function ProductDetails() {
             <span className="p-2">1</span>
             <Button variant={"ghost"}>+</Button>
           </div>
-          <Button variant={"outline"} onClick={()=>toast.success('Product Added')} className="hover:cursor-pointer">Add To Cart</Button>
-          <Button variant={"outline"} asChild><Link href={'/comparison'}>+ Compare</Link></Button>
+          <Button
+            variant={"outline"}
+            onClick={() => toast.success("Product Added")}
+            className="hover:cursor-pointer"
+          >
+            Add To Cart
+          </Button>
+          <Button variant={"outline"} asChild>
+            <Link href={"/comparison"}>+ Compare</Link>
+          </Button>
         </div>
 
         <Separator className="my-5" />

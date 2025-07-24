@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import React, { ReactElement } from "react";
+import React from "react";
 import CartButton from "./CartButton";
 import NavSearch from "./NavSearch";
 import HeartButton from "./HeartButton";
@@ -47,7 +47,13 @@ export default function Navbar() {
 
       <div className="flex items-center gap-10">
         {pages.map((page, index) => (
-          <Button key={index} variant={"ghost"} size={"icon"} asChild className="hover:cursor-pointer">
+          <Button
+            key={index}
+            variant={"ghost"}
+            size={"icon"}
+            asChild
+            className="hover:cursor-pointer"
+          >
             <page.page />
           </Button>
         ))}

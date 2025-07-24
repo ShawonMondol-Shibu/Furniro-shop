@@ -55,7 +55,11 @@ export default function Page() {
             <div className="px-5 space-y-10">
               <h3 className="text-2xl font-medium">Recent Posts</h3>
               {Array.from({ length: 5 }).map((post, i: number) => (
-                <Link href={'/about/blog'} key={i} className="w-3xs flex gap-5 items-center">
+                <Link
+                  href={"/about/blog"}
+                  key={i}
+                  className="w-3xs flex gap-5 items-center"
+                >
                   <Image
                     src={"/blogs/posts/image.png"}
                     width={80}

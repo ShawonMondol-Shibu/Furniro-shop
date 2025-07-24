@@ -34,7 +34,7 @@ export default function Page() {
         </div>
       </header>
 
-<Toaster richColors/>
+      <Toaster richColors />
 
       <main className="my-10 px-5">
         {/* Product Details Section */}
