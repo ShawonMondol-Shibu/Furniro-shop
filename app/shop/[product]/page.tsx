@@ -13,6 +13,7 @@ import Link from "next/link";
 import React from "react";
 import ProductDetails from "./ProductDetails";
 import ExtraDetails from "../extraDetails/page";
+import { Toaster } from "@/components/ui/sonner";
 
 export default function Page() {
   return (
@@ -32,6 +33,8 @@ export default function Page() {
           </Breadcrumb>
         </div>
       </header>
+
+<Toaster richColors/>
 
       <main className="my-10 px-5">
         {/* Product Details Section */}

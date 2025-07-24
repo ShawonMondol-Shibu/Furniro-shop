@@ -14,6 +14,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
+import { toast } from "sonner";
 
 const formSchema = z.object({
   username: z.string().min(2, {
@@ -37,10 +38,8 @@ export default function ContactForm() {
   });
 
   // 2. Define a submit handler.
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    // Do something with the form values.
-    // ✅ This will be type-safe and validated.
-    console.log(values);
+  function onSubmit() {
+   toast.success("Message send successfully")
   }
   return (
     <Form {...form}>
@@ -97,7 +96,7 @@ export default function ContactForm() {
             </FormItem>
           )}
         />
-        <Button variant={'default'} size={'lg'} className="bg-(--textPrimary) px-20" type="submit">Submit</Button>
+        <Button variant={'default'} size={'lg'} className="bg-(--textPrimary) px-20 hover:cursor-pointer" type="submit">Submit</Button>
       </form>
     </Form>
   );
