@@ -20,7 +20,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { countries, formSchema, onSubmit, provinces } from "./data";
+import { countries, formSchema, provinces } from "./data";
 import Others from "./Others";
 
 export default function CheckoutForm() {
@@ -33,12 +33,16 @@ export default function CheckoutForm() {
       country: "",
       streetAdd: "",
       townCity: "",
+      zipCode: "",
       phone: "",
       email: "",
       additional:""
     },
   });
 
+ function onSubmit(values: z.infer<typeof formSchema>) {
+  console.info(values)
+  }
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)}>
@@ -152,6 +156,7 @@ export default function CheckoutForm() {
                   <Select
                     onValueChange={field.onChange}
                     defaultValue={field.value}
+                    
                   >
                     <FormControl>
                       <SelectTrigger>

@@ -1,4 +1,5 @@
 import z from "zod";
+// import { toast } from "sonner";
 
 export const formSchema = z.object({
   firstName: z.string().min(2, {
@@ -20,7 +21,7 @@ export const formSchema = z.object({
   province: z.string().min(2, {
     message: "Please enter your province",
   }),
-  zipCode: z.number().min(4, {
+  zipCode: z.string().min(4, {
     message: "please enter you zip code",
   }),
   phone: z.string().refine((value) => /^[+]{1}(?:[0-9-()/.]\s?){6,15}[0-9]{1}$/.test(value)),
@@ -80,8 +81,4 @@ export const countries: string[] = [
     "South Australia",
   ];
 
-  export function onSubmit(values: z.infer<typeof formSchema>) {
-    // Do something with the form values.
-    // ✅ This will be type-safe and validated.
-    console.log(values);
-  }
+ 
