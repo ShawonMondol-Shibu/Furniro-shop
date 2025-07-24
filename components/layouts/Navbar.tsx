@@ -38,16 +38,16 @@ export default function Navbar() {
       </>
 
       <ul className="flex items-center gap-10">
-        <li>
+        <li className="hover:cursor-pointer">
           <UserButton />
         </li>
-        <li>
+        <li className="hover:cursor-pointer">
           <NavSearch />
         </li>
-        <li>
+        <li className="hover:cursor-pointer">
           <HeartButton />
         </li>
-        <li>
+        <li className="hover:cursor-pointer">
           <CartButton/>
         </li>
       </ul>
