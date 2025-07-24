@@ -1,10 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { ReactElement } from "react";
 import CartButton from "./CartButton";
 import NavSearch from "./NavSearch";
 import HeartButton from "./HeartButton";
 import UserButton from "./UserButton";
+import { Button } from "../ui/button";
 
 export default function Navbar() {
   const navLink = [
@@ -13,9 +14,16 @@ export default function Navbar() {
     { name: "About", url: "/about" },
     { name: "Contact", url: "/contact" },
   ];
+
+  const pages = [
+    { page: UserButton },
+    { page: NavSearch },
+    { page: HeartButton },
+    { page: CartButton },
+  ];
   return (
     <nav className=" bg-white flex items-center justify-between gap-10 px-10 py-5 sticky top-0 left-0 z-10 ">
-      <Link href={'/'} className="flex items-center gap-2">
+      <Link href={"/"} className="flex items-center gap-2">
         <Image
           src={"/images/logo.png"}
           width={50}
@@ -37,20 +45,13 @@ export default function Navbar() {
         </ul>
       </>
 
-      <ul className="flex items-center gap-10">
-        <li className="hover:cursor-pointer">
-          <UserButton />
-        </li>
-        <li className="hover:cursor-pointer">
-          <NavSearch />
-        </li>
-        <li className="hover:cursor-pointer">
-          <HeartButton />
-        </li>
-        <li className="hover:cursor-pointer">
-          <CartButton/>
-        </li>
-      </ul>
+      <div className="flex items-center gap-10">
+        {pages.map((page, index) => (
+          <Button key={index} variant={"ghost"} size={"icon"} asChild className="hover:cursor-pointer">
+            <page.page />
+          </Button>
+        ))}
+      </div>
     </nav>
   );
 }
