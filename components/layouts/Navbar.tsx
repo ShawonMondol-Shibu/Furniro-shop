@@ -15,7 +15,7 @@ export default function Navbar() {
   ];
   return (
     <nav className=" bg-white flex items-center justify-between gap-10 px-10 py-5 sticky top-0 left-0 z-10 ">
-      <div className="flex items-center gap-2">
+      <Link href={'/'} className="flex items-center gap-2">
         <Image
           src={"/images/logo.png"}
           width={50}
@@ -23,7 +23,7 @@ export default function Navbar() {
           alt="top navbar logo image"
         />
         <span className="text-4xl font-bold">Furniro</span>
-      </div>
+      </Link>
 
       <>
         <ul className="flex items-center justify-center gap-10">

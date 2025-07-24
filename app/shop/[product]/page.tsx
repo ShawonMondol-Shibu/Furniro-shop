@@ -13,7 +13,7 @@ import Link from "next/link";
 import React from "react";
 import ProductDetails from "./ProductDetails";
 import ExtraDetails from "../extraDetails/page";
-import { Toaster } from "@/components/ui/sonner";
+import { Toaster } from "sonner";
 
 export default function Page() {
   return (
