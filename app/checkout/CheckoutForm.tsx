@@ -1,20 +1,21 @@
-import { Input } from '@/components/ui/input'
-import { Label } from '@/components/ui/label'
+"use client"
+import z from 'zod'
 import React from 'react'
 
+const formSchema = z.object({
+  firstName: z.string().min(2,{
+message: "Please enter your first name"
+  }),
+  lastName: z.string().min(2,{
+    message:'Please enter your last name'
+  }),
+  company:z.string(),
+  country:z.string()
+})
 export default function CheckoutForm() {
   return (
     <section>
-         <div className="flex gap-5 items-center">
-            <div className="space-y-4">
-              <Label> Frist Name </Label>
-              <Input />
-            </div>
-            <div className="space-y-4">
-              <Label> Frist Name </Label>
-              <Input />
-            </div>
-          </div>
+         
     </section>
   )
 }

@@ -17,7 +17,7 @@ import ExtraDetails from "../extraDetails/page";
 export default function Page() {
   return (
     <div>
-      <header className="bg-(--bgPrimary) py-8">
+      <header className="bg-(--bgPrimary) py-8 px-5">
         <div className="container m-auto">
           <Breadcrumb>
             <BreadcrumbList>
@@ -33,7 +33,7 @@ export default function Page() {
         </div>
       </header>
 
-      <main className="my-10">
+      <main className="my-10 px-5">
         {/* Product Details Section */}
         <ProductDetails />
 
