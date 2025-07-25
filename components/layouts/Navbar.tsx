@@ -1,13 +1,26 @@
+"use client"
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import CartButton from "./CartButton";
 import NavSearch from "./NavSearch";
 import HeartButton from "./HeartButton";
 import UserButton from "./UserButton";
 import { Button } from "../ui/button";
+import { Menu } from "lucide-react";
 
 export default function Navbar() {
+
+  const [toggleMenu, setToggleMenu] = useState(false);
+function handleMenu() {
+  if (toggleMenu) {
+    setToggleMenu(false)
+  }
+  if (!toggleMenu) {
+    setToggleMenu(true)
+  }
+}
+
   const navLink = [
     { name: "Home", url: "/" },
     { name: "Shop", url: "/shop" },
@@ -21,8 +34,10 @@ export default function Navbar() {
     { page: HeartButton },
     { page: CartButton },
   ];
+
+  
   return (
-    <nav className=" bg-white flex items-center justify-between gap-10 px-10 py-5 sticky top-0 left-0 z-10 ">
+    <nav className={` bg-white flex ${toggleMenu? 'grid':'flex'} items-center justify-between gap-10 px-10 py-5 sticky top-0 left-0 z-10 `}>
       <Link href={"/"} className="flex items-center gap-2">
         <Image
           src={"/images/logo.png"}
@@ -34,7 +49,7 @@ export default function Navbar() {
       </Link>
 
       <>
-        <ul className="flex items-center justify-center gap-10">
+        <ul className={`lg:flex ${ toggleMenu ? 'grid':'hidden' } items-center justify-center gap-10`}>
           {navLink.map((nav, i: number) => (
             <li key={i}>
               <Link href={nav.url} className="text-base font-semibold">
@@ -45,7 +60,7 @@ export default function Navbar() {
         </ul>
       </>
 
-      <div className="flex items-center gap-10">
+      <div className="lg:flex hidden items-center gap-10">
         {pages.map((page, index) => (
           <Button
             key={index}
@@ -58,6 +73,8 @@ export default function Navbar() {
           </Button>
         ))}
       </div>
+
+      <Menu size={30} onClick={handleMenu} className="lg:hidden inline hover:cursor-pointer" />
     </nav>
   );
 }

@@ -18,8 +18,8 @@ export default function Footer() {
   ];
   return (
     <footer className="border-t-2">
-      <div className="container m-auto ">
-        <div className="py-10 border-b flex flex-wrap items-start justify-between gap-10">
+      <div className="container m-auto px-5">
+        <div className="py-10 border-b grid lg:grid-cols-4 md:grid-cols-2 gap-10">
           <div className="space-y-10">
             <h2 className="text-2xl font-bold ">Funiro.</h2>
             <div className="text-(--textGray)">
