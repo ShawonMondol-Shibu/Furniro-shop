@@ -1,8 +1,10 @@
 "use client";
-import z from "zod";
+
 import React from "react";
+import z from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
+
 import {
   Form,
   FormControl,
@@ -11,7 +13,7 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
-// import { Button } from "@/components/ui/button";
+
 import { Input } from "@/components/ui/input";
 import {
   Select,
@@ -20,8 +22,11 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+
+import { Button } from "@/components/ui/button";
 import { countries, formSchema, provinces } from "./data";
 import Others from "./Others";
+import { toast } from "sonner";
 
 export default function CheckoutForm() {
   const form = useForm<z.infer<typeof formSchema>>({
@@ -33,6 +38,7 @@ export default function CheckoutForm() {
       country: "",
       streetAdd: "",
       townCity: "",
+      province: "",
       zipCode: "",
       phone: "",
       email: "",
@@ -40,23 +46,33 @@ export default function CheckoutForm() {
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
+  function onsubmit(values: z.infer<typeof formSchema>) {
     console.info(values);
+    if(values){
+      toast.success("Order Placed successfully");
+      
+    }else {
+      
+      toast.warning("Order Placed successfully");
+    }
   }
+
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)}>
+      <form onSubmit={form.handleSubmit(onsubmit)}>
         <div className="grid grid-cols-2 items-start gap-10">
-          <div className="space-y-8 grid w-fit">
-            <div className="flex items-center gap-4 justify-between">
+          {/* Left Column: Form */}
+          <div className="space-y-8 w-full">
+            {/* Name Fields */}
+            <div className="flex items-center gap-4">
               <FormField
                 control={form.control}
                 name="firstName"
                 render={({ field }) => (
-                  <FormItem>
+                  <FormItem className="w-full">
                     <FormLabel>First Name</FormLabel>
                     <FormControl>
-                      <Input placeholder="" {...field} />
+                      <Input placeholder="John" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -66,10 +82,10 @@ export default function CheckoutForm() {
                 control={form.control}
                 name="lastName"
                 render={({ field }) => (
-                  <FormItem>
+                  <FormItem className="w-full">
                     <FormLabel>Last Name</FormLabel>
                     <FormControl>
-                      <Input placeholder="" {...field} />
+                      <Input placeholder="Doe" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -77,6 +93,7 @@ export default function CheckoutForm() {
               />
             </div>
 
+            {/* Company */}
             <FormField
               control={form.control}
               name="company"
@@ -84,13 +101,14 @@ export default function CheckoutForm() {
                 <FormItem>
                   <FormLabel>Company Name (Optional)</FormLabel>
                   <FormControl>
-                    <Input placeholder="" {...field} />
+                    <Input placeholder="Your Company" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
               )}
             />
 
+            {/* Country */}
             <FormField
               control={form.control}
               name="country"
@@ -119,6 +137,7 @@ export default function CheckoutForm() {
               )}
             />
 
+            {/* Street */}
             <FormField
               control={form.control}
               name="streetAdd"
@@ -126,13 +145,14 @@ export default function CheckoutForm() {
                 <FormItem>
                   <FormLabel>Street Address</FormLabel>
                   <FormControl>
-                    <Input placeholder="" {...field} />
+                    <Input placeholder="123 Main Street" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
               )}
             />
 
+            {/* Town/City */}
             <FormField
               control={form.control}
               name="townCity"
@@ -140,13 +160,14 @@ export default function CheckoutForm() {
                 <FormItem>
                   <FormLabel>Town / City</FormLabel>
                   <FormControl>
-                    <Input placeholder="" {...field} />
+                    <Input placeholder="Dhaka" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
               )}
             />
 
+            {/* Province */}
             <FormField
               control={form.control}
               name="province"
@@ -159,7 +180,7 @@ export default function CheckoutForm() {
                   >
                     <FormControl>
                       <SelectTrigger>
-                        <SelectValue placeholder="Choose Country" />
+                        <SelectValue placeholder="Choose Province" />
                       </SelectTrigger>
                     </FormControl>
                     <SelectContent>
@@ -175,48 +196,61 @@ export default function CheckoutForm() {
               )}
             />
 
+            {/* ZIP Code */}
             <FormField
               control={form.control}
               name="zipCode"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>ZIP code</FormLabel>
+                  <FormLabel>ZIP Code</FormLabel>
                   <FormControl>
-                    <Input placeholder="" {...field} />
+                    <Input placeholder="1200" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
               )}
             />
+
+            {/* Phone */}
             <FormField
               control={form.control}
               name="phone"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Phone </FormLabel>
+                  <FormLabel>Phone</FormLabel>
                   <FormControl>
-                    <Input placeholder="" {...field} />
+                    <Input placeholder="+8801XXXXXXXXX" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
               )}
             />
+
+            {/* Additional Info */}
             <FormField
               control={form.control}
               name="additional"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel> </FormLabel>
+                  <FormLabel>Additional Information</FormLabel>
                   <FormControl>
-                    <Input placeholder="Additionl information" {...field} />
+                    <Input
+                      placeholder="e.g. delivery instructions"
+                      {...field}
+                    />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
               )}
             />
+
+            {/* Submit Button */}
+            <Button type="submit" className="w-full">
+              Place Order
+            </Button>
           </div>
 
-          {/* Others */}
+          {/* Right b7Column: Others */}
           <Others />
         </div>
       </form>
