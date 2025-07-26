@@ -38,7 +38,7 @@ export default function Navbar() {
     <nav
       className={` bg-white lg:flex ${
         toggleMenu ? "grid" : "flex"
-      } items-center justify-between gap-10 px-10 py-5 sticky top-0 left-0 z-10 `}
+      } items-center justify-between gap-10 px-10 py-5 sticky top-0 left-0 z-10 transition-all duration-300 ease-linear`}
     >
       <Link href={"/"} className="flex items-center gap-2">
         <Image
