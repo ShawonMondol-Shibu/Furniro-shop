@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import HeaderBreadCrumb from "@/components/layouts/HeaderBreadCrumb";
 import Services from "@/components/layouts/Services";
 import React from "react";
@@ -14,11 +14,10 @@ export default function Page() {
         breadCrumbLink="Checkout"
       />
 
-<Toaster richColors/>
+      <Toaster richColors />
       <main className="container m-auto px-5 my-10 ">
-       <CheckoutForm/>
+        <CheckoutForm />
       </main>
-
 
       <Services />
     </div>

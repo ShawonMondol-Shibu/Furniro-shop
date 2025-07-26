@@ -22,7 +22,7 @@ export default function ProductCard({
 }: productCardType) {
   return (
     <>
-      <Link href={url}>
+      <Link href={url} className="m-auto">
         <Card className="lg:w-72 w-48  pt-0 bg-(--cardBg) border-none rounded-none shadow-none m-auto">
           <Image
             src={image}
