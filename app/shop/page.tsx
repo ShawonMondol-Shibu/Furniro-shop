@@ -71,7 +71,7 @@ export default function Page() {
 
       <main>
         {/* This is the Product Section */}
-        <section className="container m-auto lg:grid xl:grid-cols-4 grid-cols-3 flex flex-wrap items-center justify-center gap-10 mt-10">
+        <section className="container m-auto lg:grid xl:grid-cols-4 grid-cols-3 flex flex-wrap items-center justify-center gap-20 mt-10">
           {Array.from({ length: 16 }).map((item, i) => (
             <ProductCard
               key={i}
