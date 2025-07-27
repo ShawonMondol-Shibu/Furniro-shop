@@ -57,7 +57,7 @@ export default function Navbar() {
         <ul
           className={`lg:flex ${
             toggleMenu ? "grid" : "hidden"
-          } items-center justify-center gap-10`}
+          } items-center lg:justify-center gap-10`}
         >
           {navLink.map((nav, i: number) => (
             <li key={i}>
@@ -77,7 +77,7 @@ export default function Navbar() {
       <div
         className={`lg:flex ${
           toggleMenu ? "grid" : "hidden"
-        } items-center justify-center gap-10`}
+        } items-center lg:justify-center gap-10`}
       >
         {pages.map((page, index) => (
           <Button
