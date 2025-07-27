@@ -10,7 +10,7 @@ export default function OurProducts() {
       <div className="text-center">
         <Title className={"text-[40px] text-center"}> Our Products </Title>
       </div>
-      <div className="xl:grid grid-cols-4 flex flex-wrap gap-20 items-center justify-center py-10">
+      <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 xl:gap-20 gap-10 items-center justify-center py-10 px-5">
         {Array.from({ length: 8 }).map((item, i) => (
           <ProductCard
             key={i}
