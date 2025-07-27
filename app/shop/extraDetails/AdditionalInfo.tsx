@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client"
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
@@ -121,15 +122,15 @@ export default function SofaInfoTabs() {
                   <div className="space-y-2 text-sm">
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Width:</span>
-                      <span>102" (259 cm)</span>
+                      <span>102&quot; (259 cm)</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Depth:</span>
-                      <span>65" (165 cm)</span>
+                      <span>65&quot; (165 cm)</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Height:</span>
-                      <span>35" (89 cm)</span>
+                      <span>35&quot; (89 cm)</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Weight:</span>
