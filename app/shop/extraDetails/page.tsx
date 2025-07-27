@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import React, { useState } from "react";
 import Description from "./description";
 import AdditionalInfo from "./AdditionalInfo";
-import Review from "./Review";
+import Review from "./Reviews";
 
 interface buttonType {
   func: React.MouseEventHandler<HTMLButtonElement> | undefined;
