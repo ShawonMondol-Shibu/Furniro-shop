@@ -23,7 +23,7 @@ export default function ProductCard({
   return (
     <>
       <Link href={url} className="m-auto">
-        <Card className="lg:w-72 w-48  pt-0 bg-(--cardBg) hover:scale-105 border-none rounded-none shadow-none hover:shadow-xl m-auto transition-all duration-200 ease-linear">
+        <Card className="lg:w-72 w-48  pt-0 bg-(--cardBg) hover:scale-105 border-none rounded-none shadow-none hover:shadow-xl m-auto group transition-all duration-200 ease-linear">
           <Image
             src={image}
             width={285}
@@ -32,7 +32,7 @@ export default function ProductCard({
             className="m-auto"
           />
           <CardFooter className="block">
-            <CardTitle className="text-2xl font-semibold">{title}</CardTitle>
+            <CardTitle className="text-2xl font-semibold group-hover:text-(--textPrimary) transition-colors duration-300 ease-in-out">{title}</CardTitle>
             <p className="text-base font-medium">{category}</p>
             <h4 className="text-xl font-semibold flex items-center justify-between">
               Rp {price}
