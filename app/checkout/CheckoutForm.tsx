@@ -60,7 +60,7 @@ export default function CheckoutForm() {
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onsubmit)}>
-        <div className="grid grid-cols-2 items-start gap-10">
+        <div className="grid lg:grid-cols-2 grid-cols-1 items-start gap-10">
           {/* Left Column: Form */}
           <div className="space-y-8 w-full">
             {/* Name Fields */}
