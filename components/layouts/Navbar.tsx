@@ -8,6 +8,7 @@ import HeartButton from "./HeartButton";
 import UserButton from "./UserButton";
 import { Button } from "../ui/button";
 import { Menu } from "lucide-react";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -34,6 +35,8 @@ export default function Navbar() {
     { page: CartButton },
   ];
 
+  const pathName = usePathname();
+
   return (
     <nav
       className={` bg-white lg:flex ${
@@ -58,7 +61,12 @@ export default function Navbar() {
         >
           {navLink.map((nav, i: number) => (
             <li key={i}>
-              <Link href={nav.url} className="text-base font-semibold">
+              <Link
+                href={nav.url}
+                className={`text-base font-semibold hover:text-[var(--textPrimary)] ${
+                  pathName === nav.url ? "text-(--textPrimary)" : "text-inherit"
+                } transition-colors duration-200 ease-in-out`}
+              >
                 {nav.name}
               </Link>
             </li>
