@@ -4,6 +4,7 @@ import React from "react";
 import CartItem from "./CartItem";
 import Title from "@/components/ui/Title";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Page() {
   const titleGroup = ["Product", "Price", "Quantity", "Subtotal"];
@@ -40,8 +41,11 @@ export default function Page() {
             <Button
               variant={"outline"}
               className=" bg-[var(--bgPrimary)] hover:bg-[var(--textPrimary)] hover:text-white text-xl font-normal px-8 size-fit"
+              asChild
             >
+              <Link href={'/checkout'}>
               Check Out
+              </Link>
             </Button>
           </div>
         </div>

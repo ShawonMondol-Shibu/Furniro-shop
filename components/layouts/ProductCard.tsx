@@ -31,8 +31,8 @@ export default function ProductCard({
             alt={category}
             className="m-auto"
           />
-          <CardFooter className="block">
-            <CardTitle className="text-2xl font-semibold group-hover:text-(--textPrimary) transition-colors duration-300 ease-in-out">{title}</CardTitle>
+          <CardFooter className="block space-y-2">
+            <CardTitle className="text-2xl font-semibold group-hover:text-(--textPrimary) transition-colors duration-200 ease-in-out">{title}</CardTitle>
             <p className="text-base font-medium">{category}</p>
             <h4 className="text-xl font-semibold flex items-center justify-between">
               Rp {price}

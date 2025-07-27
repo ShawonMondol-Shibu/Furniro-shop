@@ -13,9 +13,9 @@ export default function Services() {
     { icon: Headset, title: "24 / 7 Support", desc: "Dedicated support" },
   ];
   return (
-    <section className="bg-(--bgPrimary) px-10 py-32 flex gap-20 flex-wrap items-center justify-center">
+    <section className="bg-(--bgPrimary) px-10 py-32 grid gap-10 grid-cols-4 items-center justify-center">
       {services.map((service: serviceType, i: number) => (
-        <div key={i} className="flex items-center gap-2 ">
+        <div key={i} className="flex items-center gap-2 m-auto">
           <service.icon size={60} />
           <div>
             <h3 className="text-2xl font-semibold">{service.title}</h3>
