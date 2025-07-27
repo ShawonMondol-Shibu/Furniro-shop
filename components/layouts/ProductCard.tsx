@@ -23,7 +23,7 @@ export default function ProductCard({
   return (
     <>
       <Link href={url} className="m-auto">
-        <Card className="lg:w-72 w-48  pt-0 bg-(--cardBg) hover:scale-105 border-none rounded-none shadow-none hover:shadow-xl m-auto group transition-all duration-200 ease-linear">
+        <Card className="xl:w-72 sm:w-56  pt-0 bg-(--cardBg) hover:scale-105 border-none rounded-none shadow-none hover:shadow-xl m-auto group transition-all duration-200 ease-linear">
           <Image
             src={image}
             width={285}

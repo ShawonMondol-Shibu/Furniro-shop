@@ -25,7 +25,7 @@ export default function Page() {
 
       {/* Filter is added here */}
       <section className="bg-(--bgPrimary) p-5">
-        <div className="container m-auto flex items-center-safe justify-between">
+        <div className="container m-auto flex gap-5 items-center-safe justify-between">
           {/* Filter left side */}
           <div className="h-6 flex items-center gap-2 ">
             <Button
@@ -71,7 +71,7 @@ export default function Page() {
 
       <main>
         {/* This is the Product Section */}
-        <section className="container m-auto lg:grid xl:grid-cols-4 grid-cols-3 flex flex-wrap items-center justify-center gap-20 mt-10">
+        <section className="container m-auto grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2  items-center justify-center xl:gap-20 gap-10 mt-10 px-5">
           {Array.from({ length: 16 }).map((item, i) => (
             <ProductCard
               key={i}

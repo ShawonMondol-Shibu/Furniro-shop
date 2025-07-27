@@ -25,8 +25,8 @@ export default function Page() {
         breadCrumbPage="Home"
         breadCrumbLink="Blog"
       />
-      <main className="container m-auto my-20">
-        <div className="flex items-start justify-between gap-10">
+      <main className="container m-auto my-20 px-5">
+        <div className="flex flex-wrap items-start justify-between gap-10">
           <section className="space-y-10 flex-1/2">
             <BlogCard />
             <BlogCard />
