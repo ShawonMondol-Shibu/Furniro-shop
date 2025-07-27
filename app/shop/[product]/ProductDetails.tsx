@@ -9,7 +9,7 @@ import { toast } from "sonner";
 
 export default function ProductDetails() {
   return (
-    <section className="container m-auto flex items-start gap-30">
+    <section className="container m-auto grid md:grid-cols-2 grid-cols-1 items-start gap-10">
       {/* Product Details Images */}
       <div className="flex items-start gap-10">
         <div className="space-y-8">

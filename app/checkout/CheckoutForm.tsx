@@ -48,11 +48,9 @@ export default function CheckoutForm() {
 
   function onsubmit(values: z.infer<typeof formSchema>) {
     console.info(values);
-    if(values){
+    if (values) {
       toast.success("Order Placed successfully");
-      
-    }else {
-      
+    } else {
       toast.warning("Order Placed successfully");
     }
   }
