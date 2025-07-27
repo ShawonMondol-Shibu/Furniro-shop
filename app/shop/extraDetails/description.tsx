@@ -4,7 +4,7 @@ import React from "react";
 export default function Description() {
   return (
     <div className="space-y-10 grid items-center justify-items-center">
-      <div className="space-y-10 w-5xl">
+      <div className="space-y-10 xl:w-5xl text-wrap">
         <p>
           Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn
           portable active stereo speaker takes the unmistakable look and sound
@@ -22,18 +22,20 @@ export default function Description() {
         </p>
       </div>
 
-      <div className="flex items-center justify-center gap-10">
+      <div className="grid md:grid-cols-2 items-center justify-center gap-10">
         <Image
           src={"/images/products/sofa.png"}
           width={605}
           height={348}
           alt="sofa banner"
+          className="m-auto"
         />
         <Image
           src={"/images/products/sofa.png"}
           width={605}
           height={348}
           alt="sofa banner"
+          className="m-auto"
         />
       </div>
     </div>
