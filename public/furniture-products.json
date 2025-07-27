@@ -1,0 +1,1380 @@
+[
+  {
+    "id": 1,
+    "productName": "Modern Comfort Sectional Sofa",
+    "price": 129999,
+    "currency": "₹",
+    "rating": 4.7,
+    "totalReviews": 156,
+    "shortDescription": "Premium 3-seater sectional sofa with chaise lounge, perfect for modern living rooms",
+    "sizes": ["2-Seater", "3-Seater", "L-Shape Sectional"],
+    "colors": ["Charcoal Gray", "Navy Blue", "Cream", "Cognac Brown"],
+    "inStock": true,
+    "freeShipping": true,
+    "description": {
+      "overview": "Experience ultimate comfort with our Modern Comfort Sectional Sofa. This contemporary piece features a spacious design with an attached chaise lounge, perfect for relaxing or entertaining guests. The sofa combines style and functionality with its clean lines, plush cushioning, and durable construction.",
+      "keyFeatures": [
+        "High-density foam cushioning for lasting comfort",
+        "Reversible chaise lounge configuration",
+        "Solid hardwood frame construction",
+        "Removable and washable cushion covers",
+        "No-sag spring suspension system",
+        "Contemporary design fits any decor"
+      ]
+    },
+    "additionalInfo": {
+      "specifications": {
+        "dimensions": {
+          "width": "102 inches (259 cm)",
+          "depth": "65 inches (165 cm)",
+          "height": "35 inches (89 cm)",
+          "weight": "185 lbs (84 kg)"
+        },
+        "seating": {
+          "seatWidth": "72 inches (183 cm)",
+          "seatDepth": "24 inches (61 cm)",
+          "seatHeight": "18 inches (46 cm)",
+          "armHeight": "26 inches (66 cm)"
+        },
+        "technical": {
+          "assemblyRequired": "Minimal",
+          "maxWeightCapacity": "750 lbs",
+          "legMaterial": "Solid Wood",
+          "legFinish": "Espresso"
+        }
+      },
+      "materials": {
+        "frame": "Kiln-dried hardwood frame with reinforced joints",
+        "cushioning": "High-density polyurethane foam wrapped in polyester fiber",
+        "suspension": "8-way hand-tied springs",
+        "upholstery": "100% polyester fabric with stain-resistant treatment"
+      },
+      "shipping": {
+        "standardDelivery": "Free shipping, 2-4 weeks delivery",
+        "whiteGloveDelivery": "₹14,900 additional, inside delivery and setup"
+      },
+      "warranty": {
+        "frame": "Lifetime warranty",
+        "springs": "10-year warranty",
+        "cushions": "5-year warranty",
+        "fabric": "2-year warranty"
+      }
+    },
+    "reviews": [
+      {
+        "id": 1,
+        "customerName": "Priya Sharma",
+        "rating": 5,
+        "date": "2 weeks ago",
+        "title": "Absolutely love this sofa!",
+        "content": "The quality is outstanding and it's incredibly comfortable. The fabric feels premium and the color matches perfectly with my living room decor. Assembly was straightforward and the delivery team was professional.",
+        "verified": true,
+        "helpful": 12,
+        "variant": "Charcoal Gray, 3-Seater"
+      },
+      {
+        "id": 2,
+        "customerName": "Rajesh Kumar",
+        "rating": 4,
+        "date": "1 month ago",
+        "title": "Great value for money",
+        "content": "Solid construction and comfortable seating. The only minor issue is that the cushions are a bit firmer than expected, but they're breaking in nicely.",
+        "verified": true,
+        "helpful": 8,
+        "variant": "Navy Blue, L-Shape Sectional"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "productName": "Executive Leather Office Chair",
+    "price": 45999,
+    "currency": "₹",
+    "rating": 4.5,
+    "totalReviews": 89,
+    "shortDescription": "Ergonomic high-back office chair with premium leather upholstery and lumbar support",
+    "sizes": ["Standard", "Tall Back"],
+    "colors": ["Black", "Brown", "Burgundy"],
+    "inStock": true,
+    "freeShipping": true,
+    "description": {
+      "overview": "Transform your workspace with our Executive Leather Office Chair. Designed for professionals who spend long hours at their desk, this chair combines ergonomic excellence with luxurious leather upholstery. The advanced lumbar support and adjustable features ensure maximum comfort throughout your workday.",
+      "keyFeatures": [
+        "Premium genuine leather upholstery",
+        "Advanced lumbar support system",
+        "360-degree swivel with smooth rolling casters",
+        "Height adjustable with pneumatic lift",
+        "Padded armrests with soft-touch finish",
+        "Heavy-duty base supports up to 150kg"
+      ]
+    },
+    "additionalInfo": {
+      "specifications": {
+        "dimensions": {
+          "width": "26 inches (66 cm)",
+          "depth": "28 inches (71 cm)",
+          "height": "42-46 inches (107-117 cm)",
+          "weight": "25 kg"
+        },
+        "technical": {
+          "assemblyRequired": "Yes, 30 minutes",
+          "maxWeightCapacity": "150 kg",
+          "baseMaterial": "Chrome-plated steel",
+          "wheelType": "Dual-wheel carpet casters"
+        }
+      },
+      "materials": {
+        "upholstery": "Top-grain leather with protective coating",
+        "padding": "High-density foam cushioning",
+        "frame": "Steel reinforced frame",
+        "base": "5-star chrome base with dual-wheel casters"
+      },
+      "shipping": {
+        "standardDelivery": "Free shipping, 1-2 weeks delivery",
+        "expressDelivery": "₹2,999 additional, 3-5 days delivery"
+      },
+      "warranty": {
+        "overall": "3-year comprehensive warranty",
+        "leather": "2-year warranty against cracking",
+        "mechanism": "5-year warranty on gas cylinder and tilt"
+      }
+    },
+    "reviews": [
+      {
+        "id": 3,
+        "customerName": "Amit Patel",
+        "rating": 5,
+        "date": "1 week ago",
+        "title": "Best office chair I've owned",
+        "content": "After working from home for 2 years, I finally invested in a proper chair. The ergonomic support is fantastic - no more back pain after long work sessions.",
+        "verified": true,
+        "helpful": 23,
+        "variant": "Black, Standard"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "productName": "Rustic Oak Dining Table",
+    "price": 89999,
+    "currency": "₹",
+    "rating": 4.8,
+    "totalReviews": 124,
+    "shortDescription": "Solid oak dining table with live edge design, seats 6-8 people comfortably",
+    "sizes": ["6-Seater", "8-Seater", "10-Seater"],
+    "colors": ["Natural Oak", "Dark Walnut", "Honey Finish"],
+    "inStock": true,
+    "freeShipping": true,
+    "description": {
+      "overview": "Bring natural beauty to your dining room with our Rustic Oak Dining Table. Crafted from solid oak with a stunning live edge design, this table showcases the natural grain and character of the wood. Perfect for family gatherings and dinner parties.",
+      "keyFeatures": [
+        "Solid oak construction with live edge",
+        "Natural wood grain patterns",
+        "Sturdy pedestal base design",
+        "Seats 6-8 people comfortably",
+        "Hand-finished with protective coating",
+        "Sustainable sourced wood"
+      ]
+    },
+    "additionalInfo": {
+      "specifications": {
+        "dimensions": {
+          "length": "84 inches (213 cm)",
+          "width": "42 inches (107 cm)",
+          "height": "30 inches (76 cm)",
+          "weight": "95 kg"
+        },
+        "technical": {
+          "assemblyRequired": "Minimal, legs attach to top",
+          "maxWeightCapacity": "200 kg",
+          "woodType": "Solid Oak",
+          "finish": "Hand-rubbed oil finish"
+        }
+      },
+      "materials": {
+        "tabletop": "Solid oak with live edge, 2-inch thick",
+        "base": "Solid oak pedestal base",
+        "finish": "Natural oil finish with protective coating",
+        "hardware": "Stainless steel mounting hardware"
+      },
+      "shipping": {
+        "standardDelivery": "Free shipping, 3-4 weeks delivery",
+        "whiteGloveDelivery": "₹9,999 additional, inside delivery and setup"
+      },
+      "warranty": {
+        "wood": "10-year warranty against defects",
+        "finish": "2-year warranty against peeling",
+        "structure": "Lifetime warranty on construction"
+      }
+    },
+    "reviews": [
+      {
+        "id": 4,
+        "customerName": "Sneha Gupta",
+        "rating": 5,
+        "date": "3 weeks ago",
+        "title": "Stunning centerpiece",
+        "content": "This dining table is absolutely gorgeous! The live edge wood is beautiful and each piece is unique. It's become the focal point of our dining room.",
+        "verified": true,
+        "helpful": 18,
+        "variant": "Natural Oak, 8-Seater"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "productName": "Contemporary Platform Bed",
+    "price": 75999,
+    "currency": "₹",
+    "rating": 4.6,
+    "totalReviews": 203,
+    "shortDescription": "Minimalist platform bed with built-in nightstands and LED lighting",
+    "sizes": ["Queen", "King", "Super King"],
+    "colors": ["White", "Black", "Walnut", "Gray"],
+    "inStock": true,
+    "freeShipping": true,
+    "description": {
+      "overview": "Create a modern bedroom sanctuary with our Contemporary Platform Bed. This sleek design features built-in nightstands and optional LED lighting for a truly contemporary look. The low-profile design and clean lines make it perfect for modern and minimalist bedrooms.",
+      "keyFeatures": [
+        "Low-profile platform design",
+        "Built-in floating nightstands",
+        "Optional LED strip lighting",
+        "No box spring required",
+        "Engineered wood construction",
+        "Soft-close storage drawers"
+      ]
+    },
+    "additionalInfo": {
+      "specifications": {
+        "dimensions": {
+          "length": "88 inches (224 cm)",
+          "width": "66 inches (168 cm)",
+          "height": "14 inches (36 cm)",
+          "weight": "68 kg"
+        },
+        "technical": {
+          "assemblyRequired": "Yes, 2-3 hours",
+          "maxWeightCapacity": "300 kg",
+          "mattressSize": "Queen (60x80 inches)",
+          "storageCapacity": "4 drawers with soft-close"
+        }
+      },
+      "materials": {
+        "frame": "Engineered wood with laminate finish",
+        "slats": "Solid wood slat system",
+        "hardware": "European soft-close drawer slides",
+        "lighting": "LED strip with remote control"
+      },
+      "shipping": {
+        "standardDelivery": "Free shipping, 2-3 weeks delivery",
+        "whiteGloveDelivery": "₹7,999 additional, assembly included"
+      },
+      "warranty": {
+        "frame": "5-year structural warranty",
+        "drawers": "3-year warranty on slides",
+        "led": "2-year warranty on LED system"
+      }
+    },
+    "reviews": [
+      {
+        "id": 5,
+        "customerName": "Vikram Singh",
+        "rating": 5,
+        "date": "2 weeks ago",
+        "title": "Perfect modern bed",
+        "content": "Love the sleek design and the built-in nightstands save so much space. The LED lighting creates a great ambiance. Assembly was straightforward with clear instructions.",
+        "verified": true,
+        "helpful": 15,
+        "variant": "Walnut, Queen"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "productName": "Vintage Chesterfield Armchair",
+    "price": 65999,
+    "currency": "₹",
+    "rating": 4.4,
+    "totalReviews": 67,
+    "shortDescription": "Classic Chesterfield armchair with button tufting and rolled arms in premium leather",
+    "sizes": ["Standard"],
+    "colors": ["Cognac Brown", "Black", "Burgundy", "Olive Green"],
+    "inStock": true,
+    "freeShipping": true,
+    "description": {
+      "overview": "Add timeless elegance to your space with our Vintage Chesterfield Armchair. This classic piece features traditional button tufting, rolled arms, and premium leather upholstery. Handcrafted with attention to detail, it's perfect for studies, living rooms, or reading nooks.",
+      "keyFeatures": [
+        "Traditional button tufting design",
+        "Hand-finished leather upholstery",
+        "Solid hardwood frame",
+        "Deep comfortable seating",
+        "Brass nail head trim",
+        "Classic rolled arms"
+      ]
+    },
+    "additionalInfo": {
+      "specifications": {
+        "dimensions": {
+          "width": "32 inches (81 cm)",
+          "depth": "36 inches (91 cm)",
+          "height": "42 inches (107 cm)",
+          "weight": "45 kg"
+        },
+        "technical": {
+          "assemblyRequired": "No, arrives fully assembled",
+          "maxWeightCapacity": "120 kg",
+          "seatHeight": "18 inches (46 cm)",
+          "armHeight": "26 inches (66 cm)"
+        }
+      },
+      "materials": {
+        "upholstery": "Top-grain leather with hand-rubbed finish",
+        "frame": "Kiln-dried hardwood frame",
+        "cushioning": "High-density foam with down blend",
+        "trim": "Antique brass nail heads"
+      },
+      "shipping": {
+        "standardDelivery": "Free shipping, 4-5 weeks delivery",
+        "whiteGloveDelivery": "₹5,999 additional, inside delivery"
+      },
+      "warranty": {
+        "frame": "Lifetime structural warranty",
+        "leather": "3-year warranty against defects",
+        "cushioning": "5-year warranty"
+      }
+    },
+    "reviews": [
+      {
+        "id": 6,
+        "customerName": "Arjun Mehta",
+        "rating": 4,
+        "date": "1 month ago",
+        "title": "Beautiful classic chair",
+        "content": "The craftsmanship is excellent and the leather quality is top-notch. It's become my favorite reading chair. The only minor issue is it took longer to deliver than expected.",
+        "verified": true,
+        "helpful": 9,
+        "variant": "Cognac Brown"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "productName": "Scandinavian Coffee Table",
+    "price": 32999,
+    "currency": "₹",
+    "rating": 4.7,
+    "totalReviews": 145,
+    "shortDescription": "Minimalist coffee table with clean lines and hidden storage compartment",
+    "sizes": ["Small", "Medium", "Large"],
+    "colors": ["White Oak", "Ash Gray", "Natural Birch"],
+    "inStock": true,
+    "freeShipping": true,
+    "description": {
+      "overview": "Embrace Scandinavian design with our minimalist coffee table. Featuring clean lines, natural wood grain, and a hidden storage compartment, this piece perfectly balances form and function. The light wood finish brightens any living space.",
+      "keyFeatures": [
+        "Minimalist Scandinavian design",
+        "Hidden storage compartment",
+        "Solid wood construction",
+        "Smooth rounded edges",
+        "Natural wood grain finish",
+        "Compact yet functional"
+      ]
+    },
+    "additionalInfo": {
+      "specifications": {
+        "dimensions": {
+          "length": "48 inches (122 cm)",
+          "width": "24 inches (61 cm)",
+          "height": "16 inches (41 cm)",
+          "weight": "22 kg"
+        },
+        "technical": {
+          "assemblyRequired": "Minimal, legs attach",
+          "maxWeightCapacity": "50 kg",
+          "storageVolume": "15 liters",
+          "legHeight": "14 inches (36 cm)"
+        }
+      },
+      "materials": {
+        "top": "Solid oak with natural oil finish",
+        "legs": "Solid oak tapered legs",
+        "storage": "Soft-close hinges",
+        "finish": "Water-based protective coating"
+      },
+      "shipping": {
+        "standardDelivery": "Free shipping, 1-2 weeks delivery",
+        "expressDelivery": "₹1,999 additional, 3-5 days"
+      },
+      "warranty": {
+        "wood": "5-year warranty against defects",
+        "finish": "2-year warranty",
+        "hardware": "3-year warranty"
+      }
+    },
+    "reviews": [
+      {
+        "id": 7,
+        "customerName": "Kavya Nair",
+        "rating": 5,
+        "date": "1 week ago",
+        "title": "Perfect for small spaces",
+        "content": "Love the clean design and the hidden storage is so useful for keeping remotes and magazines. The wood quality is excellent and it fits perfectly in our apartment.",
+        "verified": true,
+        "helpful": 12,
+        "variant": "White Oak, Medium"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "productName": "Industrial Bookshelf Unit",
+    "price": 54999,
+    "currency": "₹",
+    "rating": 4.5,
+    "totalReviews": 98,
+    "shortDescription": "5-tier industrial bookshelf with metal frame and reclaimed wood shelves",
+    "sizes": ["4-Tier", "5-Tier", "6-Tier"],
+    "colors": ["Rustic Brown", "Gray Wash", "Natural Wood"],
+    "inStock": true,
+    "freeShipping": true,
+    "description": {
+      "overview": "Add industrial charm to your space with our Industrial Bookshelf Unit. Combining sturdy metal framework with reclaimed wood shelves, this piece offers both style and functionality. Perfect for displaying books, decor, and personal collections.",
+      "keyFeatures": [
+        "Industrial metal and wood design",
+        "Reclaimed wood shelves",
+        "Powder-coated steel frame",
+        "Adjustable shelf heights",
+        "Anti-tip safety hardware",
+        "Easy assembly system"
+      ]
+    },
+    "additionalInfo": {
+      "specifications": {
+        "dimensions": {
+          "width": "32 inches (81 cm)",
+          "depth": "12 inches (30 cm)",
+          "height": "72 inches (183 cm)",
+          "weight": "35 kg"
+        },
+        "technical": {
+          "assemblyRequired": "Yes, 1-2 hours",
+          "maxWeightCapacity": "40 kg per shelf",
+          "shelfThickness": "1.5 inches (4 cm)",
+          "frameThickness": "1 inch steel tube"
+        }
+      },
+      "materials": {
+        "shelves": "Reclaimed pine wood with protective finish",
+        "frame": "Powder-coated steel tubing",
+        "hardware": "Stainless steel bolts and brackets",
+        "finish": "Matte black frame with natural wood"
+      },
+      "shipping": {
+        "standardDelivery": "Free shipping, 2-3 weeks delivery",
+        "expressDelivery": "₹2,499 additional, 5-7 days"
+      },
+      "warranty": {
+        "frame": "5-year structural warranty",
+        "wood": "2-year warranty against defects",
+        "finish": "1-year warranty"
+      }
+    },
+    "reviews": [
+      {
+        "id": 8,
+        "customerName": "Rohit Sharma",
+        "rating": 4,
+        "date": "2 weeks ago",
+        "title": "Great industrial look",
+        "content": "Perfect for my home office. The combination of metal and wood looks great and it's very sturdy. Assembly was straightforward with good instructions.",
+        "verified": true,
+        "helpful": 7,
+        "variant": "Rustic Brown, 5-Tier"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "productName": "Luxury Velvet Ottoman",
+    "price": 28999,
+    "currency": "₹",
+    "rating": 4.3,
+    "totalReviews": 76,
+    "shortDescription": "Round velvet ottoman with gold legs and hidden storage compartment",
+    "sizes": ["Small", "Medium", "Large"],
+    "colors": ["Emerald Green", "Navy Blue", "Blush Pink", "Charcoal Gray"],
+    "inStock": true,
+    "freeShipping": false,
+    "description": {
+      "overview": "Add a touch of luxury to your space with our Velvet Ottoman. Featuring plush velvet upholstery, elegant gold legs, and hidden storage, this versatile piece works as extra seating, a footrest, or accent table.",
+      "keyFeatures": [
+        "Luxurious velvet upholstery",
+        "Gold-finished metal legs",
+        "Hidden storage compartment",
+        "Multi-functional design",
+        "High-density foam padding",
+        "Easy-clean fabric treatment"
+      ]
+    },
+    "additionalInfo": {
+      "specifications": {
+        "dimensions": {
+          "diameter": "20 inches (51 cm)",
+          "height": "18 inches (46 cm)",
+          "weight": "12 kg"
+        },
+        "technical": {
+          "assemblyRequired": "Minimal, legs screw in",
+          "maxWeightCapacity": "100 kg",
+          "storageVolume": "8 liters",
+          "legMaterial": "Steel with gold finish"
+        }
+      },
+      "materials": {
+        "upholstery": "Premium velvet with stain-resistant coating",
+        "padding": "High-density foam cushioning",
+        "legs": "Steel with electroplated gold finish",
+        "storage": "Fabric-lined interior compartment"
+      },
+      "shipping": {
+        "standardDelivery": "₹1,999 shipping, 1-2 weeks delivery",
+        "expressDelivery": "₹3,999 shipping, 3-5 days"
+      },
+      "warranty": {
+        "upholstery": "2-year warranty against defects",
+        "frame": "3-year structural warranty",
+        "legs": "1-year warranty on finish"
+      }
+    },
+    "reviews": [
+      {
+        "id": 9,
+        "customerName": "Meera Joshi",
+        "rating": 4,
+        "date": "3 weeks ago",
+        "title": "Beautiful accent piece",
+        "content": "The velvet is so soft and the color is gorgeous. Perfect size for our living room and the storage is handy for throw blankets. The gold legs add a nice touch.",
+        "verified": true,
+        "helpful": 11,
+        "variant": "Emerald Green, Medium"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "productName": "Modular Wardrobe System",
+    "price": 149999,
+    "currency": "₹",
+    "rating": 4.6,
+    "totalReviews": 187,
+    "shortDescription": "Customizable modular wardrobe with sliding doors and interior organizers",
+    "sizes": ["2-Door", "3-Door", "4-Door"],
+    "colors": ["White", "Walnut", "Gray", "Oak"],
+    "inStock": true,
+    "freeShipping": true,
+    "description": {
+      "overview": "Organize your bedroom with our Modular Wardrobe System. Featuring customizable interior layouts, soft-close sliding doors, and premium finishes, this wardrobe adapts to your storage needs while maintaining a sleek appearance.",
+      "keyFeatures": [
+        "Modular customizable design",
+        "Soft-close sliding doors",
+        "Adjustable shelves and rods",
+        "LED interior lighting",
+        "Mirror door options",
+        "Anti-sag reinforcement"
+      ]
+    },
+    "additionalInfo": {
+      "specifications": {
+        "dimensions": {
+          "width": "96 inches (244 cm)",
+          "depth": "24 inches (61 cm)",
+          "height": "84 inches (213 cm)",
+          "weight": "120 kg"
+        },
+        "technical": {
+          "assemblyRequired": "Professional installation recommended",
+          "doorType": "Soft-close sliding mechanism",
+          "interiorOptions": "Customizable shelves and rods",
+          "lighting": "LED strip with motion sensor"
+        }
+      },
+      "materials": {
+        "exterior": "Laminated engineered wood",
+        "doors": "18mm thick with aluminum frame",
+        "hardware": "German soft-close sliding system",
+        "interior": "Melamine-finished shelves"
+      },
+      "shipping": {
+        "standardDelivery": "Free shipping, 3-4 weeks delivery",
+        "installationService": "₹9,999 professional installation"
+      },
+      "warranty": {
+        "structure": "10-year warranty",
+        "doors": "5-year warranty on sliding mechanism",
+        "led": "2-year warranty on lighting"
+      }
+    },
+    "reviews": [
+      {
+        "id": 10,
+        "customerName": "Anita Reddy",
+        "rating": 5,
+        "date": "1 month ago",
+        "title": "Excellent storage solution",
+        "content": "The modular design allowed us to customize it perfectly for our needs. The sliding doors are smooth and the LED lighting is a great feature. Professional installation was worth it.",
+        "verified": true,
+        "helpful": 19,
+        "variant": "Walnut, 3-Door"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "productName": "Ergonomic Study Desk",
+    "price": 42999,
+    "currency": "₹",
+    "rating": 4.4,
+    "totalReviews": 112,
+    "shortDescription": "Height-adjustable study desk with built-in cable management and storage drawers",
+    "sizes": ["Compact", "Standard", "Large"],
+    "colors": ["White", "Black", "Walnut", "Gray"],
+    "inStock": true,
+    "freeShipping": true,
+    "description": {
+      "overview": "Enhance your productivity with our Ergonomic Study Desk. Featuring height adjustment, built-in cable management, and ample storage, this desk is perfect for students and professionals working from home.",
+      "keyFeatures": [
+        "Electric height adjustment",
+        "Built-in cable management",
+        "Storage drawers with locks",
+        "Scratch-resistant surface",
+        "Memory height settings",
+        "Anti-collision system"
+      ]
+    },
+    "additionalInfo": {
+      "specifications": {
+        "dimensions": {
+          "width": "55 inches (140 cm)",
+          "depth": "28 inches (71 cm)",
+          "height": "28-48 inches (71-122 cm)",
+          "weight": "45 kg"
+        },
+        "technical": {
+          "assemblyRequired": "Yes, 2-3 hours",
+          "heightRange": "28-48 inches electric adjustment",
+          "weightCapacity": "80 kg",
+          "powerConsumption": "150W motor"
+        }
+      },
+      "materials": {
+        "desktop": "Laminated engineered wood with scratch-resistant coating",
+        "frame": "Steel frame with powder coating",
+        "drawers": "Soft-close drawer slides",
+        "motor": "German-engineered height adjustment system"
+      },
+      "shipping": {
+        "standardDelivery": "Free shipping, 2-3 weeks delivery",
+        "whiteGloveDelivery": "₹4,999 additional, assembly included"
+      },
+      "warranty": {
+        "frame": "5-year structural warranty",
+        "motor": "3-year warranty on height mechanism",
+        "desktop": "2-year warranty against defects"
+      }
+    },
+    "reviews": [
+      {
+        "id": 11,
+        "customerName": "Karthik Iyer",
+        "rating": 4,
+        "date": "2 weeks ago",
+        "title": "Great for work from home",
+        "content": "The height adjustment is smooth and the memory settings are convenient. Cable management keeps everything organized. Assembly took some time but instructions were clear.",
+        "verified": true,
+        "helpful": 8,
+        "variant": "Walnut, Standard"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "productName": "Rattan Accent Chair",
+    "price": 38999,
+    "currency": "₹",
+    "rating": 4.2,
+    "totalReviews": 94,
+    "shortDescription": "Handwoven rattan accent chair with comfortable cushions and natural finish",
+    "sizes": ["Standard"],
+    "colors": ["Natural", "White Wash", "Honey Brown"],
+    "inStock": true,
+    "freeShipping": true,
+    "description": {
+      "overview": "Bring natural texture to your space with our Rattan Accent Chair. Handwoven by skilled artisans, this chair features a comfortable cushioned seat and backrest, perfect for creating a relaxed, bohemian atmosphere.",
+      "keyFeatures": [
+        "Handwoven natural rattan",
+        "Comfortable foam cushions",
+        "Sustainable materials",
+        "Lightweight yet sturdy",
+        "Removable cushion covers",
+        "Artisan craftsmanship"
+      ]
+    },
+    "additionalInfo": {
+      "specifications": {
+        "dimensions": {
+          "width": "28 inches (71 cm)",
+          "depth": "30 inches (76 cm)",
+          "height": "32 inches (81 cm)",
+          "weight": "8 kg"
+        },
+        "technical": {
+          "assemblyRequired": "No, arrives fully assembled",
+          "maxWeightCapacity": "100 kg",
+          "seatHeight": "17 inches (43 cm)",
+          "cushionThickness": "3 inches (8 cm)"
+        }
+      },
+      "materials": {
+        "frame": "Natural rattan with protective coating",
+        "cushions": "High-density foam with cotton cover",
+        "finish": "Natural lacquer for protection",
+        "hardware": "Stainless steel reinforcements"
+      },
+      "shipping": {
+        "standardDelivery": "Free shipping, 3-4 weeks delivery",
+        "expressDelivery": "₹2,999 additional, 1-2 weeks"
+      },
+      "warranty": {
+        "frame": "2-year warranty against defects",
+        "cushions": "1-year warranty",
+        "finish": "6-month warranty"
+      }
+    },
+    "reviews": [
+      {
+        "id": 12,
+        "customerName": "Deepika Agarwal",
+        "rating": 4,
+        "date": "1 week ago",
+        "title": "Beautiful natural chair",
+        "content": "Love the bohemian vibe this chair adds to my bedroom. The rattan work is beautiful and it's surprisingly comfortable. The cushions are soft and the covers are easy to remove for washing.",
+        "verified": true,
+        "helpful": 6,
+        "variant": "Natural"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "productName": "Glass Top Console Table",
+    "price": 56999,
+    "currency": "₹",
+    "rating": 4.5,
+    "totalReviews": 78,
+    "shortDescription": "Modern console table with tempered glass top and chrome legs",
+    "sizes": ["Small", "Medium", "Large"],
+    "colors": ["Clear Glass", "Smoked Glass", "Black Glass"],
+    "inStock": true,
+    "freeShipping": true,
+    "description": {
+      "overview": "Add modern elegance to your entryway or living room with our Glass Top Console Table. Featuring a tempered glass top and sleek chrome legs, this piece creates an airy, sophisticated look while providing practical surface space.",
+      "keyFeatures": [
+        "Tempered safety glass top",
+        "Chrome-plated steel legs",
+        "Modern minimalist design",
+        "Easy to clean surface",
+        "Stable triangular base",
+        "Scratch-resistant coating"
+      ]
+    },
+    "additionalInfo": {
+      "specifications": {
+        "dimensions": {
+          "length": "48 inches (122 cm)",
+          "width": "16 inches (41 cm)",
+          "height": "30 inches (76 cm)",
+          "weight": "25 kg"
+        },
+        "technical": {
+          "assemblyRequired": "Yes, 30 minutes",
+          "maxWeightCapacity": "40 kg",
+          "glassThickness": "10mm tempered glass",
+          "legDiameter": "1.5 inches chrome tube"
+        }
+      },
+      "materials": {
+        "top": "10mm tempered safety glass",
+        "legs": "Chrome-plated steel tubing",
+        "hardware": "Stainless steel mounting brackets",
+        "finish": "Mirror-polished chrome"
+      },
+      "shipping": {
+        "standardDelivery": "Free shipping, 2-3 weeks delivery",
+        "whiteGloveDelivery": "₹3,999 additional, careful handling"
+      },
+      "warranty": {
+        "glass": "2-year warranty against manufacturing defects",
+        "frame": "5-year structural warranty",
+        "chrome": "3-year warranty against tarnishing"
+      }
+    },
+    "reviews": [
+      {
+        "id": 13,
+        "customerName": "Suresh Pillai",
+        "rating": 5,
+        "date": "3 weeks ago",
+        "title": "Elegant and modern",
+        "content": "Perfect for our modern apartment. The glass top is thick and feels very safe. The chrome legs are well-finished and the overall design is very sleek. Easy to assemble too.",
+        "verified": true,
+        "helpful": 10,
+        "variant": "Clear Glass, Medium"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "productName": "Fabric Storage Bench",
+    "price": 24999,
+    "currency": "₹",
+    "rating": 4.3,
+    "totalReviews": 156,
+    "shortDescription": "Upholstered storage bench perfect for entryways and bedrooms",
+    "sizes": ["Small", "Medium", "Large"],
+    "colors": ["Beige", "Gray", "Navy Blue", "Burgundy"],
+    "inStock": true,
+    "freeShipping": false,
+    "description": {
+      "overview": "Maximize your storage with our Fabric Storage Bench. Perfect for entryways, bedrooms, or living rooms, this versatile piece provides comfortable seating while hiding away shoes, blankets, and other essentials.",
+      "keyFeatures": [
+        "Spacious hidden storage",
+        "Comfortable padded seating",
+        "Durable fabric upholstery",
+        "Solid wood frame",
+        "Safety hinge mechanism",
+        "Non-slip feet"
+      ]
+    },
+    "additionalInfo": {
+      "specifications": {
+        "dimensions": {
+          "length": "42 inches (107 cm)",
+          "width": "16 inches (41 cm)",
+          "height": "18 inches (46 cm)",
+          "weight": "18 kg"
+        },
+        "technical": {
+          "assemblyRequired": "Minimal, legs attach",
+          "maxWeightCapacity": "150 kg",
+          "storageVolume": "45 liters",
+          "seatHeight": "18 inches (46 cm)"
+        }
+      },
+      "materials": {
+        "upholstery": "Polyester blend fabric with stain resistance",
+        "frame": "Solid pine wood construction",
+        "padding": "High-density foam cushioning",
+        "hardware": "Safety hinge with soft-close"
+      },
+      "shipping": {
+        "standardDelivery": "₹1,499 shipping, 1-2 weeks delivery",
+        "expressDelivery": "₹2,999 shipping, 3-5 days"
+      },
+      "warranty": {
+        "frame": "3-year structural warranty",
+        "upholstery": "1-year warranty against defects",
+        "hardware": "2-year warranty on hinges"
+      }
+    },
+    "reviews": [
+      {
+        "id": 14,
+        "customerName": "Pooja Malhotra",
+        "rating": 4,
+        "date": "2 weeks ago",
+        "title": "Great for small spaces",
+        "content": "Perfect for our apartment entryway. Stores shoes and bags nicely and provides a place to sit while putting on shoes. The fabric is good quality and easy to clean.",
+        "verified": true,
+        "helpful": 13,
+        "variant": "Gray, Medium"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "productName": "Wooden Bar Stool Set",
+    "price": 18999,
+    "currency": "₹",
+    "rating": 4.1,
+    "totalReviews": 89,
+    "shortDescription": "Set of 2 wooden bar stools with footrest and swivel mechanism",
+    "sizes": ["Counter Height", "Bar Height"],
+    "colors": ["Natural Wood", "Black", "White", "Walnut"],
+    "inStock": true,
+    "freeShipping": true,
+    "description": {
+      "overview": "Complete your kitchen island or bar area with our Wooden Bar Stool Set. These stools feature a comfortable swivel mechanism, built-in footrest, and durable wooden construction that complements both modern and traditional decor.",
+      "keyFeatures": [
+        "360-degree swivel mechanism",
+        "Built-in footrest for comfort",
+        "Solid wood construction",
+        "Adjustable height options",
+        "Non-slip base pads",
+        "Set of 2 stools included"
+      ]
+    },
+    "additionalInfo": {
+      "specifications": {
+        "dimensions": {
+          "width": "16 inches (41 cm)",
+          "depth": "16 inches (41 cm)",
+          "height": "24-32 inches (61-81 cm)",
+          "weight": "6 kg each"
+        },
+        "technical": {
+          "assemblyRequired": "Yes, 45 minutes per stool",
+          "maxWeightCapacity": "120 kg per stool",
+          "heightAdjustment": "Gas cylinder mechanism",
+          "swivel": "360-degree rotation"
+        }
+      },
+      "materials": {
+        "seat": "Solid rubber wood with protective finish",
+        "base": "Chrome-plated steel with gas cylinder",
+        "footrest": "Integrated wooden footrest",
+        "hardware": "Heavy-duty swivel mechanism"
+      },
+      "shipping": {
+        "standardDelivery": "Free shipping, 1-2 weeks delivery",
+        "expressDelivery": "₹1,999 additional, 3-5 days"
+      },
+      "warranty": {
+        "wood": "2-year warranty against defects",
+        "mechanism": "3-year warranty on gas cylinder",
+        "base": "5-year warranty on chrome finish"
+      }
+    },
+    "reviews": [
+      {
+        "id": 15,
+        "customerName": "Rahul Kapoor",
+        "rating": 4,
+        "date": "1 month ago",
+        "title": "Good value bar stools",
+        "content": "Nice quality for the price. The swivel works smoothly and they're comfortable to sit on. Assembly was straightforward. Perfect height for our kitchen island.",
+        "verified": true,
+        "helpful": 7,
+        "variant": "Natural Wood, Bar Height"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "productName": "Upholstered Dining Chairs",
+    "price": 35999,
+    "currency": "₹",
+    "rating": 4.6,
+    "totalReviews": 134,
+    "shortDescription": "Set of 4 upholstered dining chairs with wooden legs and comfortable padding",
+    "sizes": ["Standard"],
+    "colors": ["Cream", "Gray", "Navy Blue", "Burgundy"],
+    "inStock": true,
+    "freeShipping": true,
+    "description": {
+      "overview": "Enhance your dining experience with our Upholstered Dining Chairs. This set of 4 chairs combines comfort and style with plush padding, quality upholstery, and solid wooden legs that complement any dining table.",
+      "keyFeatures": [
+        "Set of 4 matching chairs",
+        "Comfortable foam padding",
+        "Quality fabric upholstery",
+        "Solid wooden legs",
+        "Easy-clean fabric treatment",
+        "Stackable design for storage"
+      ]
+    },
+    "additionalInfo": {
+      "specifications": {
+        "dimensions": {
+          "width": "18 inches (46 cm)",
+          "depth": "20 inches (51 cm)",
+          "height": "32 inches (81 cm)",
+          "weight": "7 kg each"
+        },
+        "technical": {
+          "assemblyRequired": "Yes, 20 minutes per chair",
+          "maxWeightCapacity": "110 kg per chair",
+          "seatHeight": "18 inches (46 cm)",
+          "backHeight": "14 inches (36 cm)"
+        }
+      },
+      "materials": {
+        "upholstery": "Polyester blend fabric with stain protection",
+        "padding": "High-density foam cushioning",
+        "legs": "Solid oak wood with natural finish",
+        "hardware": "Stainless steel bolts and brackets"
+      },
+      "shipping": {
+        "standardDelivery": "Free shipping, 2-3 weeks delivery",
+        "whiteGloveDelivery": "₹4,999 additional, assembly included"
+      },
+      "warranty": {
+        "frame": "5-year structural warranty",
+        "upholstery": "2-year warranty against defects",
+        "legs": "3-year warranty on wood finish"
+      }
+    },
+    "reviews": [
+      {
+        "id": 16,
+        "customerName": "Nisha Gupta",
+        "rating": 5,
+        "date": "2 weeks ago",
+        "title": "Comfortable and stylish",
+        "content": "These chairs are perfect for our dining room. Very comfortable for long dinners and the fabric is easy to clean. The wooden legs match our table perfectly. Great value for a set of 4.",
+        "verified": true,
+        "helpful": 16,
+        "variant": "Gray, Set of 4"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "productName": "Corner TV Unit",
+    "price": 48999,
+    "currency": "₹",
+    "rating": 4.4,
+    "totalReviews": 102,
+    "shortDescription": "Space-saving corner TV unit with cable management and storage compartments",
+    "sizes": ["Small", "Medium", "Large"],
+    "colors": ["White", "Black", "Walnut", "Oak"],
+    "inStock": true,
+    "freeShipping": true,
+    "description": {
+      "overview": "Maximize your living room space with our Corner TV Unit. Designed to fit perfectly in corners, this unit features multiple storage compartments, built-in cable management, and supports TVs up to 65 inches.",
+      "keyFeatures": [
+        "Space-saving corner design",
+        "Supports TVs up to 65 inches",
+        "Multiple storage compartments",
+        "Built-in cable management",
+        "Adjustable shelves",
+        "Soft-close doors"
+      ]
+    },
+    "additionalInfo": {
+      "specifications": {
+        "dimensions": {
+          "width": "48 inches (122 cm)",
+          "depth": "24 inches (61 cm)",
+          "height": "22 inches (56 cm)",
+          "weight": "35 kg"
+        },
+        "technical": {
+          "assemblyRequired": "Yes, 2-3 hours",
+          "maxTVSize": "65 inches",
+          "weightCapacity": "50 kg TV weight",
+          "storageCompartments": "4 compartments with doors"
+        }
+      },
+      "materials": {
+        "exterior": "Laminated engineered wood",
+        "shelves": "Adjustable melamine shelves",
+        "doors": "Soft-close hinges",
+        "hardware": "European cabinet hardware"
+      },
+      "shipping": {
+        "standardDelivery": "Free shipping, 2-3 weeks delivery",
+        "whiteGloveDelivery": "₹5,999 additional, assembly included"
+      },
+      "warranty": {
+        "structure": "5-year warranty",
+        "doors": "3-year warranty on hinges",
+        "finish": "2-year warranty against peeling"
+      }
+    },
+    "reviews": [
+      {
+        "id": 17,
+        "customerName": "Arun Kumar",
+        "rating": 4,
+        "date": "3 weeks ago",
+        "title": "Perfect corner solution",
+        "content": "Great use of corner space in our small apartment. Fits our 55-inch TV perfectly and has plenty of storage for our media devices. Cable management works well to keep everything tidy.",
+        "verified": true,
+        "helpful": 9,
+        "variant": "Walnut, Medium"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "productName": "Leather Recliner Chair",
+    "price": 89999,
+    "currency": "₹",
+    "rating": 4.7,
+    "totalReviews": 145,
+    "shortDescription": "Premium leather recliner with massage function and USB charging ports",
+    "sizes": ["Standard", "Large"],
+    "colors": ["Black", "Brown", "Burgundy"],
+    "inStock": true,
+    "freeShipping": true,
+    "description": {
+      "overview": "Experience ultimate relaxation with our Leather Recliner Chair. Featuring premium leather upholstery, built-in massage function, and convenient USB charging ports, this chair is perfect for your home theater or living room.",
+      "keyFeatures": [
+        "Premium genuine leather",
+        "Built-in massage function",
+        "USB charging ports",
+        "Power reclining mechanism",
+        "Memory foam cushioning",
+        "Cup holder and storage"
+      ]
+    },
+    "additionalInfo": {
+      "specifications": {
+        "dimensions": {
+          "width": "32 inches (81 cm)",
+          "depth": "36-72 inches (91-183 cm)",
+          "height": "42 inches (107 cm)",
+          "weight": "55 kg"
+        },
+        "technical": {
+          "assemblyRequired": "Minimal, arrives mostly assembled",
+          "maxWeightCapacity": "140 kg",
+          "reclineAngle": "160 degrees",
+          "massagePoints": "8 vibration points"
+        }
+      },
+      "materials": {
+        "upholstery": "Top-grain leather with protective coating",
+        "frame": "Hardwood frame with steel reinforcement",
+        "cushioning": "Memory foam with gel infusion",
+        "mechanism": "German-engineered power reclining system"
+      },
+      "shipping": {
+        "standardDelivery": "Free shipping, 3-4 weeks delivery",
+        "whiteGloveDelivery": "₹7,999 additional, inside delivery and setup"
+      },
+      "warranty": {
+        "leather": "5-year warranty against cracking",
+        "frame": "Lifetime structural warranty",
+        "mechanism": "3-year warranty on power system",
+        "massage": "2-year warranty on massage function"
+      }
+    },
+    "reviews": [
+      {
+        "id": 18,
+        "customerName": "Sanjay Patel",
+        "rating": 5,
+        "date": "1 week ago",
+        "title": "Ultimate comfort chair",
+        "content": "This recliner is amazing! The leather is top quality and the massage function is so relaxing after a long day. The USB ports are convenient for charging devices. Worth every rupee.",
+        "verified": true,
+        "helpful": 22,
+        "variant": "Brown, Standard"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "productName": "Floating Wall Shelves",
+    "price": 12999,
+    "currency": "₹",
+    "rating": 4.2,
+    "totalReviews": 234,
+    "shortDescription": "Set of 3 floating wall shelves with hidden brackets and modern design",
+    "sizes": ["Small", "Medium", "Large"],
+    "colors": ["White", "Black", "Walnut", "Natural Oak"],
+    "inStock": true,
+    "freeShipping": false,
+    "description": {
+      "overview": "Add stylish storage to any room with our Floating Wall Shelves. This set of 3 shelves features hidden mounting brackets for a clean, modern look. Perfect for displaying books, decor, or everyday essentials.",
+      "keyFeatures": [
+        "Set of 3 floating shelves",
+        "Hidden mounting brackets",
+        "Modern minimalist design",
+        "Easy installation system",
+        "Durable wood construction",
+        "Multiple size options"
+      ]
+    },
+    "additionalInfo": {
+      "specifications": {
+        "dimensions": {
+          "length": "24, 32, 40 inches (61, 81, 102 cm)",
+          "depth": "8 inches (20 cm)",
+          "thickness": "1.5 inches (4 cm)",
+          "weight": "2-4 kg per shelf"
+        },
+        "technical": {
+          "assemblyRequired": "Wall mounting required",
+          "maxWeightCapacity": "15 kg per shelf",
+          "wallType": "Drywall or masonry",
+          "mountingHardware": "Included with anchors"
+        }
+      },
+      "materials": {
+        "shelves": "Engineered wood with laminate finish",
+        "brackets": "Steel hidden mounting system",
+        "hardware": "Wall anchors and screws included",
+        "finish": "Scratch-resistant surface coating"
+      },
+      "shipping": {
+        "standardDelivery": "₹999 shipping, 1-2 weeks delivery",
+        "expressDelivery": "₹1,999 shipping, 3-5 days"
+      },
+      "warranty": {
+        "shelves": "2-year warranty against defects",
+        "brackets": "5-year warranty on mounting system",
+        "finish": "1-year warranty against peeling"
+      }
+    },
+    "reviews": [
+      {
+        "id": 19,
+        "customerName": "Priyanka Singh",
+        "rating": 4,
+        "date": "2 weeks ago",
+        "title": "Great floating shelves",
+        "content": "Love the clean look these shelves give to our living room. Installation was straightforward and they hold a good amount of weight. The hidden brackets work perfectly.",
+        "verified": true,
+        "helpful": 11,
+        "variant": "White, Set of 3 Mixed Sizes"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "productName": "Tufted Headboard",
+    "price": 34999,
+    "currency": "₹",
+    "rating": 4.5,
+    "totalReviews": 167,
+    "shortDescription": "Upholstered tufted headboard with diamond pattern and wall mounting system",
+    "sizes": ["Queen", "King", "Super King"],
+    "colors": ["Gray", "Beige", "Navy Blue", "Charcoal"],
+    "inStock": true,
+    "freeShipping": true,
+    "description": {
+      "overview": "Transform your bedroom with our Tufted Headboard. Featuring elegant diamond tufting, premium upholstery, and a secure wall mounting system, this headboard adds luxury and comfort to any bed frame.",
+      "keyFeatures": [
+        "Diamond tufted design",
+        "Premium fabric upholstery",
+        "Wall mounting system",
+        "High-density foam padding",
+        "Easy installation",
+        "Multiple size options"
+      ]
+    },
+    "additionalInfo": {
+      "specifications": {
+        "dimensions": {
+          "width": "64 inches (163 cm) for Queen",
+          "height": "54 inches (137 cm)",
+          "thickness": "4 inches (10 cm)",
+          "weight": "18 kg"
+        },
+        "technical": {
+          "assemblyRequired": "Wall mounting required",
+          "mountingType": "French cleat system",
+          "wallClearance": "2 inches from wall",
+          "bedCompatibility": "Standard bed frames"
+        }
+      },
+      "materials": {
+        "upholstery": "Polyester blend fabric with stain resistance",
+        "padding": "High-density foam with batting",
+        "frame": "Plywood backing with fabric wrap",
+        "hardware": "Heavy-duty wall mounting brackets"
+      },
+      "shipping": {
+        "standardDelivery": "Free shipping, 2-3 weeks delivery",
+        "whiteGloveDelivery": "₹3,999 additional, installation available"
+      },
+      "warranty": {
+        "upholstery": "3-year warranty against defects",
+        "frame": "5-year structural warranty",
+        "mounting": "2-year warranty on hardware"
+      }
+    },
+    "reviews": [
+      {
+        "id": 20,
+        "customerName": "Ravi Agarwal",
+        "rating": 5,
+        "date": "1 month ago",
+        "title": "Beautiful headboard",
+        "content": "The tufted design looks so elegant in our bedroom. The fabric is good quality and the mounting system is very secure. Installation was easier than expected with clear instructions.",
+        "verified": true,
+        "helpful": 14,
+        "variant": "Gray, Queen"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "productName": "Nesting Coffee Tables",
+    "price": 29999,
+    "currency": "₹",
+    "rating": 4.3,
+    "totalReviews": 118,
+    "shortDescription": "Set of 3 nesting coffee tables with marble tops and gold metal legs",
+    "sizes": ["Standard Set"],
+    "colors": ["White Marble", "Black Marble", "Gray Marble"],
+    "inStock": true,
+    "freeShipping": true,
+    "description": {
+      "overview": "Add versatility to your living room with our Nesting Coffee Tables. This set of 3 tables features beautiful marble tops and elegant gold metal legs. Perfect for entertaining or everyday use, they nest together to save space when not needed.",
+      "keyFeatures": [
+        "Set of 3 nesting tables",
+        "Genuine marble tops",
+        "Gold-finished metal legs",
+        "Space-saving design",
+        "Scratch-resistant surface",
+        "Modern contemporary style"
+      ]
+    },
+    "additionalInfo": {
+      "specifications": {
+        "dimensions": {
+          "large": "32x20x18 inches (81x51x46 cm)",
+          "medium": "28x18x16 inches (71x46x41 cm)",
+          "small": "24x16x14 inches (61x41x36 cm)",
+          "totalWeight": "45 kg"
+        },
+        "technical": {
+          "assemblyRequired": "Yes, 1 hour",
+          "maxWeightCapacity": "25 kg per table",
+          "marbleThickness": "15mm natural marble",
+          "legMaterial": "Steel with gold electroplating"
+        }
+      },
+      "materials": {
+        "tops": "Natural marble with protective sealant",
+        "legs": "Steel tubing with gold finish",
+        "hardware": "Stainless steel mounting brackets",
+        "feet": "Adjustable leveling feet with floor protection"
+      },
+      "shipping": {
+        "standardDelivery": "Free shipping, 3-4 weeks delivery",
+        "whiteGloveDelivery": "₹4,999 additional, careful handling required"
+      },
+      "warranty": {
+        "marble": "2-year warranty against defects",
+        "legs": "3-year warranty on gold finish",
+        "structure": "5-year warranty"
+      }
+    },
+    "reviews": [
+      {
+        "id": 21,
+        "customerName": "Shreya Jain",
+        "rating": 4,
+        "date": "2 weeks ago",
+        "title": "Elegant nesting tables",
+        "content": "These tables are beautiful and very functional. The marble tops are gorgeous and the gold legs add a luxurious touch. Perfect for our modern living room. Assembly was straightforward.",
+        "verified": true,
+        "helpful": 8,
+        "variant": "White Marble, Set of 3"
+      }
+    ]
+  }
+]
