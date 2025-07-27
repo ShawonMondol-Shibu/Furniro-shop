@@ -37,8 +37,8 @@ export default function Page() {
         breadCrumbLink="Contact"
       />
       <Toaster richColors />
-      <main className="mt-20">
-        <div className="w-xl text-center m-auto">
+      <main className="mt-20 px-5">
+        <div className="md:w-xl text-center m-auto text-wrap">
           <h2 className="text-4xl font-semibold">Get In Touch With Us</h2>
           <p className="text-base font-normal">
             For More Information About Our Product & Services. Please Feel Free
@@ -47,7 +47,7 @@ export default function Page() {
           </p>
         </div>
 
-        <section className="m-auto mt-30 mb-20 flex gap-40 items-start justify-center">
+        <section className="m-auto mt-30 mb-20 flex flex-wrap gap-40 items-start justify-center">
           <div className="space-y-10">
             {contacts.map((contact: contactType, i) => (
               <div key={i} className="flex gap-5 items-start">
