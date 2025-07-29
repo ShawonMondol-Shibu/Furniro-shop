@@ -7,8 +7,17 @@
     "rating": 4.7,
     "totalReviews": 156,
     "shortDescription": "Premium 3-seater sectional sofa with chaise lounge, perfect for modern living rooms",
-    "sizes": ["2-Seater", "3-Seater", "L-Shape Sectional"],
-    "colors": ["Charcoal Gray", "Navy Blue", "Cream", "Cognac Brown"],
+    "sizes": [
+      "2-Seater",
+      "3-Seater",
+      "L-Shape Sectional"
+    ],
+    "colors": [
+      "Charcoal Gray",
+      "Navy Blue",
+      "Cream",
+      "Cognac Brown"
+    ],
     "inStock": true,
     "freeShipping": true,
     "description": {
@@ -93,8 +102,15 @@
     "rating": 4.5,
     "totalReviews": 89,
     "shortDescription": "Ergonomic high-back office chair with premium leather upholstery and lumbar support",
-    "sizes": ["Standard", "Tall Back"],
-    "colors": ["Black", "Brown", "Burgundy"],
+    "sizes": [
+      "Standard",
+      "Tall Back"
+    ],
+    "colors": [
+      "Black",
+      "Brown",
+      "Burgundy"
+    ],
     "inStock": true,
     "freeShipping": true,
     "description": {
@@ -161,8 +177,16 @@
     "rating": 4.8,
     "totalReviews": 124,
     "shortDescription": "Solid oak dining table with live edge design, seats 6-8 people comfortably",
-    "sizes": ["6-Seater", "8-Seater", "10-Seater"],
-    "colors": ["Natural Oak", "Dark Walnut", "Honey Finish"],
+    "sizes": [
+      "6-Seater",
+      "8-Seater",
+      "10-Seater"
+    ],
+    "colors": [
+      "Natural Oak",
+      "Dark Walnut",
+      "Honey Finish"
+    ],
     "inStock": true,
     "freeShipping": true,
     "description": {
@@ -229,8 +253,17 @@
     "rating": 4.6,
     "totalReviews": 203,
     "shortDescription": "Minimalist platform bed with built-in nightstands and LED lighting",
-    "sizes": ["Queen", "King", "Super King"],
-    "colors": ["White", "Black", "Walnut", "Gray"],
+    "sizes": [
+      "Queen",
+      "King",
+      "Super King"
+    ],
+    "colors": [
+      "White",
+      "Black",
+      "Walnut",
+      "Gray"
+    ],
     "inStock": true,
     "freeShipping": true,
     "description": {
@@ -297,8 +330,15 @@
     "rating": 4.4,
     "totalReviews": 67,
     "shortDescription": "Classic Chesterfield armchair with button tufting and rolled arms in premium leather",
-    "sizes": ["Standard"],
-    "colors": ["Cognac Brown", "Black", "Burgundy", "Olive Green"],
+    "sizes": [
+      "Standard"
+    ],
+    "colors": [
+      "Cognac Brown",
+      "Black",
+      "Burgundy",
+      "Olive Green"
+    ],
     "inStock": true,
     "freeShipping": true,
     "description": {
@@ -365,8 +405,16 @@
     "rating": 4.7,
     "totalReviews": 145,
     "shortDescription": "Minimalist coffee table with clean lines and hidden storage compartment",
-    "sizes": ["Small", "Medium", "Large"],
-    "colors": ["White Oak", "Ash Gray", "Natural Birch"],
+    "sizes": [
+      "Small",
+      "Medium",
+      "Large"
+    ],
+    "colors": [
+      "White Oak",
+      "Ash Gray",
+      "Natural Birch"
+    ],
     "inStock": true,
     "freeShipping": true,
     "description": {
@@ -433,8 +481,16 @@
     "rating": 4.5,
     "totalReviews": 98,
     "shortDescription": "5-tier industrial bookshelf with metal frame and reclaimed wood shelves",
-    "sizes": ["4-Tier", "5-Tier", "6-Tier"],
-    "colors": ["Rustic Brown", "Gray Wash", "Natural Wood"],
+    "sizes": [
+      "4-Tier",
+      "5-Tier",
+      "6-Tier"
+    ],
+    "colors": [
+      "Rustic Brown",
+      "Gray Wash",
+      "Natural Wood"
+    ],
     "inStock": true,
     "freeShipping": true,
     "description": {
@@ -501,8 +557,17 @@
     "rating": 4.3,
     "totalReviews": 76,
     "shortDescription": "Round velvet ottoman with gold legs and hidden storage compartment",
-    "sizes": ["Small", "Medium", "Large"],
-    "colors": ["Emerald Green", "Navy Blue", "Blush Pink", "Charcoal Gray"],
+    "sizes": [
+      "Small",
+      "Medium",
+      "Large"
+    ],
+    "colors": [
+      "Emerald Green",
+      "Navy Blue",
+      "Blush Pink",
+      "Charcoal Gray"
+    ],
     "inStock": true,
     "freeShipping": false,
     "description": {
@@ -568,8 +633,17 @@
     "rating": 4.6,
     "totalReviews": 187,
     "shortDescription": "Customizable modular wardrobe with sliding doors and interior organizers",
-    "sizes": ["2-Door", "3-Door", "4-Door"],
-    "colors": ["White", "Walnut", "Gray", "Oak"],
+    "sizes": [
+      "2-Door",
+      "3-Door",
+      "4-Door"
+    ],
+    "colors": [
+      "White",
+      "Walnut",
+      "Gray",
+      "Oak"
+    ],
     "inStock": true,
     "freeShipping": true,
     "description": {
@@ -636,8 +710,17 @@
     "rating": 4.4,
     "totalReviews": 112,
     "shortDescription": "Height-adjustable study desk with built-in cable management and storage drawers",
-    "sizes": ["Compact", "Standard", "Large"],
-    "colors": ["White", "Black", "Walnut", "Gray"],
+    "sizes": [
+      "Compact",
+      "Standard",
+      "Large"
+    ],
+    "colors": [
+      "White",
+      "Black",
+      "Walnut",
+      "Gray"
+    ],
     "inStock": true,
     "freeShipping": true,
     "description": {
@@ -704,8 +787,14 @@
     "rating": 4.2,
     "totalReviews": 94,
     "shortDescription": "Handwoven rattan accent chair with comfortable cushions and natural finish",
-    "sizes": ["Standard"],
-    "colors": ["Natural", "White Wash", "Honey Brown"],
+    "sizes": [
+      "Standard"
+    ],
+    "colors": [
+      "Natural",
+      "White Wash",
+      "Honey Brown"
+    ],
     "inStock": true,
     "freeShipping": true,
     "description": {
@@ -772,8 +861,16 @@
     "rating": 4.5,
     "totalReviews": 78,
     "shortDescription": "Modern console table with tempered glass top and chrome legs",
-    "sizes": ["Small", "Medium", "Large"],
-    "colors": ["Clear Glass", "Smoked Glass", "Black Glass"],
+    "sizes": [
+      "Small",
+      "Medium",
+      "Large"
+    ],
+    "colors": [
+      "Clear Glass",
+      "Smoked Glass",
+      "Black Glass"
+    ],
     "inStock": true,
     "freeShipping": true,
     "description": {
@@ -840,8 +937,17 @@
     "rating": 4.3,
     "totalReviews": 156,
     "shortDescription": "Upholstered storage bench perfect for entryways and bedrooms",
-    "sizes": ["Small", "Medium", "Large"],
-    "colors": ["Beige", "Gray", "Navy Blue", "Burgundy"],
+    "sizes": [
+      "Small",
+      "Medium",
+      "Large"
+    ],
+    "colors": [
+      "Beige",
+      "Gray",
+      "Navy Blue",
+      "Burgundy"
+    ],
     "inStock": true,
     "freeShipping": false,
     "description": {
@@ -908,8 +1014,16 @@
     "rating": 4.1,
     "totalReviews": 89,
     "shortDescription": "Set of 2 wooden bar stools with footrest and swivel mechanism",
-    "sizes": ["Counter Height", "Bar Height"],
-    "colors": ["Natural Wood", "Black", "White", "Walnut"],
+    "sizes": [
+      "Counter Height",
+      "Bar Height"
+    ],
+    "colors": [
+      "Natural Wood",
+      "Black",
+      "White",
+      "Walnut"
+    ],
     "inStock": true,
     "freeShipping": true,
     "description": {
@@ -976,8 +1090,15 @@
     "rating": 4.6,
     "totalReviews": 134,
     "shortDescription": "Set of 4 upholstered dining chairs with wooden legs and comfortable padding",
-    "sizes": ["Standard"],
-    "colors": ["Cream", "Gray", "Navy Blue", "Burgundy"],
+    "sizes": [
+      "Standard"
+    ],
+    "colors": [
+      "Cream",
+      "Gray",
+      "Navy Blue",
+      "Burgundy"
+    ],
     "inStock": true,
     "freeShipping": true,
     "description": {
@@ -1044,8 +1165,17 @@
     "rating": 4.4,
     "totalReviews": 102,
     "shortDescription": "Space-saving corner TV unit with cable management and storage compartments",
-    "sizes": ["Small", "Medium", "Large"],
-    "colors": ["White", "Black", "Walnut", "Oak"],
+    "sizes": [
+      "Small",
+      "Medium",
+      "Large"
+    ],
+    "colors": [
+      "White",
+      "Black",
+      "Walnut",
+      "Oak"
+    ],
     "inStock": true,
     "freeShipping": true,
     "description": {
@@ -1112,8 +1242,15 @@
     "rating": 4.7,
     "totalReviews": 145,
     "shortDescription": "Premium leather recliner with massage function and USB charging ports",
-    "sizes": ["Standard", "Large"],
-    "colors": ["Black", "Brown", "Burgundy"],
+    "sizes": [
+      "Standard",
+      "Large"
+    ],
+    "colors": [
+      "Black",
+      "Brown",
+      "Burgundy"
+    ],
     "inStock": true,
     "freeShipping": true,
     "description": {
@@ -1181,8 +1318,17 @@
     "rating": 4.2,
     "totalReviews": 234,
     "shortDescription": "Set of 3 floating wall shelves with hidden brackets and modern design",
-    "sizes": ["Small", "Medium", "Large"],
-    "colors": ["White", "Black", "Walnut", "Natural Oak"],
+    "sizes": [
+      "Small",
+      "Medium",
+      "Large"
+    ],
+    "colors": [
+      "White",
+      "Black",
+      "Walnut",
+      "Natural Oak"
+    ],
     "inStock": true,
     "freeShipping": false,
     "description": {
@@ -1249,8 +1395,17 @@
     "rating": 4.5,
     "totalReviews": 167,
     "shortDescription": "Upholstered tufted headboard with diamond pattern and wall mounting system",
-    "sizes": ["Queen", "King", "Super King"],
-    "colors": ["Gray", "Beige", "Navy Blue", "Charcoal"],
+    "sizes": [
+      "Queen",
+      "King",
+      "Super King"
+    ],
+    "colors": [
+      "Gray",
+      "Beige",
+      "Navy Blue",
+      "Charcoal"
+    ],
     "inStock": true,
     "freeShipping": true,
     "description": {
@@ -1317,8 +1472,14 @@
     "rating": 4.3,
     "totalReviews": 118,
     "shortDescription": "Set of 3 nesting coffee tables with marble tops and gold metal legs",
-    "sizes": ["Standard Set"],
-    "colors": ["White Marble", "Black Marble", "Gray Marble"],
+    "sizes": [
+      "Standard Set"
+    ],
+    "colors": [
+      "White Marble",
+      "Black Marble",
+      "Gray Marble"
+    ],
     "inStock": true,
     "freeShipping": true,
     "description": {

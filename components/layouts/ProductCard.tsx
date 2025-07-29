@@ -10,6 +10,7 @@ export type productCardType = {
   price: number;
   savings: number;
   url: string;
+  currency:string;
 };
 
 export default function ProductCard({
@@ -19,6 +20,7 @@ export default function ProductCard({
   price,
   savings,
   url,
+  currency,
 }: productCardType) {
   return (
     <>
@@ -33,9 +35,9 @@ export default function ProductCard({
           />
           <CardFooter className="block space-y-2">
             <CardTitle className="text-2xl font-semibold group-hover:text-(--textPrimary) transition-colors duration-200 ease-in-out">{title}</CardTitle>
-            <p className="text-base font-medium">{category}</p>
+            <p className="text-base font-medium">{category}...</p>
             <h4 className="text-xl font-semibold flex items-center justify-between">
-              Rp {price}
+              {currency} {price}
               <del className="text-base font-normal">{savings}</del>
             </h4>
           </CardFooter>

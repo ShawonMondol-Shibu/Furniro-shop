@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import {
   Popover,
   PopoverContent,
@@ -14,7 +15,25 @@ import HeaderBreadCrumb from "@/components/layouts/HeaderBreadCrumb";
 import Services from "@/components/layouts/Services";
 import SitePagination from "@/components/layouts/SitePagination";
 
+interface dataType {
+  id: number;
+  productName: string;
+  price: number;
+  currency: string;
+  shortDescription: string;
+}
+
 export default function Page() {
+  const [product, setProduct] = useState(null);
+  useEffect(() => {
+    fetch('/furnitureProducts.json')
+      .then((res) => res.json())
+      .then((data) => setProduct(data));
+  }, []);
+  if (!product) {
+    return <>Loading....</>;
+  }
+
   return (
     <div className="">
       <HeaderBreadCrumb
@@ -72,13 +91,14 @@ export default function Page() {
       <main>
         {/* This is the Product Section */}
         <section className="container m-auto grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2  items-center justify-center xl:gap-20 gap-10 mt-10 px-5">
-          {Array.from({ length: 16 }).map((item, i) => (
+          {product.map((item: dataType) => (
             <ProductCard
-              key={i}
+              key={item.id}
               image={"/images/image.png"}
-              title={"Asgaard Sofa"}
-              category={"Luxury Big Sofa"}
-              price={1000}
+              title={item.productName}
+              category={item.shortDescription.slice(0,10)}
+              currency={item.currency}
+              price={item.price}
               savings={1200}
               url="/shop/product"
             />
