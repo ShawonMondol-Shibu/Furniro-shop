@@ -1,15 +1,20 @@
-"use client";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Circle, Star } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+// import { useRouter } from "next/router";
 import React from "react";
 import { toast } from "sonner";
 
+
+
 export default function ProductDetails() {
+
+
   return (
     <section className="container m-auto grid md:grid-cols-2 grid-cols-1 items-start gap-10">
+      <p>product id is </p>
       {/* Product Details Images */}
       <div className="flex items-start gap-10">
         <div className="space-y-8">

@@ -15,7 +15,7 @@ import HeaderBreadCrumb from "@/components/layouts/HeaderBreadCrumb";
 import Services from "@/components/layouts/Services";
 import SitePagination from "@/components/layouts/SitePagination";
 
-interface dataType {
+export interface dataType {
   id: number;
   productName: string;
   price: number;
@@ -31,7 +31,7 @@ export default function Page() {
       .then((data) => setProduct(data));
   }, []);
   if (!product) {
-    return <>Loading....</>;
+    return <h3 className="text-center">Loading....</h3>;
   }
 
   return (
@@ -100,7 +100,7 @@ export default function Page() {
               currency={item.currency}
               price={item.price}
               savings={1200}
-              url="/shop/product"
+              url={`/shop/:${item.id}`}
             />
           ))}
         </section>
