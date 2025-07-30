@@ -26,7 +26,7 @@ export interface dataType {
 export default function Page() {
   const [product, setProduct] = useState(null);
   useEffect(() => {
-    fetch('/furnitureProducts.json')
+    fetch("/furnitureProducts.json")
       .then((res) => res.json())
       .then((data) => setProduct(data));
   }, []);
@@ -96,7 +96,7 @@ export default function Page() {
               key={item.id}
               image={"/images/image.png"}
               title={item.productName}
-              category={item.shortDescription.slice(0,10)}
+              category={item.shortDescription.slice(0, 10)}
               currency={item.currency}
               price={item.price}
               savings={1200}

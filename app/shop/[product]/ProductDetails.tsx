@@ -88,17 +88,15 @@ export default function ProductDetails() {
         <div className="space-y-4">
           <p>Color</p>
           <div className="space-x-4">
-            <Button variant={"ghost"} size={"icon"} className="size-8" asChild>
-              <Circle fill="#816DFA" stroke="#816DFA" />
+            {
+              productData?.colors.map((color,)=>(<Button key={color} variant={"ghost"} size={"icon"} className="size-8" asChild>
+              {/* <Circle fill="#816DFA" stroke="#816DFA" /> */}
+              {color}
             </Button>
+              ))
+            }
 
-            <Button variant={"ghost"} size={"icon"} className="size-8" asChild>
-              <Circle fill="black" />
-            </Button>
-
-            <Button variant={"ghost"} size={"icon"} className="size-8" asChild>
-              <Circle fill="var(--textPrimary)" stroke="var(--textPrimary)" />
-            </Button>
+          
           </div>
         </div>
 
