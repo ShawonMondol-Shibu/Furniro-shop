@@ -1,7 +1,7 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { Circle, Star } from "lucide-react";
+import { Star } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useParams } from "next/navigation";
@@ -55,9 +55,10 @@ export default function ProductDetails() {
 
         <span className="flex items-center gap-5 h-8">
           <span className="flex gap-2 items-center">
-            {Array.from({ length: 4 }).map((_, index) => (
-              <Star key={index} fill="gold" stroke="gold" size={20} />
+            {[...Array(Math.floor(productData?.rating))].map((_, index) => (
+              <Star key={index}  fill="gold" stroke="gold" size={20} />
             ))}
+            {productData?.rating}
           </span>
 
           <Separator orientation="vertical" />
@@ -72,13 +73,12 @@ export default function ProductDetails() {
         <div className="space-y-4">
           <p>Size</p>
           <div className="space-x-2">
-            {productData?.sizes.map((size) => (
+            {productData?.sizes.map((sizes) => (
               <Button
-                key={size}
-                size={"sm"}
+                key={sizes}
                 className="bg-(--bgPrimary) hover:text-white hover:bg-(--textPrimary) text-black"
               >
-                {size}
+                {sizes}
               </Button>
             ))}
           </div>
@@ -88,15 +88,12 @@ export default function ProductDetails() {
         <div className="space-y-4">
           <p>Color</p>
           <div className="space-x-4">
-            {
-              productData?.colors.map((color,)=>(<Button key={color} variant={"ghost"} size={"icon"} className="size-8" asChild>
-              {/* <Circle fill="#816DFA" stroke="#816DFA" /> */}
-              {color}
-            </Button>
-              ))
-            }
-
-          
+            {productData?.colors.map((color) => (
+              <Button size={'sm'} key={color}>
+                {/* <Circle fill="#816DFA" stroke="#816DFA" /> */}
+                {color}
+              </Button>
+            ))}
           </div>
         </div>
 
