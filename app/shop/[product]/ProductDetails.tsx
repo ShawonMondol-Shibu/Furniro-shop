@@ -56,7 +56,7 @@ export default function ProductDetails() {
         <span className="flex items-center gap-5 h-8">
           <span className="flex gap-2 items-center">
             {[...Array(Math.floor(productData?.rating))].map((_, index) => (
-              <Star key={index}  fill="gold" stroke="gold" size={20} />
+              <Star key={index} fill="gold" stroke="gold" size={20} />
             ))}
             {productData?.rating}
           </span>
@@ -89,7 +89,7 @@ export default function ProductDetails() {
           <p>Color</p>
           <div className="space-x-4">
             {productData?.colors.map((color) => (
-              <Button size={'sm'} key={color}>
+              <Button size={"sm"} key={color}>
                 {/* <Circle fill="#816DFA" stroke="#816DFA" /> */}
                 {color}
               </Button>
@@ -116,6 +116,18 @@ export default function ProductDetails() {
         </div>
 
         <Separator className="my-5" />
+
+        {productData?.inStock ? (
+          <p className="font-semibold">
+            Stock :{" "}
+            <span className="text-green-600 font-medium"> In Stock</span>
+          </p>
+        ) : (
+          <p className="font-semibold">
+            Stock :{" "}
+            <span className="text-red-600 font-medium"> Out Of Stock</span>
+          </p>
+        )}
       </div>
     </section>
   );

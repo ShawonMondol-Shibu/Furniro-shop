@@ -17,6 +17,7 @@ import ExtraDetails from "../extraDetails/page";
 import { Toaster } from "sonner";
 import { dataType } from "../page";
 
+
 export default function Page() {
   
   const [product, setProduct] = useState(null);
@@ -73,8 +74,8 @@ export default function Page() {
                 category={"Luxury Big Sofa"}
                 price={1000}
                 savings={1200}
-                url="/shop/product"
-                currency={""}
+                url={`/shop/${item.id}`}
+                currency={item.currency}
               />
             ))}
           </div>
