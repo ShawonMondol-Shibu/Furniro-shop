@@ -16,11 +16,9 @@ import ProductDetails from "./ProductDetails";
 import ExtraDetails from "../extraDetails/page";
 import { Toaster } from "sonner";
 import { dataType } from "../page";
-import { useParams } from "next/navigation";
 
 export default function Page() {
-  const params = useParams();
-  const id = params.id;
+  
   const [product, setProduct] = useState(null);
   useEffect(() => {
     fetch("/furnitureProducts.json")
@@ -42,7 +40,7 @@ export default function Page() {
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>
-                <BreadcrumbLink href="/shop">Shop {id}</BreadcrumbLink>
+                <BreadcrumbLink href="/shop">Shop {}</BreadcrumbLink>
               </BreadcrumbItem>
             </BreadcrumbList>
           </Breadcrumb>

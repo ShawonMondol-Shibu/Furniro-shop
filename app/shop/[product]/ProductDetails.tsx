@@ -1,20 +1,22 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Circle, Star } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-// import { useRouter } from "next/router";
+import { useParams } from "next/navigation";
 import React from "react";
 import { toast } from "sonner";
-
-
+import data from "@/public/furnitureProducts.json";
 
 export default function ProductDetails() {
-
-
+  const params = useParams();
+  console.log(params.product);
+  const id = params.product;
+  const productData = data.find((product) => product.id == id);
+  console.log(productData);
   return (
     <section className="container m-auto grid md:grid-cols-2 grid-cols-1 items-start gap-10">
-      <p>product id is </p>
       {/* Product Details Images */}
       <div className="flex items-start gap-10">
         <div className="space-y-8">
@@ -44,49 +46,41 @@ export default function ProductDetails() {
 
       {/* Product Details texts */}
       <div className="space-y-5 w-96">
-        <h3 className="text-[42px] font-normal">Asgaard Sofa</h3>
+        <h3 className="text-[42px] font-normal">{productData?.productName}</h3>
 
-        <h5 className="text-2xl font-medium">Rs 250,000.00</h5>
+        <h5 className="text-2xl font-medium">
+          {productData?.currency}
+          {productData?.price}{" "}
+        </h5>
 
         <span className="flex items-center gap-5 h-8">
           <span className="flex gap-2 items-center">
-            {Array.from({ length: 5 }).map((_, index) => (
+            {Array.from({ length: 4 }).map((_, index) => (
               <Star key={index} fill="gold" stroke="gold" size={20} />
             ))}
           </span>
 
           <Separator orientation="vertical" />
-          <span className="text-(--textGray) text-sm">5 Customer Review</span>
+          <span className="text-(--textGray) text-sm">
+            {productData?.totalReviews} Customer Review
+          </span>
         </span>
 
-        <p className="text-sm font-normal">
-          Setting the bar as one of the loudest speakers in its class, the
-          Kilburn is a compact, stout-hearted hero with a well-balanced audio
-          which boasts a clear midrange and extended highs for a sound.
-        </p>
+        <p className="text-sm font-normal">{productData?.shortDescription}</p>
 
         {/* Product Sizes  */}
         <div className="space-y-4">
           <p>Size</p>
           <div className="space-x-2">
-            <Button
-              size={"icon"}
-              className="bg-(--bgPrimary) hover:text-white hover:bg-(--textPrimary) text-black"
-            >
-              L
-            </Button>
-            <Button
-              size={"icon"}
-              className="bg-(--bgPrimary) text-black hover:text-white hover:bg-(--textPrimary)"
-            >
-              XL
-            </Button>
-            <Button
-              size={"icon"}
-              className="bg-(--bgPrimary) text-black hover:text-white hover:bg-(--textPrimary)"
-            >
-              XS
-            </Button>
+            {productData?.sizes.map((size) => (
+              <Button
+                key={size}
+                size={"sm"}
+                className="bg-(--bgPrimary) hover:text-white hover:bg-(--textPrimary) text-black"
+              >
+                {size}
+              </Button>
+            ))}
           </div>
         </div>
 

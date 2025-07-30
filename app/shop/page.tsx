@@ -100,7 +100,7 @@ export default function Page() {
               currency={item.currency}
               price={item.price}
               savings={1200}
-              url={`/shop/:${item.id}`}
+              url={`/shop/${item.id}`}
             />
           ))}
         </section>
