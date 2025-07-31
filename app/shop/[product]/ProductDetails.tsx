@@ -55,9 +55,12 @@ export default function ProductDetails() {
 
         <span className="flex items-center gap-5 h-8">
           <span className="flex gap-2 items-center">
-            {[...Array(productData?.rating)].map((_, index) => (
-              <Star key={index} fill="gold" stroke="gold" size={20} />
-            ))}
+            {[...Array(Math.floor(productData?.rating || 0))].map(
+              (_, index) => (
+                <Star key={index} fill="gold" stroke="gold" size={20} />
+              )
+            )}
+
             {productData?.rating}
           </span>
 
