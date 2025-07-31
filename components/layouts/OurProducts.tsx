@@ -1,20 +1,26 @@
-import React from "react";
+"use clients"
+import React, { useEffect, useState } from "react";
 import Title from "../ui/Title";
 import { Button } from "../ui/button";
 import Link from "next/link";
 import ProductCard from "./ProductCard";
+import { dataType } from "@/app/shop/page";
 
 export default function OurProducts() {
+  const [products, setProducts] = useState<dataType[]>();
+  useEffect(()=>{
+fetch("/furnitureProducts.josn").then((res)=>res.json()).then(data=>setProducts(data))
+  },[])
   return (
     <main className="container m-auto py-5">
       <div className="text-center">
         <Title className={"text-[40px] text-center"}> Our Products </Title>
       </div>
       <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 xl:gap-20 gap-10 items-center justify-center py-10 px-5">
-        {Array.from({ length: 8 }).map((item, i) => (
+        {products.map((item:dataType) => (
           <ProductCard
-            key={i}
-            image={"/images/image.png"}
+            key={item.id}
+            image={item.}
             title={"Asgaard Sofa"}
             category={"Luxury Big Sofa"}
             price={100}

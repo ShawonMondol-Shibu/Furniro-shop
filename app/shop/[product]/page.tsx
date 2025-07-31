@@ -20,7 +20,7 @@ import { dataType } from "../page";
 
 export default function Page() {
   
-  const [product, setProduct] = useState(null);
+  const [product, setProduct] = useState<dataType[]>();
   useEffect(() => {
     fetch("/furnitureProducts.json")
       .then((res) => res.json())
