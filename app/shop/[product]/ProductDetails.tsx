@@ -12,8 +12,8 @@ import data from "@/public/furnitureProducts.json";
 export default function ProductDetails() {
   const params = useParams();
   console.log(params.product);
-  const id = params.product;
-  const productData = data.find((product) => product.id == id);
+  const id = String(params.product);
+  const productData = data.find((product) => String(product.id) == id);
   console.log(productData);
   return (
     <section className="container m-auto grid md:grid-cols-2 grid-cols-1 items-start gap-10">
@@ -55,7 +55,7 @@ export default function ProductDetails() {
 
         <span className="flex items-center gap-5 h-8">
           <span className="flex gap-2 items-center">
-            {[...Array(Math.floor(productData?.rating))].map((_, index) => (
+            {[...Array(productData?.rating)].map((_, index) => (
               <Star key={index} fill="gold" stroke="gold" size={20} />
             ))}
             {productData?.rating}
@@ -117,17 +117,30 @@ export default function ProductDetails() {
 
         <Separator className="my-5" />
 
-        {productData?.inStock ? (
-          <p className="font-semibold">
-            Stock :{" "}
-            <span className="text-green-600 font-medium"> In Stock</span>
-          </p>
-        ) : (
-          <p className="font-semibold">
-            Stock :{" "}
-            <span className="text-red-600 font-medium"> Out Of Stock</span>
-          </p>
-        )}
+        <div className="space-y-2 my-5">
+          {productData?.inStock ? (
+            <p className="font-semibold">
+              Stock :{" "}
+              <span className="text-green-600 font-medium"> In Stock</span>
+            </p>
+          ) : (
+            <p className="font-semibold">
+              Stock :{" "}
+              <span className="text-red-600 font-medium"> Out Of Stock</span>
+            </p>
+          )}
+
+          {productData?.freeShipping ? (
+            <p className="font-semibold">
+              Shipping :{" "}
+              <span className="text-green-600 font-medium"> Free</span>
+            </p>
+          ) : (
+            <p className="font-semibold">
+              Stock : <span className="text-red-600 font-medium">Paid</span>
+            </p>
+          )}
+        </div>
       </div>
     </section>
   );

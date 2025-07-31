@@ -21,7 +21,6 @@ export interface dataType {
   price: number;
   currency: string;
   shortDescription: string;
-  
 }
 
 export default function Page() {
