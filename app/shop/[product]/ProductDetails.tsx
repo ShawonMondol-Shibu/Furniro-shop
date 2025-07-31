@@ -36,10 +36,10 @@ export default function ProductDetails() {
         </div>
         <div className="w-[423px] h-[500] bg-(--bgPrimary) rounded-xl flex items-center">
           <Image
-            src={"/images/products/image.png"}
+            src={productData?.image ?? ""}
             width={481}
             height={391}
-            alt="product main image"
+            alt={productData?.productName ?? ""}
           />
         </div>
       </div>

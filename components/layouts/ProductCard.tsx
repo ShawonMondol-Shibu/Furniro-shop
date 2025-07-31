@@ -31,7 +31,7 @@ export default function ProductCard({
             width={285}
             height={301}
             alt={category}
-            className="m-auto"
+            className="m-auto h-[285px] w-[285px] object-contain"
           />
           <CardFooter className="block space-y-2">
             <CardTitle className="text-2xl font-semibold group-hover:text-(--textPrimary) transition-colors duration-200 ease-in-out">{title}</CardTitle>

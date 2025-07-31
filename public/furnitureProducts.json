@@ -97,7 +97,7 @@
   },
   {
     "id": 2,
-    "image":"/images/products/image.png",
+    "image":"/images/products/chair.png",
     "productName": "Executive Leather Office Chair",
     "price": 45999,
     "currency": "₹",
@@ -173,7 +173,7 @@
   },
   {
     "id": 3,
-    "image":"/images/products/image.png",
+    "image":"/images/products/Wooden-Furniture-Table-PNG.png",
     "productName": "Rustic Oak Dining Table",
     "price": 89999,
     "currency": "₹",
@@ -250,7 +250,7 @@
   },
   {
     "id": 4,
-    "image":"/images/products/image.png",
+    "image":"/images/products/modern-platform-bed-design-featuring-slats-and-two-decorative-pillows-in-a-minimalist-setting-modern-platform-bed-with-slats-and-two-pillows-transparent-background-free-png.png",
     "productName": "Contemporary Platform Bed",
     "price": 75999,
     "currency": "₹",
@@ -328,7 +328,7 @@
   },
   {
     "id": 5,
-    "image":"/images/products/image.png",
+    "image":"/images/products/pngtree-blue-chesterfield-armchair-png-image_16044306.png",
     "productName": "Vintage Chesterfield Armchair",
     "price": 65999,
     "currency": "₹",
@@ -404,7 +404,7 @@
   },
   {
     "id": 6,
-    "image":"/images/products/image.png",
+    "image":"/images/products/pngtree-modern-scandinavian-style-coffee-table-minimalist-furniture-design-for-png-image_14511129.png",
     "productName": "Scandinavian Coffee Table",
     "price": 32999,
     "currency": "₹",
@@ -481,7 +481,7 @@
   },
   {
     "id": 7,
-    "image":"/images/products/image.png",
+    "image":"/images/products/pngtree-the-ultimate-guide-to-choosing-perfect-bookshelf-png-image_12597191.png",
     "productName": "Industrial Bookshelf Unit",
     "price": 54999,
     "currency": "₹",
@@ -558,7 +558,7 @@
   },
   {
     "id": 8,
-    "image":"/images/products/image.png",
+    "image":"/images/products/pngtree-luxurious-round-blue-velvet-ottoman-with-tufted-design-for-stylish-home-png-image_20758274.png",
     "productName": "Luxury Velvet Ottoman",
     "price": 28999,
     "currency": "₹",
@@ -635,7 +635,7 @@
   },
   {
     "id": 9,
-    "image":"/images/products/image.png",
+    "image":"/images/products/pngtree-stylish-modern-wardrobe-for-contemporary-homes-classic-wooden-with-elegant-design-png-image_16101431.png",
     "productName": "Modular Wardrobe System",
     "price": 149999,
     "currency": "₹",
@@ -713,7 +713,7 @@
   },
   {
     "id": 10,
-    "image":"/images/products/image.png",
+    "image":"/images/products/pngtree-ergonomic-laptop-desk-for-comfortable-work-and-study-png-image_15784268.png",
     "productName": "Ergonomic Study Desk",
     "price": 42999,
     "currency": "₹",
@@ -791,7 +791,7 @@
   },
   {
     "id": 11,
-    "image":"/images/products/image.png",
+    "image":"/images/products/pngtree-elegant-rattan-armchair-design-png-image_12689317.png",
     "productName": "Rattan Accent Chair",
     "price": 38999,
     "currency": "₹",
@@ -866,7 +866,7 @@
   },
   {
     "id": 12,
-    "image":"/images/products/image.png",
+    "image":"/images/products/pngtree-glass-top-console-table-modern-living-room-furniture-elegant-hallway-clear-png-image_16429983.png",
     "productName": "Glass Top Console Table",
     "price": 56999,
     "currency": "₹",
@@ -943,7 +943,7 @@
   },
   {
     "id": 13,
-    "image":"/images/products/image.png",
+    "image":"/images/products/pngtree-storage-bench-with-upholstered-seat-and-wooden-frame-isolated-on-transparent-png-image_21210288.png",
     "productName": "Fabric Storage Bench",
     "price": 24999,
     "currency": "₹",
@@ -1021,7 +1021,7 @@
   },
   {
     "id": 14,
-    "image":"/images/products/image.png",
+    "image":"/images/products/pngtree-wooden-bar-stool-with-cushioned-seat-png-image_14487586.png",
     "productName": "Wooden Bar Stool Set",
     "price": 18999,
     "currency": "₹",
@@ -1098,7 +1098,7 @@
   },
   {
     "id": 15,
-    "image":"/images/products/image.png",
+    "image":"/images/products/pngtree-velvet-upholstered-dining-chair-high-quality-image-isolated-on-transparent-background-png-image_15816830.png",
     "productName": "Upholstered Dining Chairs",
     "price": 35999,
     "currency": "₹",
@@ -1174,7 +1174,7 @@
   },
   {
     "id": 16,
-    "image":"/images/products/image.png",
+    "image":"/images/products/pngtree-solid-wood-steelside-tv-stands-entertainment-centers-png-image_12339800.png",
     "productName": "Corner TV Unit",
     "price": 48999,
     "currency": "₹",
@@ -1252,7 +1252,7 @@
   },
   {
     "id": 17,
-    "image":"/images/products/image.png",
+    "image":"/images/products/brown-leather-recliner-chair-on-transparent-background-free-png.png",
     "productName": "Leather Recliner Chair",
     "price": 89999,
     "currency": "₹",
@@ -1329,7 +1329,7 @@
   },
   {
     "id": 18,
-    "image":"/images/products/image.png",
+    "image":"/images/products/pngtree-rustic-wooden-floating-shelves-wall-mounted-isolated-on-transparent-background-png-image_13135946.png",
     "productName": "Floating Wall Shelves",
     "price": 12999,
     "currency": "₹",
@@ -1407,7 +1407,7 @@
   },
   {
     "id": 19,
-    "image":"/images/products/image.png",
+    "image":"/images/products/pngtree-white-bed-with-tufted-headboard-design-png-image_20801751.png",
     "productName": "Tufted Headboard",
     "price": 34999,
     "currency": "₹",
@@ -1485,7 +1485,7 @@
   },
   {
     "id": 20,
-    "image":"/images/products/image.png",
+    "image":"/images/products/pngtree-round-small-coffee-table-nesting-wood-and-metal-side-png-image_16121233.png",
     "productName": "Nesting Coffee Tables",
     "price": 29999,
     "currency": "₹",
