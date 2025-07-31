@@ -66,13 +66,13 @@ export default function Page() {
             </Title>
           </div>
           <div className="xl:grid grid-cols-4 flex flex-wrap gap-10 items-center justify-center py-10">
-            {product.map((item: dataType) => (
+            {product.slice(0,4).map((item: dataType) => (
               <ProductCard
                 key={item.id}
-                image={"/images/image.png"}
-                title={"Asgaard Sofa"}
-                category={"Luxury Big Sofa"}
-                price={1000}
+                image={item.image}
+                title={item.productName}
+                category={item.shortDescription.slice(0,15)}
+                price={item.price}
                 savings={1200}
                 url={`/shop/${item.id}`}
                 currency={item.currency}
