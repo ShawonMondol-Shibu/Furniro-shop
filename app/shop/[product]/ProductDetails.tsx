@@ -26,10 +26,10 @@ export default function ProductDetails() {
               className="w-18 h-20 bg-(--bgPrimary) rounded-xl flex items-center"
             >
               <Image
-                src={productData?.image}
+                src={productData?.image ?? ""}
                 width={481}
                 height={391}
-                alt={productData?.productName}
+                alt={productData?.productName ?? ""}
               />
             </div>
           ))}
