@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+    "image":"/images/products/image.png",
     "productName": "Modern Comfort Sectional Sofa",
     "price": 129999,
     "currency": "₹",

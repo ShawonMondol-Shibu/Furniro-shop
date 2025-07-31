@@ -21,10 +21,11 @@ export interface dataType {
   price: number;
   currency: string;
   shortDescription: string;
+  image:string;
 }
 
 export default function Page() {
-  const [product, setProduct] = useState(null);
+  const [product, setProduct] = useState<dataType[]>();
   useEffect(() => {
     fetch("/furnitureProducts.json")
       .then((res) => res.json())
@@ -94,7 +95,7 @@ export default function Page() {
           {product.map((item: dataType) => (
             <ProductCard
               key={item.id}
-              image={"/images/image.png"}
+              image={item.image}
               title={item.productName}
               category={item.shortDescription.slice(0, 10)}
               currency={item.currency}
