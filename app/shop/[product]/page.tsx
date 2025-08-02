@@ -17,9 +17,7 @@ import ExtraDetails from "../extraDetails/page";
 import { Toaster } from "sonner";
 import { dataType } from "../page";
 
-
 export default function Page() {
-  
   const [product, setProduct] = useState<dataType[]>();
   useEffect(() => {
     fetch("/furnitureProducts.json")
@@ -66,12 +64,12 @@ export default function Page() {
             </Title>
           </div>
           <div className="xl:grid grid-cols-4 flex flex-wrap gap-10 items-center justify-center py-10">
-            {product.slice(0,4).map((item: dataType) => (
+            {product.slice(0, 4).map((item: dataType) => (
               <ProductCard
                 key={item.id}
                 image={item.image}
                 title={item.productName}
-                category={item.shortDescription.slice(0,15)}
+                category={item.shortDescription.slice(0, 15)}
                 price={item.price}
                 savings={1200}
                 url={`/shop/${item.id}`}
