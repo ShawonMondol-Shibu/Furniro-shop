@@ -24,7 +24,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-        <ClerkProvider publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY!}>
+      <ClerkProvider
+        publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY!}
+      >
         <body
           className={`${poppins.className} ${poppins.variable} antialiased`}
         >
@@ -33,7 +35,7 @@ export default function RootLayout({
           {children}
           <Footer />
         </body>
-    </ClerkProvider>
-      </html>
+      </ClerkProvider>
+    </html>
   );
 }
