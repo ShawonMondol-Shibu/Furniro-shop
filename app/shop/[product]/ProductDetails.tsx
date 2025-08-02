@@ -15,6 +15,11 @@ export default function ProductDetails() {
   const id = String(params.product);
   const productData = data.find((product) => String(product.id) == id);
   console.log(productData);
+  const handleCart = ()=>{
+    localStorage.setItem("id", id)
+    console.info(localStorage)
+    return toast.success(`${id} Product added`)
+  }
   return (
     <section className="container m-auto grid md:grid-cols-2 grid-cols-1 items-start gap-10">
       {/* Product Details Images */}
@@ -108,7 +113,7 @@ export default function ProductDetails() {
           </div>
           <Button
             variant={"outline"}
-            onClick={() => toast.success("Product Added")}
+            onClick={handleCart}
             className="hover:cursor-pointer"
           >
             Add To Cart

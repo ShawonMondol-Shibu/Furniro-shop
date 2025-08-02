@@ -16,7 +16,6 @@ export default function OurProducts() {
   if (!products) {
     return <h3 className="text-center">Loading....</h3>;
   }
-  products.map((item)=>console.log(item.productName))
   return (
     <main className="container m-auto py-5">
       <div className="text-center">
