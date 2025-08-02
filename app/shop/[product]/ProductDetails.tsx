@@ -14,10 +14,12 @@ export default function ProductDetails() {
   console.log(params.product);
   const id = String(params.product);
   const productData = data.find((product) => String(product.id) == id);
-  console.log(productData);
+  // console.log(productData);
+  const arr:string[] = [];
   const handleCart = ()=>{
-    localStorage.setItem("id", id)
-    console.info(localStorage)
+    arr.push(id)
+    // localStorage.setItem("id",arr)
+    console.log(arr)
     return toast.success(`${id} Product added`)
   }
   return (
