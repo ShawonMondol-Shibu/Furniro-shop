@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import CartButton from "./CartButton";
 import NavSearch from "./NavSearch";
 import HeartButton from "./HeartButton";
-import UserButton from "./UserButton";
+import UserButton from "./UserBtn";
 import { Button } from "../ui/button";
 import { Menu } from "lucide-react";
 import { usePathname } from "next/navigation";
