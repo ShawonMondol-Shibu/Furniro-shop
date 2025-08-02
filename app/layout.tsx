@@ -23,8 +23,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY!}>
-      <html lang="en">
+    <html lang="en">
+        <ClerkProvider publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY!}>
         <body
           className={`${poppins.className} ${poppins.variable} antialiased`}
         >
@@ -33,7 +33,7 @@ export default function RootLayout({
           {children}
           <Footer />
         </body>
-      </html>
     </ClerkProvider>
+      </html>
   );
 }
