@@ -20,9 +20,11 @@ export default function UserBtn() {
           onClick={() => {
             if (openSignIn) openSignIn();
           }}
-          className="p-2"
+          size={'icon'}
+          asChild
+          className="p-1.5"
         >
-          <User2 size={20} />
+          <User2 />
         </Button>
       )}
     </>
