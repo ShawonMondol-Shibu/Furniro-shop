@@ -13,7 +13,7 @@ export default function UserBtn() {
   return (
     <>
       {user ? (
-        <UserButton afterSignOutUrl="/" />
+        <UserButton />
       ) : (
         <Button
           variant="ghost"
