@@ -17,10 +17,10 @@ export default function ProductDetails() {
   // console.log(productData);
   const arr:string[] = [];
   const handleCart = ()=>{
-    arr.push(id)
-    // localStorage.setItem("id",arr)
-    console.log(arr)
-    return toast.success(`${id} Product added`)
+    arr.push(...id)
+    localStorage.setItem("id",JSON.stringify(arr))
+    console.log(localStorage)
+    return toast.success(`${arr} Product added`)
   }
   return (
     <section className="container m-auto grid md:grid-cols-2 grid-cols-1 items-start gap-10">
