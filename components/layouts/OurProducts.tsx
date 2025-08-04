@@ -22,7 +22,7 @@ export default function OurProducts() {
         <Title className={"text-[40px] text-center"}> Our Products </Title>
       </div>
       <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 xl:gap-20 gap-10 items-center justify-center py-10 px-5">
-        {products.map((item: dataType) => (
+        {products.slice(0,4).map((item: dataType) => (
           <ProductCard
             key={item.id}
             image={item.image}
