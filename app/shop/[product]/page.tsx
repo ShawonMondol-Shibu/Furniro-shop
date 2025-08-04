@@ -16,6 +16,7 @@ import ProductDetails from "./ProductDetails";
 import ExtraDetails from "../extraDetails/page";
 import { Toaster } from "sonner";
 import { dataType } from "../page";
+import OurProducts from "@/components/layouts/OurProducts";
 
 export default function Page() {
   const [product, setProduct] = useState<dataType[]>();
