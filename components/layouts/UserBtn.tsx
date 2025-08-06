@@ -24,7 +24,7 @@ export default function UserBtn() {
           asChild
           className="p-1.5"
         >
-          <User2 />
+          <User2 /> 
         </Button>
       )}
     </>
