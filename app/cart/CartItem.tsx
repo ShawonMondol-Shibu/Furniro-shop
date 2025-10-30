@@ -12,7 +12,7 @@ import { CartContextProvider } from "@/context/CartProvider";
 
 export default function CartItem({ cartsData }:any) {
   const [quantity, setQuantity] = useState(cartsData.quantity || 1);
-  const { handleQuantity } = CartContextProvider();
+  const { handleQuantity, handleRemove } = CartContextProvider();
 
   const handleQuantityChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const newQty = Math.max(1, Number(e.target.value)); // prevent 0 or negative
@@ -63,7 +63,7 @@ export default function CartItem({ cartsData }:any) {
             size="icon"
             variant="ghost"
             className="text-yellow-600 hover:text-yellow-700"
-            onClick={() => handleQuantity(cartsData.id, 0)} // remove item
+            onClick={() => handleRemove(cartsData.id)} // remove item
           >
             <Trash2 className="w-4 h-4" />
           </Button>

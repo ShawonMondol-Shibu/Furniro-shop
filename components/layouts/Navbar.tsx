@@ -7,19 +7,12 @@ import NavSearch from "./NavSearch";
 import HeartButton from "./HeartButton";
 import UserButton from "./UserBtn";
 import { Button } from "../ui/button";
-import { Menu } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
-  function handleMenu() {
-    if (toggleMenu) {
-      setToggleMenu(false);
-    }
-    if (!toggleMenu) {
-      setToggleMenu(true);
-    }
-  }
+  const pathName = usePathname();
 
   const navLink = [
     { name: "Home", url: "/" },
@@ -28,75 +21,104 @@ export default function Navbar() {
     { name: "Contact", url: "/contact" },
   ];
 
-  const pages = [
-    { page: UserButton },
-    { page: NavSearch },
-    { page: HeartButton },
-    { page: CartButton },
-  ];
+  const pages = [UserButton, NavSearch, HeartButton, CartButton];
 
-  const pathName = usePathname();
+  const handleMenu = () => setToggleMenu(!toggleMenu);
 
   return (
-    <nav
-      className={` bg-white lg:flex ${
-        toggleMenu ? "grid" : "flex"
-      } items-center justify-between gap-10 px-10 py-5 sticky top-0 left-0 z-10 transition-all duration-300 ease-linear`}
-    >
-      <Link href={"/"} className="flex items-center gap-2">
+    <nav className="bg-white flex items-center justify-between px-6 py-4 shadow-sm sticky top-0 left-0 z-50">
+      {/* Logo */}
+      <Link href="/" className="flex items-center gap-2">
         <Image
-          src={"/images/logo.png"}
-          width={50}
-          height={50}
-          alt="top navbar logo image"
+          src="/images/logo.png"
+          width={45}
+          height={45}
+          alt="Navbar logo"
+          priority
         />
-        <span className="text-4xl font-bold">Furniro</span>
+        <span className="text-2xl font-bold text-gray-900">Furniro</span>
       </Link>
 
-      <>
-        <ul
-          className={`lg:flex ${
-            toggleMenu ? "grid" : "hidden"
-          } items-center lg:justify-center gap-10`}
-        >
-          {navLink.map((nav, i: number) => (
+      {/* Desktop Links */}
+      <ul className="hidden lg:flex items-center gap-10">
+        {navLink.map((nav, i) => (
+          <li key={i}>
+            <Link
+              href={nav.url}
+              className={`text-base font-medium transition-colors duration-200 ${
+                pathName === nav.url
+                  ? "text-[var(--textPrimary)]"
+                  : "text-gray-700 hover:text-[var(--textPrimary)]"
+              }`}
+            >
+              {nav.name}
+            </Link>
+          </li>
+        ))}
+      </ul>
+
+      {/* Desktop Buttons */}
+      <div className="hidden lg:flex items-center gap-4">
+        {pages.map((Component, index) => (
+          <Button
+            key={index}
+            variant="ghost"
+            size="icon"
+            asChild
+            className="hover:cursor-pointer"
+          >
+            <Component />
+          </Button>
+        ))}
+      </div>
+
+      {/* Mobile Menu Icon */}
+      <div className="lg:hidden flex items-center">
+        {toggleMenu ? (
+          <X size={28} onClick={handleMenu} className="cursor-pointer" />
+        ) : (
+          <Menu size={28} onClick={handleMenu} className="cursor-pointer" />
+        )}
+      </div>
+
+      {/* Mobile Dropdown */}
+      <div
+        className={`absolute left-0 top-[70px] w-full bg-white shadow-md flex flex-col items-center gap-6 py-6 transition-all duration-300 ease-in-out ${
+          toggleMenu ? "opacity-100 visible" : "opacity-0 invisible -translate-y-3"
+        }`}
+      >
+        <ul className="flex flex-col items-center gap-4">
+          {navLink.map((nav, i) => (
             <li key={i}>
               <Link
                 href={nav.url}
-                className={`text-base font-semibold hover:text-[var(--textPrimary)] ${
-                  pathName === nav.url ? "text-(--textPrimary)" : "text-inherit"
-                } transition-colors duration-200 ease-in-out`}
+                onClick={() => setToggleMenu(false)}
+                className={`text-base font-medium transition-colors duration-200 ${
+                  pathName === nav.url
+                    ? "text-[var(--textPrimary)]"
+                    : "text-gray-700 hover:text-[var(--textPrimary)]"
+                }`}
               >
                 {nav.name}
               </Link>
             </li>
           ))}
         </ul>
-      </> 
 
-      <div
-        className={`lg:flex ${
-          toggleMenu ? "grid" : "hidden"
-        } items-center lg:justify-center gap-10`}
-      >
-        {pages.map((page, index) => (
-          <Button
-            key={index}
-            variant={"ghost"}
-            size={"icon"}
-            asChild
-            className="hover:cursor-pointer"
-          >
-            <page.page />
-          </Button>
-        ))}
+        <div className="flex items-center gap-4">
+          {pages.map((Component, index) => (
+            <Button
+              key={index}
+              variant="ghost"
+              size="icon"
+              asChild
+              className="hover:cursor-pointer"
+            >
+              <Component />
+            </Button>
+          ))}
+        </div>
       </div>
-
-      <Menu
-        size={30}
-        onClick={handleMenu}
-        className="lg:hidden inline hover:cursor-pointer"
-      />
     </nav>
   );
 }

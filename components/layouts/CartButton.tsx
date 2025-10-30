@@ -9,7 +9,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { CartContextProvider } from "@/context/CartProvider";
 export default function CartButton() {
-  const { totalPrice,carts, handleQuantity } = CartContextProvider();
+  const { totalPrice, carts, handleRemove } = CartContextProvider();
   const cartLinks = [
     { url: "/cart", name: "Cart" },
     { url: "/checkout", name: "Checkout" },
@@ -35,41 +35,39 @@ export default function CartButton() {
           </Button>
         </div>
 
-{
-  carts.map((cart)=>(
-        <Card key={cart.id} className="p-0 border-none shadow-none mt-4">
-          <div className="flex items-center justify-between gap-5">
-            <Image
-              src={cart.image||"/images/products/image.png"}
-              width={108}
-              height={108}
-              alt={cart.productName}
-            />
-            <CardContent className="p-0 space-y-2">
-              <p>{cart.productName}</p>
-              <p>
-                {cart.quantity}X {''} 
-                <span className="text-(--textPrimary) text-xs font-medium">
-                  {cart.currency}{cart.price}
-                </span>
-              </p>
-            </CardContent>
-            <CardFooter className="p-0">
-              <Button
-                variant={"ghost"}
-                size={"icon"}
-                onClick={()=>handleQuantity(cart.id, 0)}
-                asChild
-                className="size-6"
-              >
-                <CircleX />
-              </Button>
-            </CardFooter>
-          </div>
-        </Card>
-
-  ))
-}
+        {carts.map((cart) => (
+          <Card key={cart.id} className="p-0 border-none shadow-none mt-4">
+            <div className="flex items-center justify-between gap-5">
+              <Image
+                src={cart.image || "/images/products/image.png"}
+                width={108}
+                height={108}
+                alt={cart.productName}
+              />
+              <CardContent className="p-0 space-y-2">
+                <p>{cart.productName}</p>
+                <p>
+                  {cart.quantity}X {""}
+                  <span className="text-(--textPrimary) text-xs font-medium">
+                    {cart.currency}
+                    {cart.price}
+                  </span>
+                </p>
+              </CardContent>
+              <CardFooter className="p-0">
+                <Button
+                  variant={"ghost"}
+                  size={"icon"}
+                  onClick={() => handleRemove(cart.id)}
+                  asChild
+                  className="size-6"
+                >
+                  <CircleX />
+                </Button>
+              </CardFooter>
+            </div>
+          </Card>
+        ))}
 
         <div className="mt-10">
           <div className="flex items-center justify-between gap-20">

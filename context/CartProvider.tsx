@@ -30,7 +30,8 @@ interface cartContextType {
   setCarts: Dispatch<SetStateAction<cartsType[]>>;
   handleCarts: (productData: any) => void;
   handleQuantity: (id: number, quantity: number) => void;
-  totalPrice:number
+  totalPrice: number;
+  handleRemove: (id: number) => void;
 }
 
 const defaultCartContext: cartContextType = {
@@ -38,7 +39,8 @@ const defaultCartContext: cartContextType = {
   setCarts: () => {},
   handleCarts: () => {},
   handleQuantity: () => {},
-  totalPrice:0
+  totalPrice: 0,
+  handleRemove: () => {},
 };
 
 const cartContext = createContext<cartContextType>(defaultCartContext);
@@ -91,13 +93,18 @@ export default function CartProvider({ children }: { children: ReactNode }) {
     setCarts((prevCarts) => {
       if (quantity === 0) {
         toast.warning("Removed from cart");
-        
+
         return prevCarts.filter((cart) => cart.id !== id);
       }
       return prevCarts.map((cart) =>
         cart.id === id ? { ...cart, quantity } : cart
       );
     });
+  };
+
+  const handleRemove = (id: number) => {
+    setCarts(carts.filter((cart) => cart.id !== id));
+    toast.warning("Removed from cart");
   };
 
   useEffect(() => {
@@ -119,7 +126,14 @@ export default function CartProvider({ children }: { children: ReactNode }) {
 
   return (
     <cartContext.Provider
-      value={{ carts, setCarts, totalPrice, handleCarts, handleQuantity }}
+      value={{
+        carts,
+        setCarts,
+        totalPrice,
+        handleCarts,
+        handleQuantity,
+        handleRemove,
+      }}
     >
       {children}
     </cartContext.Provider>
