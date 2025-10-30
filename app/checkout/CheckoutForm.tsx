@@ -23,7 +23,6 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
-import { Button } from "@/components/ui/button";
 import { countries, formSchema, provinces } from "./data";
 import Others from "./Others";
 import { toast } from "sonner";
@@ -243,9 +242,9 @@ export default function CheckoutForm() {
             />
 
             {/* Submit Button */}
-            <Button type="submit" className="w-full">
+            {/* <Button type="submit" className="w-full">
               Place Order
-            </Button>
+            </Button> */}
           </div>
 
           {/* Right b7Column: Others */}

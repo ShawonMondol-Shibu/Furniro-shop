@@ -5,6 +5,7 @@ import Navbar from "@/components/layouts/Navbar";
 import Footer from "@/components/layouts/Footer";
 import { ClerkProvider } from "@clerk/nextjs";
 import { Toaster } from "sonner";
+import CartProvider from "@/context/CartProvider";
 
 const poppins = Poppins({
   variable: "--my-font-poppins",
@@ -28,15 +29,17 @@ export default function RootLayout({
       <ClerkProvider
         publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY!}
       >
-        <body
-          className={`${poppins.className} ${poppins.variable} antialiased`}
-        >
-          <Navbar />
+        <CartProvider>
+          <body
+            className={`${poppins.className} ${poppins.variable} antialiased`}
+          >
+            <Navbar />
 
-          {children}
-          <Footer />
-      <Toaster position="top-right" richColors/>
-        </body>
+            {children}
+            <Footer />
+            <Toaster position="top-right" richColors />
+          </body>
+        </CartProvider>
       </ClerkProvider>
     </html>
   );

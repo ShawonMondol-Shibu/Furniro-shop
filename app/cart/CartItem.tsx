@@ -5,48 +5,69 @@ import Image from "next/image";
 import { Trash2 } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
+import { useState } from "react";
+import { CartContextProvider } from "@/context/CartProvider";
 
-export default function CartItem() {
+export default function CartItem({ cartsData }) {
+  const [quantity, setQuantity] = useState(cartsData.quantity || 1);
+  const { handleQuantity } = CartContextProvider();
+
+  const handleQuantityChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const newQty = Math.max(1, Number(e.target.value)); // prevent 0 or negative
+    setQuantity(newQty);
+    handleQuantity(cartsData.id, newQty);
+  };
+
   return (
-    <Card className="flex items-center p-4 gap-4 bg-white shadow-sm">
-      {/* Product Preview */}
-      <div className="flex items-center gap-4">
+    <Card className="bg-white shadow-sm">
+      <CardContent className="flex items-center justify-between gap-4">
+        {/* Product Preview */}
         <div className="rounded-md p-2 bg-[#F9F1E7]">
           <Image
-            src="/images/products/image.png" // 👈 Replace with your actual image path
-            alt="Asgaard Sofa"
+            src={cartsData.image || "/images/products/image.png"}
+            alt={cartsData.productName || "Product image"}
             width={80}
             height={80}
             className="object-cover rounded-md"
           />
         </div>
 
+        {/* Product Info */}
         <div className="space-x-6">
           <span className="text-sm text-muted-foreground font-medium">
-            Asgaard sofa
+            {cartsData.productName}
           </span>
-          <span className="text-sm text-muted-foreground">Rs. 250,000.00</span>
+          <span className="text-sm text-muted-foreground">
+            <small>{cartsData.currency}</small>
+            {cartsData.price}
+          </span>
         </div>
 
         {/* Quantity & Total */}
         <div className="flex items-center gap-4">
           <Input
             type="number"
-            defaultValue={1}
+            value={quantity}
+            min={1}
+            onChange={handleQuantityChange}
             className="w-12 text-center text-sm px-1 py-0 h-8"
           />
-          <p className="text-sm font-medium">Rs. 250,000.00</p>
+          <p className="text-sm font-medium">
+            <small>{cartsData.currency}</small>
+            {(cartsData.price * quantity).toFixed(2)}
+          </p>
 
           <Button
             size="icon"
             variant="ghost"
             className="text-yellow-600 hover:text-yellow-700"
+            onClick={() => handleQuantity(cartsData.id, 0)} // remove item
           >
             <Trash2 className="w-4 h-4" />
           </Button>
         </div>
-      </div>
+      </CardContent>
     </Card>
   );
 }

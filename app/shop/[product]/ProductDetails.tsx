@@ -4,23 +4,18 @@ import { Separator } from "@/components/ui/separator";
 import { Star } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useParams, useRouter } from "next/navigation";
+import { useParams } from "next/navigation";
 import React from "react";
-import { toast } from "sonner";
 import data from "@/public/furnitureProducts.json";
+import { CartContextProvider } from "@/context/CartProvider";
 
 export default function ProductDetails() {
-  const router = useRouter()
+  const { handleCarts, carts } = CartContextProvider();
   const params = useParams();
-  console.log(params.product);
   const id = String(params.product);
   const productData = data.find((product) => String(product.id) == id);
-  // console.log(productData);
-  const handleCart = ()=>{
-    toast.success(`${id} Product added`)
-    router.push("/cart")
-    new Audio('/notify.wav').play()
-  }
+  const isCartExist = carts.find((cart) => String(cart.id) == id);
+
   return (
     <section className="container m-auto grid md:grid-cols-2 grid-cols-1 items-start gap-10">
       {/* Product Details Images */}
@@ -114,8 +109,8 @@ export default function ProductDetails() {
           </div>
           <Button
             variant={"outline"}
-            onClick={handleCart}
-            disabled={!productData?.inStock}
+            onClick={() => handleCarts(productData)}
+            disabled={!productData?.inStock || isCartExist ? true : false}
             className="hover:cursor-pointer"
           >
             Add To Cart

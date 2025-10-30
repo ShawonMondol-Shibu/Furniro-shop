@@ -7,7 +7,9 @@ import { MdOutlineRemoveShoppingCart } from "react-icons/md";
 import { Card, CardContent, CardFooter } from "../ui/card";
 import Image from "next/image";
 import Link from "next/link";
+import { CartContextProvider } from "@/context/CartProvider";
 export default function CartButton() {
+  const { totalPrice,carts, handleQuantity } = CartContextProvider();
   const cartLinks = [
     { url: "/cart", name: "Cart" },
     { url: "/checkout", name: "Checkout" },
@@ -16,7 +18,12 @@ export default function CartButton() {
   return (
     <Popover>
       <PopoverTrigger asChild>
-        <ShoppingCart />
+        <span className="relative w-fit">
+          <small className="sticky right-0 top-0 w-4 h-4 text-white bg-primary rounded-full flex items-center justify-center">
+            {carts.length}
+          </small>
+          <ShoppingCart />
+        </span>
       </PopoverTrigger>
       <PopoverContent className="w-96">
         <div className="flex items-start justify-between gap-10">
@@ -28,20 +35,22 @@ export default function CartButton() {
           </Button>
         </div>
 
-        <Card className="p-0 border-none shadow-none mt-4">
+{
+  carts.map((cart)=>(
+        <Card key={cart.id} className="p-0 border-none shadow-none mt-4">
           <div className="flex items-center justify-between gap-5">
             <Image
-              src={"/images/products/image.png"}
+              src={cart.image||"/images/products/image.png"}
               width={108}
               height={108}
-              alt="product image"
+              alt={cart.productName}
             />
             <CardContent className="p-0 space-y-2">
-              <p>Asgaard Sofa</p>
+              <p>{cart.productName}</p>
               <p>
-                1 x{" "}
+                {cart.quantity}X {''} 
                 <span className="text-(--textPrimary) text-xs font-medium">
-                  Rs 250,000.00
+                  {cart.currency}{cart.price}
                 </span>
               </p>
             </CardContent>
@@ -49,6 +58,7 @@ export default function CartButton() {
               <Button
                 variant={"ghost"}
                 size={"icon"}
+                onClick={()=>handleQuantity(cart.id, 0)}
                 asChild
                 className="size-6"
               >
@@ -58,10 +68,13 @@ export default function CartButton() {
           </div>
         </Card>
 
+  ))
+}
+
         <div className="mt-10">
           <div className="flex items-center justify-between gap-20">
             <p>Subtotal</p>
-            <p className="text-(--textPrimary)">Rs 250,000.00</p>
+            <p className="text-(--textPrimary)">Rs {totalPrice}</p>
           </div>
           <hr className="my-5" />
           <div className="flex items-center justify-between gap-5">

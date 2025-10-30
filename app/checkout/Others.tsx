@@ -1,31 +1,44 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { CartContextProvider } from "@/context/CartProvider";
 import { CircleIcon } from "lucide-react";
 import React from "react";
 
 export default function Others() {
+  const { carts, totalPrice } = CartContextProvider();
   return (
     <section className="w-96 m-auto space-y-4">
       <div className="flex items-center gap-10 justify-between">
         <p className="text-2xl font-medium">Product</p>
         <p className="text-2xl font-medium">Subtotal</p>
       </div>
-      <div className="flex items-center gap-10 justify-between text-base font-normal">
-        <p>
-          <span className="text-[var(--textGray)]">Asgaard Sofa</span> &nbsp; X
-          1
-        </p>
-        <p className=" font-light">Rs. 250,000.00</p>
-      </div>
+
+      {carts.map((cart) => (
+        <div
+          key={cart.id}
+          className="flex items-center gap-10 justify-between text-base font-normal"
+        >
+          <p>
+            <span className="text-[var(--textGray)]">
+              {cart.productName || ""}
+            </span>{" "}
+            &nbsp; X{cart.quantity || ""}
+          </p>
+          <p className=" font-light">
+            {cart.currency} {cart.price || 0}
+          </p>
+        </div>
+      ))}
       <div className="flex items-center gap-10 justify-between text-base font-normal">
         <p>Subtotal</p>
-        <p className="font-light">Rs. 250,000.00</p>
+        <p className="font-light">Rs. {totalPrice}</p>
       </div>
       <div className="flex items-center gap-10 justify-between">
         <p className="text-2xl font-medium">Total</p>
         <p className="text-2xl font-bold text-[var(--textPrimary)]">
-          Rs. 250,000.00
+          Rs. {totalPrice}
         </p>
       </div>
 
