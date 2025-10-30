@@ -39,7 +39,9 @@ export default function ContactForm() {
 
   // 2. Define a submit handler.
   function onSubmit() {
+    const notify = new Audio('/notify.wav')
     toast.success("Message send successfully");
+    notify.play()
   }
   return (
     <Form {...form}>

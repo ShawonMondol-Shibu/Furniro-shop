@@ -27,7 +27,7 @@ export default function OurProducts() {
             key={item.id}
             image={item.image}
             title={item.productName}
-            category={item.shortDescription.slice(0, 10)}
+            category={item.shortDescription}
             currency={item.currency}
             price={item.price}
             savings={1200}

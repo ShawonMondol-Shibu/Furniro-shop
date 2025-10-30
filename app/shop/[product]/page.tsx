@@ -14,7 +14,6 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import ProductDetails from "./ProductDetails";
 import ExtraDetails from "../extraDetails/page";
-import { Toaster } from "sonner";
 import { dataType } from "../page";
 
 export default function Page() {
@@ -46,7 +45,6 @@ export default function Page() {
         </div>
       </header>
 
-      <Toaster richColors />
 
       <main className="my-10 px-5">
         {/* Product Details Section */}

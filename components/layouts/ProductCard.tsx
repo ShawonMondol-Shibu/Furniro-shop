@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardFooter, CardTitle } from "../ui/card";
+import { Card, CardContent, CardFooter, CardTitle } from "../ui/card";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -25,21 +25,21 @@ export default function ProductCard({
   return (
     <>
       <Link href={url} className="m-auto">
-        <Card className="xl:w-72 sm:w-56  pt-0 bg-(--cardBg) hover:scale-105 border-none rounded-none shadow-none hover:shadow-xl m-auto group transition-all duration-200 ease-linear">
-          <div className="m-auto h-[285px] w-[285px] flex items-center">
+        <Card className="xl:w-72 sm:w-56 bg-(--cardBg) hover:scale-105 border-none rounded-none shadow-none hover:shadow-xl m-auto group transition-all duration-200 ease-linear">
+          <CardContent className="overflow-hidden">
             <Image
               src={image}
-              width={285}
-              height={301}
+              width={500}
+              height={500}
               alt={category}
-              className="object-contain m-auto"
+              className="w-60 h-60 transition-all duration-300 ease-in-out group-hover:scale-120 group-hover:drop-shadow-md m-auto"
             />
-          </div>
+          </CardContent>
           <CardFooter className="block space-y-2">
-            <CardTitle className="text-2xl font-semibold group-hover:text-(--textPrimary) transition-colors duration-200 ease-in-out">
+            <CardTitle className="text-2xl line-clamp-1 font-semibold group-hover:text-(--textPrimary) transition-colors duration-200 ease-in-out">
               {title}
             </CardTitle>
-            <p className="text-base font-medium">{category}...</p>
+            <p className="text-base font-medium line-clamp-2">{category}...</p>
             <h4 className="text-xl font-semibold flex items-center justify-between">
               {currency} {price}
               <del className="text-base font-normal">{savings}</del>

@@ -4,23 +4,22 @@ import { Separator } from "@/components/ui/separator";
 import { Star } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { useParams } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 import React from "react";
 import { toast } from "sonner";
 import data from "@/public/furnitureProducts.json";
 
 export default function ProductDetails() {
+  const router = useRouter()
   const params = useParams();
   console.log(params.product);
   const id = String(params.product);
   const productData = data.find((product) => String(product.id) == id);
   // console.log(productData);
-  const arr:string[] = [];
   const handleCart = ()=>{
-    arr.push(...id)
-    localStorage.setItem("id",JSON.stringify(arr))
-    console.log(localStorage)
-    return toast.success(`${arr} Product added`)
+    toast.success(`${id} Product added`)
+    router.push("/cart")
+    new Audio('/notify.wav').play()
   }
   return (
     <section className="container m-auto grid md:grid-cols-2 grid-cols-1 items-start gap-10">
@@ -116,6 +115,7 @@ export default function ProductDetails() {
           <Button
             variant={"outline"}
             onClick={handleCart}
+            disabled={!productData?.inStock}
             className="hover:cursor-pointer"
           >
             Add To Cart

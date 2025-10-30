@@ -3,7 +3,6 @@ import Services from "@/components/layouts/Services";
 import { Clock, LocationEditIcon, Phone } from "lucide-react";
 import React from "react";
 import ContactForm from "./ContactForm";
-import { Toaster } from "sonner";
 
 interface contactType {
   icon: React.ElementType;
@@ -36,7 +35,6 @@ export default function Page() {
         breadCrumbPage="Home"
         breadCrumbLink="Contact"
       />
-      <Toaster richColors />
       <main className="mt-20 px-5">
         <div className="md:w-xl text-center m-auto text-wrap">
           <h2 className="text-4xl font-semibold">Get In Touch With Us</h2>
