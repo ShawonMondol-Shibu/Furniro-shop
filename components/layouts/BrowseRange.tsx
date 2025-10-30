@@ -23,14 +23,16 @@ export default function BrowseRange() {
 
       <div className="flex flex-wrap items-center justify-center gap-8">
         {rangeData.map((data: dataType, i) => (
-          <div key={i} className="rounded-lg ">
-            <Image
-              src={data.image}
-              width={381}
-              height={480}
-              alt="range image"
-              className="rounded-lg"
-            />
+          <div key={i} className="rounded-lg  group overflow-hidden">
+            <div className="w-[381px] h-[480px] overflow-hidden rounded-2xl">
+              <Image
+                src={data.image}
+                width={381}
+                height={480}
+                alt="range image"
+                className="rounded-lg transition-all duration-300 ease-in-out group-hover:scale-110"
+              />
+            </div>
             <h3 className="text-2xl font-semibold text-center mt-8">
               {data.title}
             </h3>

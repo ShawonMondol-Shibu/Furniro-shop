@@ -1,39 +1,48 @@
+"use client";
 import React from "react";
 import { Carousel, CarouselContent, CarouselItem } from "../ui/carousel";
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 export default function Header() {
   return (
-    <header>
+    <header className="relative w-full">
       <Carousel
         opts={{
           align: "start",
           loop: true,
         }}
-        className="m-auto"
+        className="m-auto w-full"
       >
         <CarouselContent>
           {Array.from({ length: 3 }).map((_, i) => (
             <CarouselItem
               key={i}
-              className=" w-full h-[95dvh] bg-[url('/images/header-banner.png')] bg-no-repeat bg-top bg-contain"
+              className="w-full h-[90vh] bg-[url('/images/header-banner.png')] bg-cover bg-center flex items-center justify-center relative"
             >
-              <div className="xl:p-8 lg:p-6 md:p-4 p-2 rounded-lg md:space-y-2 space-y-0 bg-[var(--bgPrimary)] xl:max-w-lg lg:max-w-96 md:max-w-80 max-w-70 text-center">
-                <p className="xl:text-base lg:text-sm text-xs font-semibold">
+              <div className="bg-white/80 backdrop-blur-sm xl:p-10 lg:p-8 md:p-6 p-4 rounded-lg text-center max-w-[90%] sm:max-w-lg md:max-w-xl lg:max-w-2xl">
+                <p className="text-sm md:text-base font-semibold text-gray-700">
                   New Arrival
                 </p>
-                <h1 className="xl:text-5xl lg:text-3xl text-xl font-bold leading-tight text-[var(--textPrimary)]">
+
+                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-[var(--textPrimary)] mt-2">
                   Discover Our New Collection
                 </h1>
-                <p className="xl:text-lg lg:text-base text-sm font-medium">
+
+                <p className="text-xs sm:text-sm md:text-base font-medium text-gray-700 mt-3">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
                   elit tellus, luctus nec ullamcorper mattis.
                 </p>
+
                 <Button
                   variant="default"
-                  className="rounded-none mt-4 bg-[var(--textPrimary)]  text-white"
+                  asChild
+                  className="rounded-none mt-6 bg-[var(--textPrimary)] text-white hover:opacity-90 transition"
+
                 >
+                  <Link href={'/shop'}>
                   BUY NOW
+                  </Link>
                 </Button>
               </div>
             </CarouselItem>

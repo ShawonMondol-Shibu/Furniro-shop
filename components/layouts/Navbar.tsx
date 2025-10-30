@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import CartButton from "./CartButton";
-import NavSearch from "./NavSearch";
+// import NavSearch from "./NavSearch";
 import HeartButton from "./HeartButton";
 import UserButton from "./UserBtn";
 import { Button } from "../ui/button";
@@ -21,7 +21,7 @@ export default function Navbar() {
     { name: "Contact", url: "/contact" },
   ];
 
-  const pages = [UserButton, NavSearch, HeartButton, CartButton];
+  const pages = [UserButton,  HeartButton, CartButton];
 
   const handleMenu = () => setToggleMenu(!toggleMenu);
 
