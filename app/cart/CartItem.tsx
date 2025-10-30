@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 // components/CartItem.tsx
 "use client";
 
@@ -9,7 +10,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { useState } from "react";
 import { CartContextProvider } from "@/context/CartProvider";
 
-export default function CartItem({ cartsData }) {
+export default function CartItem({ cartsData }:any) {
   const [quantity, setQuantity] = useState(cartsData.quantity || 1);
   const { handleQuantity } = CartContextProvider();
 
